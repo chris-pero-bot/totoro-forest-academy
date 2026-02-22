@@ -1,0 +1,129 @@
+{
+  "id": "clearing-4-4",
+  "name": "The Calendar",
+  "realm": 3,
+  "trail": 4,
+  "focus": "Ordinal numbers 1st-31st and dates",
+  "storyIntro": "The calendar pages blew away in the wind! Let's put the dates back!",
+  "storyOutro": "The calendar is fixed! Now everyone knows what day it is!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "January is the ___ month of the year.",
+      "options": ["first", "second", "third", "last"],
+      "correctIndex": 0,
+      "hint": "January = month #1.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "The party is on the ___ of July.",
+      "options": ["third", "three", "threes", "thirdly"],
+      "correctIndex": 0,
+      "hint": "3 → third (ordinal number).",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each number to its ordinal form.",
+      "pairs": [
+        { "left": "11", "right": "eleventh" },
+        { "left": "15", "right": "fifteenth" },
+        { "left": "20", "right": "twentieth" },
+        { "left": "31", "right": "thirty-first" }
+      ],
+      "hint": "Most ordinals end in -th.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "My birthday is on the ___ of March.",
+      "options": ["twenty-fifth", "twenty-five", "twenty five", "25"],
+      "correctIndex": 0,
+      "hint": "Dates use ordinal numbers with a hyphen.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Which is the correct way to say a date?",
+      "options": [
+        "The twelfth of October",
+        "The twelve of October",
+        "The twelves of October",
+        "The twelfths of October"
+      ],
+      "correctIndex": 0,
+      "hint": "12 → twelfth.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match the ordinal to its number.",
+      "pairs": [
+        { "left": "first", "right": "1st" },
+        { "left": "second", "right": "2nd" },
+        { "left": "third", "right": "3rd" },
+        { "left": "twenty-first", "right": "21st" }
+      ],
+      "hint": "1st, 2nd, 3rd are special. Others end in -th.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "There are ___ days in January.",
+      "options": ["thirty-one", "twenty-eight", "thirty", "twenty-nine"],
+      "correctIndex": 0,
+      "hint": "January has 31 days!",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "order_it",
+      "round": "challenge",
+      "prompt": "Put these dates in order from earliest to latest.",
+      "items": [
+        "The first of January",
+        "The fourteenth of February",
+        "The fourth of July",
+        "The thirty-first of December"
+      ],
+      "correctOrder": [0, 1, 2, 3],
+      "hint": "January is the first month, December is the last.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "The city tour is on the ___ of the month.",
+      "options": ["fifteenth", "fifteen", "fifteens", "fifteenths"],
+      "correctIndex": 0,
+      "hint": "15 → fifteenth.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "Today is the ___ of ___. Tomorrow will be the ___ of ___.",
+      "options": ["tenth, May, eleventh, May", "ten, May, eleven, May", "tenth, May, ten, May", "10, May, 11, May"],
+      "correctIndex": 0,
+      "hint": "Dates always use ordinal numbers!",
+      "acornValue": 3
+    }
+  ]
+}

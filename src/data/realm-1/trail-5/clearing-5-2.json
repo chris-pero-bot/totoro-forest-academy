@@ -1,0 +1,128 @@
+{
+  "id": "clearing-5-2",
+  "name": "Kangaroo Facts",
+  "realm": 1,
+  "trail": 5,
+  "focus": "Informational text about kangaroos in Australia",
+  "storyIntro": "Let's learn about kangaroos! They live far away in Australia!",
+  "storyOutro": "You know so much about kangaroos now! Great reading!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Where do kangaroos live?",
+      "options": ["Australia", "Africa", "Europe", "Antarctica"],
+      "correctIndex": 0,
+      "hint": "It's a big country that is also a continent.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "How do kangaroos move?",
+      "options": ["They hop.", "They fly.", "They swim.", "They slide."],
+      "correctIndex": 0,
+      "hint": "They use their strong legs to jump!",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "A baby kangaroo is called a ___.",
+      "options": ["joey", "puppy", "kitten", "cub"],
+      "correctIndex": 0,
+      "hint": "It starts with J!",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Where does a joey live when it is very small?",
+      "options": ["In its mother's pouch", "In a nest", "In a cave", "In the water"],
+      "correctIndex": 0,
+      "hint": "The mother carries it in a special pocket.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Kangaroos have strong ___ for jumping.",
+      "options": ["legs", "wings", "claws", "feathers"],
+      "correctIndex": 0,
+      "hint": "They use them to hop very high!",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "sort_it",
+      "round": "core",
+      "prompt": "Sort these facts: true or false about kangaroos?",
+      "buckets": ["True", "False"],
+      "items": [
+        { "text": "Kangaroos can hop.", "correctBucket": "True" },
+        { "text": "Kangaroos can fly.", "correctBucket": "False" },
+        { "text": "Joeys live in a pouch.", "correctBucket": "True" },
+        { "text": "Kangaroos live in the ocean.", "correctBucket": "False" },
+        { "text": "Kangaroos live in Australia.", "correctBucket": "True" },
+        { "text": "Kangaroos are very small.", "correctBucket": "False" }
+      ],
+      "hint": "Think about what you read about kangaroos.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "What covers a kangaroo's body?",
+      "options": ["Fur", "Feathers", "Scales", "Stripes"],
+      "correctIndex": 0,
+      "hint": "It's soft and keeps them warm.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "How are kangaroos and dolphins different?",
+      "options": [
+        "Kangaroos live on land, dolphins live in water.",
+        "Kangaroos are small, dolphins are big.",
+        "Kangaroos have feathers, dolphins have fur.",
+        "Kangaroos swim, dolphins hop."
+      ],
+      "correctIndex": 0,
+      "hint": "Think about WHERE they live.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "What do kangaroos and koalas have in common?",
+      "options": [
+        "Both live in Australia.",
+        "Both can fly.",
+        "Both live in the ocean.",
+        "Both have feathers."
+      ],
+      "correctIndex": 0,
+      "hint": "Think about WHERE they both come from.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "Kangaroos are ___ animals. They hop ___ on their strong legs.",
+      "options": ["fast, quickly", "slow, slowly", "small, quietly", "scary, loudly"],
+      "correctIndex": 0,
+      "hint": "Kangaroos are known for being speedy!",
+      "acornValue": 3
+    }
+  ]
+}

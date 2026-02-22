@@ -1,0 +1,120 @@
+{
+  "id": "clearing-4-2",
+  "name": "There Is a Library",
+  "realm": 3,
+  "trail": 4,
+  "focus": "There is / There are / There aren't",
+  "storyIntro": "What's in the city? Let's describe it using 'there is' and 'there are'!",
+  "storyOutro": "You described the whole city! What a place!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "___ a library on Main Street.",
+      "options": ["There is", "There are", "There isn't any", "There were"],
+      "correctIndex": 0,
+      "hint": "One library → There is.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "___ many tall buildings in the city.",
+      "options": ["There are", "There is", "There was", "It is"],
+      "correctIndex": 0,
+      "hint": "Many buildings → There are.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "There ___ a big park near the school.",
+      "options": ["is", "are", "were", "been"],
+      "correctIndex": 0,
+      "hint": "One park → is.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "There ___ three restaurants on this street.",
+      "options": ["are", "is", "was", "has"],
+      "correctIndex": 0,
+      "hint": "Three restaurants → are.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "There are a hospital near the park.",
+      "options": ["are", "is", "were", "been"],
+      "correctIndex": 1,
+      "hint": "One hospital → There IS.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "There ___ any subways in the small town.",
+      "options": ["aren't", "isn't", "is", "are"],
+      "correctIndex": 0,
+      "hint": "Subways (plural) + negative → aren't.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "There ___ a church with ___ gardens.",
+      "options": ["is, beautiful", "are, beautiful", "is, beautifuls", "are, beautifuls"],
+      "correctIndex": 0,
+      "hint": "One church → is. Beautiful doesn't change for plural.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "match_up",
+      "round": "challenge",
+      "prompt": "Match the sentence to the correct form.",
+      "pairs": [
+        { "left": "one museum", "right": "There is a museum." },
+        { "left": "many cars", "right": "There are many cars." },
+        { "left": "no subway", "right": "There isn't a subway." },
+        { "left": "no farms", "right": "There aren't any farms." }
+      ],
+      "hint": "Singular → is. Plural → are. Negative → isn't/aren't.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "In the city, there ___ tall buildings. In the country, there ___.",
+      "options": ["are, aren't", "is, isn't", "are, isn't", "is, aren't"],
+      "correctIndex": 0,
+      "hint": "Buildings = plural → are / aren't.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which sentence is correct?",
+      "options": [
+        "There is a stadium and there are two parks.",
+        "There are a stadium and there is two parks.",
+        "There is a stadium and there is two parks.",
+        "There are a stadium and there are two parks."
+      ],
+      "correctIndex": 0,
+      "hint": "One stadium → is. Two parks → are.",
+      "acornValue": 3
+    }
+  ]
+}

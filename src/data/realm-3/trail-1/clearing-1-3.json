@@ -1,0 +1,125 @@
+{
+  "id": "clearing-1-3",
+  "name": "What Time Is It?",
+  "realm": 3,
+  "trail": 1,
+  "focus": "Telling time expanded: half past, quarter to, quarter past",
+  "storyIntro": "The Catbus schedule is mixed up! Fix the times so it runs on time!",
+  "storyOutro": "The Catbus is running on schedule again! All aboard!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "The clock shows 7:30. What time is it?",
+      "options": ["Half past seven", "Seven o'clock", "Quarter past seven", "Quarter to eight"],
+      "correctIndex": 0,
+      "hint": ":30 = half past.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "It's quarter past three. What does the clock show?",
+      "options": ["3:15", "3:30", "3:45", "3:00"],
+      "correctIndex": 0,
+      "hint": "Quarter past = 15 minutes after.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each time to its words.",
+      "pairs": [
+        { "left": "6:00", "right": "six o'clock" },
+        { "left": "6:15", "right": "quarter past six" },
+        { "left": "6:30", "right": "half past six" },
+        { "left": "6:45", "right": "quarter to seven" }
+      ],
+      "hint": ":00=o'clock, :15=quarter past, :30=half past, :45=quarter to.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Ralph wakes up at ___ past seven every morning.",
+      "options": ["half", "full", "double", "zero"],
+      "correctIndex": 0,
+      "hint": "7:30 = ___ past seven.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "It's 8:45. How do you say this?",
+      "options": ["Quarter to nine", "Quarter past eight", "Half past eight", "Nine o'clock"],
+      "correctIndex": 0,
+      "hint": ":45 = quarter TO the next hour.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "School starts at ___ minutes past eight.",
+      "options": ["ten", "sixty", "hundred", "zero"],
+      "correctIndex": 0,
+      "hint": "8:10 = ten minutes past eight.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "The Catbus arrives at quarter past four. What time is that?",
+      "options": ["4:15", "4:45", "4:30", "4:00"],
+      "correctIndex": 0,
+      "hint": "Quarter past = 15 minutes after the hour.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "match_up",
+      "round": "challenge",
+      "prompt": "Match Ralph's daily schedule.",
+      "pairs": [
+        { "left": "7:00", "right": "wake up" },
+        { "left": "8:00", "right": "go to school" },
+        { "left": "12:30", "right": "eat lunch" },
+        { "left": "9:00", "right": "go to bed" }
+      ],
+      "hint": "Think about when you do each activity.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "It's ___ to five. That means it's 4:45!",
+      "options": ["quarter", "half", "ten", "five"],
+      "correctIndex": 0,
+      "hint": ":45 = quarter to the next hour.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "order_it",
+      "round": "challenge",
+      "prompt": "Put these times in order from earliest to latest.",
+      "items": [
+        "Seven o'clock",
+        "Quarter past seven",
+        "Half past seven",
+        "Quarter to eight",
+        "Eight o'clock"
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "hint": "7:00 → 7:15 → 7:30 → 7:45 → 8:00.",
+      "acornValue": 3
+    }
+  ]
+}

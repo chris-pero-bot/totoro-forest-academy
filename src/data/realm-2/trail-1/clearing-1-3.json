@@ -1,0 +1,120 @@
+{
+  "id": "clearing-1-3",
+  "name": "Family Portraits",
+  "realm": 2,
+  "trail": 1,
+  "focus": "Describe family members",
+  "storyIntro": "The family portraits are mixed up! Let's describe each person correctly!",
+  "storyOutro": "All the portraits look perfect now! What a lovely family!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Sophie's grandmother has ___ hair.",
+      "options": ["white", "green", "blue", "purple"],
+      "correctIndex": 0,
+      "hint": "Grandmothers are older. Their hair changes color.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "The baby is very ___.",
+      "options": ["small", "tall", "old", "big"],
+      "correctIndex": 0,
+      "hint": "Babies are tiny!",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "My father is ___ and ___.",
+      "options": ["tall, strong", "small, tiny", "short, light", "slimy, colorful"],
+      "correctIndex": 0,
+      "hint": "Fathers are usually grown-up and powerful.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "My ___ sister is only two years old.",
+      "options": ["baby", "old", "tall", "big"],
+      "correctIndex": 0,
+      "hint": "A two-year-old is very young.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "My grandmother is very young. She is 80 years old.",
+      "options": ["young", "old", "small", "short"],
+      "correctIndex": 1,
+      "hint": "80 years old is not young!",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each family member to a description.",
+      "pairs": [
+        { "left": "baby", "right": "very small and young" },
+        { "left": "grandfather", "right": "old and wise" },
+        { "left": "brother", "right": "a boy in the family" },
+        { "left": "mother", "right": "takes care of children" }
+      ],
+      "hint": "Think about each family member.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Sophie's mother is ___ and ___.",
+      "options": ["beautiful, kind", "slimy, spotted", "scaly, striped", "dangerous, wild"],
+      "correctIndex": 0,
+      "hint": "Mothers are lovely and caring.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "My uncle is my father's brother. He is ___ like my father.",
+      "options": ["tall", "tiny", "baby", "young"],
+      "correctIndex": 0,
+      "hint": "Brothers often look similar!",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "The family has ___ people: parents, grandparents, and children.",
+      "options": ["many", "no", "zero", "one"],
+      "correctIndex": 0,
+      "hint": "Parents + grandparents + children = a lot!",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which sentence best describes a happy family?",
+      "options": [
+        "They love each other and spend time together.",
+        "They never talk to each other.",
+        "They live in different countries.",
+        "They don't know each other's names."
+      ],
+      "correctIndex": 0,
+      "hint": "Happy families are close and caring.",
+      "acornValue": 3
+    }
+  ]
+}

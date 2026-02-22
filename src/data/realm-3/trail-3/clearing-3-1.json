@@ -1,0 +1,115 @@
+{
+  "id": "clearing-3-1",
+  "name": "My, Your, His, Her",
+  "realm": 3,
+  "trail": 3,
+  "focus": "Possessive adjectives: my, your, his, her, its, our, their",
+  "storyIntro": "A windstorm mixed up everyone's things! Whose is whose?",
+  "storyOutro": "Everyone has their things back! No more mix-ups!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "That is ___ book. (the book belongs to me)",
+      "options": ["my", "me", "I", "mine"],
+      "correctIndex": 0,
+      "hint": "I → my (before a noun).",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "Ralph loves ___ family. (the family belongs to him)",
+      "options": ["his", "him", "he", "her"],
+      "correctIndex": 0,
+      "hint": "He → his.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each pronoun to its possessive adjective.",
+      "pairs": [
+        { "left": "I", "right": "my" },
+        { "left": "you", "right": "your" },
+        { "left": "he", "right": "his" },
+        { "left": "she", "right": "her" }
+      ],
+      "hint": "The possessive adjective shows who owns something.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "It's ___ towel. (the towel belongs to her)",
+      "options": ["her", "she", "hers", "his"],
+      "correctIndex": 0,
+      "hint": "She → her (before a noun).",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "___ house is big. (the house belongs to them)",
+      "options": ["Their", "They", "Them", "Theirs"],
+      "correctIndex": 0,
+      "hint": "They → their.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "We love we city. It is beautiful!",
+      "options": ["we", "our", "us", "ours"],
+      "correctIndex": 1,
+      "hint": "We → our (possessive adjective).",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The dog wagged ___ tail. (the tail belongs to the dog)",
+      "options": ["its", "it", "his", "her"],
+      "correctIndex": 0,
+      "hint": "It → its (for animals and things).",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Ralph showed Uncle Michael ___ school.",
+      "options": ["his", "him", "he", "her"],
+      "correctIndex": 0,
+      "hint": "The school belongs to Ralph. Ralph = he → his.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "She went to he room and got him bag.",
+      "options": ["he", "her", "she", "his"],
+      "correctIndex": 1,
+      "hint": "She → her room.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "___ names are Ralph and Amy. ___ teacher is Miss Wilson.",
+      "options": ["Their, Their", "They, They", "Them, Them", "Their, They"],
+      "correctIndex": 0,
+      "hint": "Both blanks need the possessive form of 'they'.",
+      "acornValue": 3
+    }
+  ]
+}

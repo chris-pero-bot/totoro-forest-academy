@@ -1,0 +1,123 @@
+{
+  "id": "clearing-4-2",
+  "name": "Likes and Don't Likes",
+  "realm": 1,
+  "trail": 4,
+  "focus": "like/likes/don't like/doesn't like",
+  "storyIntro": "The forest animals are picky! Let's find out what they like and don't like!",
+  "storyOutro": "Now we know what everyone likes! Time for a snack!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "She ___ dolphins. They are her favorite!",
+      "options": ["likes", "like", "don't like", "liking"],
+      "correctIndex": 0,
+      "hint": "For she/he/it, add -s to like.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "They ___ snakes. Snakes are scary!",
+      "options": ["don't like", "doesn't like", "likes", "doesn't likes"],
+      "correctIndex": 0,
+      "hint": "For they/we/I, use 'don't like'.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "He ___ spiders. They make him scared!",
+      "options": ["doesn't like", "don't like", "like", "doesn't likes"],
+      "correctIndex": 0,
+      "hint": "For he/she/it, use 'doesn't like'.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "I ___ koalas. They are so cute!",
+      "options": ["like", "likes", "doesn't like", "liking"],
+      "correctIndex": 0,
+      "hint": "For I/you/we/they, use 'like' (no -s).",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "She don't like crocodiles.",
+      "options": ["don't like", "doesn't like", "like", "likes"],
+      "correctIndex": 1,
+      "hint": "For she, use 'doesn't' not 'don't'.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "We ___ the museum. It was great!",
+      "options": ["like", "likes", "doesn't like", "liking"],
+      "correctIndex": 0,
+      "hint": "For we, use 'like' (no -s).",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "sort_it",
+      "round": "core",
+      "prompt": "Sort: which use 'likes' and which use 'like'?",
+      "buckets": ["likes", "like"],
+      "items": [
+        { "text": "She", "correctBucket": "likes" },
+        { "text": "They", "correctBucket": "like" },
+        { "text": "He", "correctBucket": "likes" },
+        { "text": "I", "correctBucket": "like" },
+        { "text": "We", "correctBucket": "like" },
+        { "text": "It", "correctBucket": "likes" }
+      ],
+      "hint": "He, she, it → likes. I, you, we, they → like.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "Amy ___ dolphins but she ___ snakes.",
+      "options": ["likes, doesn't like", "like, don't like", "likes, don't like", "like, doesn't like"],
+      "correctIndex": 0,
+      "hint": "Amy = she → likes / doesn't like.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "Ralph like eagles. They are his favorite birds.",
+      "options": ["like", "likes", "don't like", "liking"],
+      "correctIndex": 1,
+      "hint": "Ralph = he → likes (with -s).",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which sentence is correct?",
+      "options": [
+        "She likes parrots but she doesn't like snakes.",
+        "She like parrots but she don't like snakes.",
+        "She likes parrots but she don't like snakes.",
+        "She like parrots but she doesn't like snakes."
+      ],
+      "correctIndex": 0,
+      "hint": "She → likes / doesn't like (both need -s rules).",
+      "acornValue": 3
+    }
+  ]
+}

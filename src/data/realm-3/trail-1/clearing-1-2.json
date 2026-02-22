@@ -1,0 +1,127 @@
+{
+  "id": "clearing-1-2",
+  "name": "First, Then, Finally",
+  "realm": 3,
+  "trail": 1,
+  "focus": "Sequence words: first, then, next, after that, finally",
+  "storyIntro": "Let's learn the magic words that put stories in order!",
+  "storyOutro": "You know all the sequence words! Your stories will be great!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "___, I wake up. ___, I brush my teeth.",
+      "options": ["First, Then", "Finally, First", "Then, First", "Next, First"],
+      "correctIndex": 0,
+      "hint": "The beginning word is 'First'.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "First, I get dressed. Then, I have breakfast. ___, I go to school.",
+      "options": ["Finally", "First", "Before", "Yesterday"],
+      "correctIndex": 0,
+      "hint": "This is the last step.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "order_it",
+      "round": "core",
+      "prompt": "Put the sequence words in the right order.",
+      "items": [
+        "First",
+        "Then",
+        "Next",
+        "After that",
+        "Finally"
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "hint": "First is #1, Finally is the last one!",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "First, Ralph wakes up. ___, he takes a shower.",
+      "options": ["Then", "Finally", "Before", "Yesterday"],
+      "correctIndex": 0,
+      "hint": "The second step uses this word.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Which word means 'at the end'?",
+      "options": ["finally", "first", "then", "next"],
+      "correctIndex": 0,
+      "hint": "The very last step.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each sequence word to its position.",
+      "pairs": [
+        { "left": "First", "right": "Step 1" },
+        { "left": "Then", "right": "Step 2" },
+        { "left": "Next", "right": "Step 3" },
+        { "left": "Finally", "right": "Last step" }
+      ],
+      "hint": "First → Then → Next → Finally.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "___, we eat dinner. After that, we wash the dishes. ___, we go to bed.",
+      "options": ["First, Finally", "Finally, First", "Then, Next", "Next, Then"],
+      "correctIndex": 0,
+      "hint": "Eating is first, going to bed is last.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "order_it",
+      "round": "challenge",
+      "prompt": "Put Ralph's morning in order using sequence words.",
+      "items": [
+        "First, Ralph wakes up at seven o'clock.",
+        "Then, he brushes his teeth.",
+        "Next, he gets dressed.",
+        "After that, he has breakfast.",
+        "Finally, he goes to school."
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "hint": "Follow the sequence words!",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "Finally, I wake up. Then, I go to bed.",
+      "options": ["Finally", "First", "After", "Next"],
+      "correctIndex": 1,
+      "hint": "Waking up is the beginning, not the end!",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "First, open the book. ___, read the story. ___, close the book.",
+      "options": ["Then, Finally", "Finally, Then", "First, Next", "After, Before"],
+      "correctIndex": 0,
+      "hint": "Open → Read → Close. Use sequence words!",
+      "acornValue": 3
+    }
+  ]
+}

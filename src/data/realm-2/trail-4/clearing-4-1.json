@@ -1,0 +1,120 @@
+{
+  "id": "clearing-4-1",
+  "name": "What Did You Do?",
+  "realm": 2,
+  "trail": 4,
+  "focus": "'Did' questions and short answers",
+  "storyIntro": "Totoro wants to know about the feast! Answer his questions!",
+  "storyOutro": "You answered all of Totoro's questions! He's so curious!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "___ you eat breakfast today?",
+      "options": ["Did", "Do", "Does", "Are"],
+      "correctIndex": 0,
+      "hint": "We use 'did' for past tense questions.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "Did she cook dinner? Yes, she ___.",
+      "options": ["did", "does", "do", "is"],
+      "correctIndex": 0,
+      "hint": "Short answer: Yes, she did / No, she didn't.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Did they buy groceries? No, they ___.",
+      "options": ["didn't", "don't", "doesn't", "isn't"],
+      "correctIndex": 0,
+      "hint": "Past tense negative short answer.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Did he ___ the table? Yes, he did.",
+      "options": ["set", "sets", "setting", "setted"],
+      "correctIndex": 0,
+      "hint": "After 'did', use the base form of the verb.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each question to its answer.",
+      "pairs": [
+        { "left": "Did you eat pie?", "right": "Yes, I did." },
+        { "left": "Did she help?", "right": "No, she didn't." },
+        { "left": "Did they come?", "right": "Yes, they did." },
+        { "left": "Did he cook?", "right": "No, he didn't." }
+      ],
+      "hint": "Match question to the right yes/no answer.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "Did she cooked the turkey?",
+      "options": ["cooked", "cook", "cooks", "cooking"],
+      "correctIndex": 1,
+      "hint": "After 'did', DON'T use past tense again!",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Did you ___ the dishes after dinner?",
+      "options": ["wash", "washed", "washing", "washes"],
+      "correctIndex": 0,
+      "hint": "After 'did', use the simple form.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which question is correct?",
+      "options": [
+        "Did you enjoy the party?",
+        "Did you enjoyed the party?",
+        "Do you enjoyed the party?",
+        "Did you enjoys the party?"
+      ],
+      "correctIndex": 0,
+      "hint": "Did + subject + base verb.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "Did Mom ___ the cake? Yes, she ___. It was delicious!",
+      "options": ["make, did", "made, did", "make, does", "making, did"],
+      "correctIndex": 0,
+      "hint": "Did + base verb. Short answer: she did.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "Did they went to the store yesterday?",
+      "options": ["went", "go", "goes", "going"],
+      "correctIndex": 1,
+      "hint": "After 'did', use the base form (go, not went).",
+      "acornValue": 3
+    }
+  ]
+}

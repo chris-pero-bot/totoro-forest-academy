@@ -1,0 +1,130 @@
+{
+  "id": "clearing-2-1",
+  "name": "What's on the List?",
+  "realm": 2,
+  "trail": 2,
+  "focus": "Food vocabulary",
+  "storyIntro": "The forest spirits need food for the feast! But the shopping list is blank!",
+  "storyOutro": "The shopping list is ready! Let's go buy everything!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Which food do you eat at Thanksgiving?",
+      "options": ["turkey", "lizard", "dinosaur", "snake"],
+      "correctIndex": 0,
+      "hint": "It's a big bird!",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Which one is a fruit?",
+      "options": ["apple", "bread", "cheese", "rice"],
+      "correctIndex": 0,
+      "hint": "It grows on trees and is sweet.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each food to its group.",
+      "pairs": [
+        { "left": "chicken", "right": "meat" },
+        { "left": "salad", "right": "vegetables" },
+        { "left": "cake", "right": "dessert" },
+        { "left": "milk", "right": "drink" }
+      ],
+      "hint": "What kind of food is each one?",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "For dessert, we can have ___ or ___.",
+      "options": ["pie, cookies", "soup, salad", "rice, beans", "turkey, chicken"],
+      "correctIndex": 0,
+      "hint": "Desserts are sweet!",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "word_build",
+      "round": "core",
+      "prompt": "You put this red sauce on turkey at Thanksgiving.",
+      "answer": "cranberry",
+      "hint": "It's a small red berry!",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Which is NOT a vegetable?",
+      "options": ["cake", "corn", "beans", "salad"],
+      "correctIndex": 0,
+      "hint": "One of these is a sweet dessert!",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "sort_it",
+      "round": "core",
+      "prompt": "Sort these into food and drinks!",
+      "buckets": ["Food", "Drink"],
+      "items": [
+        { "text": "turkey", "correctBucket": "Food" },
+        { "text": "juice", "correctBucket": "Drink" },
+        { "text": "bread", "correctBucket": "Food" },
+        { "text": "water", "correctBucket": "Drink" },
+        { "text": "pie", "correctBucket": "Food" },
+        { "text": "milk", "correctBucket": "Drink" }
+      ],
+      "hint": "Do you eat it or drink it?",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "We need to buy ___ for the salad.",
+      "options": ["vegetables", "cookies", "cake", "candy"],
+      "correctIndex": 0,
+      "hint": "Salad is made of healthy, green food.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "match_up",
+      "round": "challenge",
+      "prompt": "Match the food to what you do with it.",
+      "pairs": [
+        { "left": "bread", "right": "slice it" },
+        { "left": "soup", "right": "heat it up" },
+        { "left": "fruit", "right": "wash it" },
+        { "left": "juice", "right": "pour it" }
+      ],
+      "hint": "How do you prepare each food?",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "For the Thanksgiving feast, the family needs ___.",
+      "options": [
+        "turkey, mashed potatoes, and pie",
+        "pizza, hamburgers, and soda",
+        "sushi, ramen, and tea",
+        "tacos, rice, and beans"
+      ],
+      "correctIndex": 0,
+      "hint": "Think about traditional Thanksgiving food!",
+      "acornValue": 3
+    }
+  ]
+}

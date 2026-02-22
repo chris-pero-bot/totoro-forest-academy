@@ -1,0 +1,120 @@
+{
+  "id": "clearing-4-1",
+  "name": "It Was Rainy",
+  "realm": 3,
+  "trail": 4,
+  "focus": "Past tense: was/were",
+  "storyIntro": "It was a rainy day in the city! Tell Totoro what happened!",
+  "storyOutro": "You told the whole rainy day story! Great use of was and were!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "It ___ rainy yesterday.",
+      "options": ["was", "were", "is", "are"],
+      "correctIndex": 0,
+      "hint": "It → was (past tense).",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "They ___ wet after running in the rain.",
+      "options": ["were", "was", "are", "is"],
+      "correctIndex": 0,
+      "hint": "They → were (past tense).",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each subject to was or were.",
+      "pairs": [
+        { "left": "I", "right": "was" },
+        { "left": "They", "right": "were" },
+        { "left": "She", "right": "was" },
+        { "left": "We", "right": "were" }
+      ],
+      "hint": "I/he/she/it → was. You/we/they → were.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The baby ___ crying because it ___ cold.",
+      "options": ["was, was", "were, were", "was, were", "were, was"],
+      "correctIndex": 0,
+      "hint": "Baby = it → was. It (the weather) → was.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "Uncle Michael were happy to visit the city.",
+      "options": ["were", "was", "is", "are"],
+      "correctIndex": 1,
+      "hint": "Uncle Michael = he → was.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Ralph and Amy ___ at the museum yesterday.",
+      "options": ["were", "was", "is", "are"],
+      "correctIndex": 0,
+      "hint": "Ralph and Amy = they → were.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The museum ___ beautiful. The gardens ___ green.",
+      "options": ["was, were", "were, was", "was, was", "were, were"],
+      "correctIndex": 0,
+      "hint": "Museum = it → was. Gardens = they → were.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which sentence is correct?",
+      "options": [
+        "The children were happy and the teacher was proud.",
+        "The children was happy and the teacher were proud.",
+        "The children were happy and the teacher were proud.",
+        "The children was happy and the teacher was proud."
+      ],
+      "correctIndex": 0,
+      "hint": "Children = they → were. Teacher = she → was.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "The family were running to catch the tour bus. It were leaving!",
+      "options": ["were", "was", "is", "are"],
+      "correctIndex": 1,
+      "hint": "It (the bus) → was.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "Yesterday ___ a rainy day. We ___ at home drinking hot chocolate.",
+      "options": ["was, were", "were, was", "is, are", "are, is"],
+      "correctIndex": 0,
+      "hint": "Yesterday (it) → was. We → were.",
+      "acornValue": 3
+    }
+  ]
+}

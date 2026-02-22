@@ -1,0 +1,127 @@
+{
+  "id": "clearing-4-2",
+  "name": "Now and Then",
+  "realm": 2,
+  "trail": 4,
+  "focus": "Present vs. past tense mixed",
+  "storyIntro": "Some things happen NOW and some happened BEFORE. Can you tell which is which?",
+  "storyOutro": "You know the difference between now and then! Great job!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "snap_choice",
+      "round": "warmup",
+      "prompt": "Is this PAST or PRESENT?",
+      "question": "She cooked dinner.",
+      "options": ["Past", "Present"],
+      "correctIndex": 0,
+      "timeLimit": 8,
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "snap_choice",
+      "round": "warmup",
+      "prompt": "Is this PAST or PRESENT?",
+      "question": "They eat breakfast every day.",
+      "options": ["Past", "Present"],
+      "correctIndex": 1,
+      "timeLimit": 8,
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Every day, she ___ breakfast at seven.",
+      "options": ["eats", "ate", "eaten", "eating"],
+      "correctIndex": 0,
+      "hint": "Every day = present tense.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Yesterday, he ___ a big cake.",
+      "options": ["made", "makes", "make", "making"],
+      "correctIndex": 0,
+      "hint": "Yesterday = past tense.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "Last week, she cook turkey for the family.",
+      "options": ["cook", "cooked", "cooks", "cooking"],
+      "correctIndex": 1,
+      "hint": "Last week = past tense. Add -ed.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "sort_it",
+      "round": "core",
+      "prompt": "Sort these words: Past or Present?",
+      "buckets": ["Past", "Present"],
+      "items": [
+        { "text": "went", "correctBucket": "Past" },
+        { "text": "goes", "correctBucket": "Present" },
+        { "text": "ate", "correctBucket": "Past" },
+        { "text": "eats", "correctBucket": "Present" },
+        { "text": "saw", "correctBucket": "Past" },
+        { "text": "sees", "correctBucket": "Present" }
+      ],
+      "hint": "-ed or changed form = past. -s = present.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "snap_choice",
+      "round": "core",
+      "prompt": "Is this PAST or PRESENT?",
+      "question": "We had a party last Saturday.",
+      "options": ["Past", "Present"],
+      "correctIndex": 0,
+      "timeLimit": 8,
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "She ___ pie every Sunday. Last Sunday she ___ two pies!",
+      "options": ["makes, made", "made, makes", "make, made", "makes, make"],
+      "correctIndex": 0,
+      "hint": "Every Sunday = present. Last Sunday = past.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "snap_choice",
+      "round": "challenge",
+      "prompt": "Is this PAST or PRESENT?",
+      "question": "I like pie. It is delicious.",
+      "options": ["Past", "Present"],
+      "correctIndex": 1,
+      "timeLimit": 8,
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which pair is correct?",
+      "options": [
+        "Now: I eat lunch. Yesterday: I ate lunch.",
+        "Now: I ate lunch. Yesterday: I eat lunch.",
+        "Now: I eated lunch. Yesterday: I eats lunch.",
+        "Now: I eating lunch. Yesterday: I eat lunch."
+      ],
+      "correctIndex": 0,
+      "hint": "Present = eat. Past = ate.",
+      "acornValue": 3
+    }
+  ]
+}

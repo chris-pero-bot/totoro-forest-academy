@@ -1,0 +1,147 @@
+{
+  "id": "clearing-4-3",
+  "name": "Ask, Tell, Say No",
+  "realm": 3,
+  "trail": 4,
+  "focus": "Sentence types: affirmative, negative, interrogative",
+  "storyIntro": "Sentences can tell, ask, or say no. Let's learn the three types!",
+  "storyOutro": "You know all three sentence types! You're a grammar star!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Which sentence is a QUESTION?",
+      "options": [
+        "Did they visit the museum?",
+        "They visited the museum.",
+        "They didn't visit the museum.",
+        "Visit the museum!"
+      ],
+      "correctIndex": 0,
+      "hint": "Questions end with a question mark (?).",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Which sentence is NEGATIVE?",
+      "options": [
+        "They didn't go to the park.",
+        "They went to the park.",
+        "Did they go to the park?",
+        "Go to the park!"
+      ],
+      "correctIndex": 0,
+      "hint": "Negative sentences have 'not' or 'didn't'.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "sort_it",
+      "round": "core",
+      "prompt": "Sort these sentences by type!",
+      "buckets": ["Affirmative", "Negative", "Question"],
+      "items": [
+        { "text": "The museum was beautiful.", "correctBucket": "Affirmative" },
+        { "text": "They didn't see the stadium.", "correctBucket": "Negative" },
+        { "text": "Did you like the city?", "correctBucket": "Question" },
+        { "text": "We visited the church.", "correctBucket": "Affirmative" },
+        { "text": "She didn't go to school.", "correctBucket": "Negative" },
+        { "text": "Where is the library?", "correctBucket": "Question" }
+      ],
+      "hint": "Positive = affirmative. 'Not'/'didn't' = negative. '?' = question.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Make it negative: 'They went to the park.' → 'They ___ go to the park.'",
+      "options": ["didn't", "don't", "doesn't", "isn't"],
+      "correctIndex": 0,
+      "hint": "Past tense negative = didn't + base verb.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Make it a question: 'He visited the museum.' → ___",
+      "options": [
+        "Did he visit the museum?",
+        "He did visit the museum?",
+        "Visit he did the museum?",
+        "He visited the museum?"
+      ],
+      "correctIndex": 0,
+      "hint": "Did + subject + base verb + ?",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "___ went to the park? Ralph ___.",
+      "options": ["Who, did", "What, did", "Where, did", "When, did"],
+      "correctIndex": 0,
+      "hint": "The question asks about a PERSON.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Which is an AFFIRMATIVE sentence?",
+      "options": [
+        "The city tour was amazing!",
+        "The city tour wasn't good.",
+        "Was the city tour good?",
+        "Don't miss the city tour!"
+      ],
+      "correctIndex": 0,
+      "hint": "Affirmative = positive statement.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "They not visited the stadium yesterday.",
+      "options": ["not visited", "didn't visit", "don't visit", "not visit"],
+      "correctIndex": 1,
+      "hint": "Past negative = didn't + base verb.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "match_up",
+      "round": "challenge",
+      "prompt": "Match each sentence to its type.",
+      "pairs": [
+        { "left": "Ralph loved the city.", "right": "Affirmative" },
+        { "left": "Amy didn't like the rain.", "right": "Negative" },
+        { "left": "Where did they go?", "right": "Question" },
+        { "left": "The baby was not happy.", "right": "Negative" }
+      ],
+      "hint": "Look for question marks and negative words.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Change to a question: 'She liked the church gardens.'",
+      "options": [
+        "Did she like the church gardens?",
+        "She did like the church gardens?",
+        "Liked she the church gardens?",
+        "Does she liked the church gardens?"
+      ],
+      "correctIndex": 0,
+      "hint": "Did + she + like (base form) + ?",
+      "acornValue": 3
+    }
+  ]
+}

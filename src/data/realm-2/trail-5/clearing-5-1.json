@@ -1,0 +1,137 @@
+{
+  "id": "clearing-5-1",
+  "name": "Sophie's Family Time",
+  "realm": 2,
+  "trail": 5,
+  "focus": "Reading comprehension - family gathering story",
+  "storyIntro": "Let's read about Sophie's family and their special time together!",
+  "storyOutro": "You understood Sophie's story perfectly! What a great reader!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "What is Sophie's family getting ready for?",
+      "options": ["A family dinner", "A field trip", "A day at school", "A visit to the zoo"],
+      "correctIndex": 0,
+      "hint": "They are cooking and setting the table!",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Where does the family prepare the food?",
+      "options": ["In the kitchen", "In the bedroom", "At school", "In the garden"],
+      "correctIndex": 0,
+      "hint": "This room has a stove and refrigerator.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "order_it",
+      "round": "core",
+      "prompt": "Put the story events in order.",
+      "items": [
+        "The family made a shopping list.",
+        "They went to the store to buy food.",
+        "They cooked the food in the kitchen.",
+        "They set the table for dinner.",
+        "The family sat down and ate together."
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "hint": "First you plan, then shop, then cook!",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Sophie helped her mother ___ the table.",
+      "options": ["set", "break", "throw", "hide"],
+      "correctIndex": 0,
+      "hint": "She put plates and forks on the table.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Who cooked the dinner?",
+      "options": ["Sophie's mother", "Sophie's teacher", "Sophie's friend", "Sophie alone"],
+      "correctIndex": 0,
+      "hint": "A family member prepared the meal.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "What is the main idea of the story?",
+      "options": [
+        "A family works together to prepare a meal.",
+        "Sophie goes to school.",
+        "The family visits a museum.",
+        "Sophie plays at the park."
+      ],
+      "correctIndex": 0,
+      "hint": "The whole story is about getting ready for dinner.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The family was ___ to be together.",
+      "options": ["happy", "sad", "angry", "scared"],
+      "correctIndex": 0,
+      "hint": "Family time is special and joyful!",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Why did Sophie like helping in the kitchen?",
+      "options": [
+        "She liked spending time with her family.",
+        "She wanted to watch TV.",
+        "She was bored.",
+        "She had nothing else to do."
+      ],
+      "correctIndex": 0,
+      "hint": "Family time is about being together!",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "What can you learn from Sophie's story?",
+      "options": [
+        "Families are stronger when they work together.",
+        "Cooking is very hard.",
+        "Children should not help in the kitchen.",
+        "Dinner is not important."
+      ],
+      "correctIndex": 0,
+      "hint": "The story shows that helping each other is good.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "order_it",
+      "round": "challenge",
+      "prompt": "What happened after the family ate dinner?",
+      "items": [
+        "They finished eating.",
+        "They washed the dishes.",
+        "They said thank you.",
+        "They spent time together in the living room."
+      ],
+      "correctOrder": [0, 1, 2, 3],
+      "hint": "After eating, you clean up!",
+      "acornValue": 3
+    }
+  ]
+}

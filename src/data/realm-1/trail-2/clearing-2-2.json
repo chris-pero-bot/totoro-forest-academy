@@ -1,0 +1,129 @@
+{
+  "id": "clearing-2-2",
+  "name": "Nature's Homes",
+  "realm": 1,
+  "trail": 2,
+  "focus": "Habitats and which animals live where",
+  "storyIntro": "The animals got lost! They need to find their way back to their homes!",
+  "storyOutro": "Every animal is back in its home. The forest is peaceful again!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Dolphins live in the ___.",
+      "options": ["ocean", "desert", "forest", "mountains"],
+      "correctIndex": 0,
+      "hint": "It's full of salt water.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "Parrots and monkeys live in the ___.",
+      "options": ["jungle", "desert", "lake", "mountains"],
+      "correctIndex": 0,
+      "hint": "It has many tall trees and rain.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "sort_it",
+      "round": "core",
+      "prompt": "Sort these animals by where they live!",
+      "buckets": ["Land", "Water"],
+      "items": [
+        { "text": "dolphin", "correctBucket": "Water" },
+        { "text": "eagle", "correctBucket": "Land" },
+        { "text": "whale", "correctBucket": "Water" },
+        { "text": "kangaroo", "correctBucket": "Land" },
+        { "text": "crocodile", "correctBucket": "Water" },
+        { "text": "koala", "correctBucket": "Land" }
+      ],
+      "hint": "Does it live on land or in water?",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each habitat to an animal.",
+      "pairs": [
+        { "left": "ocean", "right": "whale" },
+        { "left": "jungle", "right": "parrot" },
+        { "left": "river", "right": "crocodile" },
+        { "left": "forest", "right": "koala" }
+      ],
+      "hint": "Think about where each animal likes to live.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "You can find fish in a ___ or a ___.",
+      "options": ["river, lake", "desert, mountain", "forest, jungle", "school, park"],
+      "correctIndex": 0,
+      "hint": "Fish need water!",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Which animal lives in the desert?",
+      "options": ["penguin", "whale", "camel", "dolphin"],
+      "correctIndex": 2,
+      "hint": "The desert is very hot and dry.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Penguins live on the ice. It is very ___.",
+      "options": ["cold", "hot", "dry", "sunny"],
+      "correctIndex": 0,
+      "hint": "Ice is frozen water!",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which place has trees, rivers, and many animals?",
+      "options": ["museum", "forest", "cafeteria", "restroom"],
+      "correctIndex": 1,
+      "hint": "It's a natural place, not a building.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "sort_it",
+      "round": "challenge",
+      "prompt": "Sort these places: natural or made by people?",
+      "buckets": ["Natural", "Made by People"],
+      "items": [
+        { "text": "forest", "correctBucket": "Natural" },
+        { "text": "museum", "correctBucket": "Made by People" },
+        { "text": "ocean", "correctBucket": "Natural" },
+        { "text": "library", "correctBucket": "Made by People" },
+        { "text": "mountains", "correctBucket": "Natural" },
+        { "text": "school", "correctBucket": "Made by People" }
+      ],
+      "hint": "Did people build it, or is it part of nature?",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Kangaroos live in Australia. Australia has deserts and ___.",
+      "options": ["forests", "igloos", "subways", "apartments"],
+      "correctIndex": 0,
+      "hint": "Australia has lots of natural places.",
+      "acornValue": 3
+    }
+  ]
+}

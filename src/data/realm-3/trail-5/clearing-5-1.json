@@ -1,0 +1,143 @@
+{
+  "id": "clearing-5-1",
+  "name": "A City Tour",
+  "realm": 3,
+  "trail": 5,
+  "focus": "Reading comprehension - city tour story",
+  "storyIntro": "Let's read about the city tour with Uncle Michael!",
+  "storyOutro": "You understood the whole story! What an amazing tour!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Who came to visit Ralph's family?",
+      "options": ["Uncle Michael and his family", "Miss Wilson", "Sophie", "The Pilgrims"],
+      "correctIndex": 0,
+      "hint": "A family member from the country came to visit.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Where does Uncle Michael live?",
+      "options": ["In the mountains", "In the city", "At the beach", "On a boat"],
+      "correctIndex": 0,
+      "hint": "He lives in the country.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "order_it",
+      "round": "core",
+      "prompt": "Put the city tour in order.",
+      "items": [
+        "Uncle Michael arrived in the city.",
+        "They visited the museum.",
+        "They saw the church with beautiful gardens.",
+        "They went to the City Hall Library.",
+        "They watched a baseball game at the stadium."
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "hint": "Follow the tour route!",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The church had ___ gardens that Uncle Michael loved.",
+      "options": ["beautiful", "ugly", "scary", "empty"],
+      "correctIndex": 0,
+      "hint": "The gardens were very pretty!",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "What happened on the rainy day?",
+      "options": [
+        "The family tried to catch the tour bus and got wet.",
+        "They went to the beach.",
+        "They flew on an airplane.",
+        "They stayed at the museum all day."
+      ],
+      "correctIndex": 0,
+      "hint": "It was raining and they were running!",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Why was the baby crying?",
+      "options": [
+        "Because the baby was wet and cold from the rain.",
+        "Because the baby was hungry.",
+        "Because the baby was lost.",
+        "Because the baby was bored."
+      ],
+      "correctIndex": 0,
+      "hint": "The rain made everyone wet!",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "When it rained, they stayed home and drank ___.",
+      "options": ["hot chocolate", "cold water", "orange juice", "milk"],
+      "correctIndex": 0,
+      "hint": "A warm drink for a rainy day!",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "What is the MAIN IDEA of the city tour story?",
+      "options": [
+        "A family from the country visits the city and sees many places.",
+        "A boy goes to school every day.",
+        "A family goes shopping for food.",
+        "Children learn about animals at the museum."
+      ],
+      "correctIndex": 0,
+      "hint": "The whole story is about showing the city to visitors.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "How did Uncle Michael feel about the city?",
+      "options": [
+        "He was amazed because the city was so different from the country.",
+        "He was bored because there was nothing to do.",
+        "He was angry because it was too noisy.",
+        "He was sad because he missed his home."
+      ],
+      "correctIndex": 0,
+      "hint": "The city was new and exciting for him!",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "order_it",
+      "round": "challenge",
+      "prompt": "Put the rainy day events in order.",
+      "items": [
+        "It started to rain.",
+        "The family ran to catch the tour bus.",
+        "They got very wet.",
+        "The baby started crying.",
+        "They went home for hot chocolate."
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "hint": "First it rained, then they ran...",
+      "acornValue": 3
+    }
+  ]
+}

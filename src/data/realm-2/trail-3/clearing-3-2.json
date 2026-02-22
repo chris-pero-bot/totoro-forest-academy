@@ -1,0 +1,125 @@
+{
+  "id": "clearing-3-2",
+  "name": "Could You Help?",
+  "realm": 2,
+  "trail": 3,
+  "focus": "Polite requests with 'could'",
+  "storyIntro": "At the feast, it's important to be polite! Let's practice asking nicely!",
+  "storyOutro": "You're so polite! Everyone loves it when you say 'please'!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Which is the POLITE way to ask?",
+      "options": [
+        "Could you pass the salt, please?",
+        "Give me the salt!",
+        "I want the salt now!",
+        "Salt! Quick!"
+      ],
+      "correctIndex": 0,
+      "hint": "Polite people say 'could' and 'please'.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "___ I have some water, please?",
+      "options": ["Could", "Want", "Give", "Do"],
+      "correctIndex": 0,
+      "hint": "This word makes a request polite.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Could you ___ me the bread, please?",
+      "options": ["pass", "throw", "hit", "kick"],
+      "correctIndex": 0,
+      "hint": "Hand it over gently.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Could you ___ me with the dishes?",
+      "options": ["help", "helped", "helping", "helps"],
+      "correctIndex": 0,
+      "hint": "After 'could', use the base form of the verb.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "Give me more pie now!",
+      "options": ["Give me", "Could I have", "I want", "Bring me"],
+      "correctIndex": 1,
+      "hint": "Make it polite!",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match the polite request to the situation.",
+      "pairs": [
+        { "left": "Could you pass the salt?", "right": "at the dinner table" },
+        { "left": "Could I have a glass of water?", "right": "you are thirsty" },
+        { "left": "Could you help me?", "right": "you need assistance" },
+        { "left": "Could I sit here?", "right": "looking for a seat" }
+      ],
+      "hint": "When do you use each request?",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Could you ___ the door, please? It's cold!",
+      "options": ["close", "break", "throw", "eat"],
+      "correctIndex": 0,
+      "hint": "If it's cold, you want the door shut.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which answer is correct? 'Could I have some pie?'",
+      "options": [
+        "Yes, of course!",
+        "No, I could.",
+        "Yes, you could not.",
+        "Could, yes."
+      ],
+      "correctIndex": 0,
+      "hint": "A friendly answer to a polite question.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "Could you helped me set the table?",
+      "options": ["helped", "help", "helping", "helps"],
+      "correctIndex": 1,
+      "hint": "After 'could', use the simple form of the verb.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "Could you ___ me ___ to make the salad?",
+      "options": ["show, how", "give, when", "tell, where", "help, why"],
+      "correctIndex": 0,
+      "hint": "You want someone to teach you the recipe!",
+      "acornValue": 3
+    }
+  ]
+}

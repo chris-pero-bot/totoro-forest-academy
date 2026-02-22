@@ -1,0 +1,115 @@
+{
+  "id": "clearing-4-1",
+  "name": "Me, Him, Her, Them",
+  "realm": 1,
+  "trail": 4,
+  "focus": "Object pronouns: me, you, him, her, it, us, them",
+  "storyIntro": "The forest animals are confused! They don't know who is who! Help them with pronouns!",
+  "storyOutro": "Everyone knows who 'him', 'her', and 'them' are now!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Miss Wilson asked Amy to help ___.",
+      "options": ["her", "she", "hers", "herself"],
+      "correctIndex": 0,
+      "hint": "After a verb, we use 'her' not 'she'.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "Ralph lost his ticket. Can you help ___?",
+      "options": ["him", "he", "his", "himself"],
+      "correctIndex": 0,
+      "hint": "After 'help', we use 'him' not 'he'.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each subject to its object pronoun.",
+      "pairs": [
+        { "left": "I", "right": "me" },
+        { "left": "he", "right": "him" },
+        { "left": "she", "right": "her" },
+        { "left": "they", "right": "them" }
+      ],
+      "hint": "Subject does the action. Object receives it.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The teacher told ___ to be quiet.",
+      "options": ["us", "we", "our", "ours"],
+      "correctIndex": 0,
+      "hint": "We → us (after a verb).",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "I can see the dinosaur. Look at ___!",
+      "options": ["it", "its", "he", "they"],
+      "correctIndex": 0,
+      "hint": "We use 'it' for things and animals.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "Miss Wilson helped they find the gallery.",
+      "options": ["they", "them", "their", "theirs"],
+      "correctIndex": 1,
+      "hint": "After 'helped', use the object pronoun.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Amy and Ralph went missing. Can you find ___?",
+      "options": ["them", "they", "their", "theirs"],
+      "correctIndex": 0,
+      "hint": "Amy and Ralph = them.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "The parrot talked to ___ and ___ laughed.",
+      "options": ["me, I", "I, me", "me, me", "I, I"],
+      "correctIndex": 0,
+      "hint": "After 'to' use 'me'. Before a verb use 'I'.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "Give the acorn to I, please.",
+      "options": ["I", "me", "my", "mine"],
+      "correctIndex": 1,
+      "hint": "After 'to', use the object pronoun.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "She saw ___ at the museum. He waved at ___.",
+      "options": ["him, her", "he, she", "his, hers", "him, him"],
+      "correctIndex": 0,
+      "hint": "After 'saw' and 'at', use object pronouns.",
+      "acornValue": 3
+    }
+  ]
+}

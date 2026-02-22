@@ -1,0 +1,126 @@
+{
+  "id": "clearing-2-2",
+  "name": "City Landmarks",
+  "realm": 3,
+  "trail": 2,
+  "focus": "Buildings and places in town",
+  "storyIntro": "The city buildings lost their signs! Help put the right name on each building!",
+  "storyOutro": "All the buildings have their names back! The city is working again!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Where do you go when you are sick?",
+      "options": ["hospital", "stadium", "restaurant", "airport"],
+      "correctIndex": 0,
+      "hint": "Doctors and nurses work here.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Where do you catch an airplane?",
+      "options": ["airport", "stadium", "park", "school"],
+      "correctIndex": 0,
+      "hint": "Planes take off and land here.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each place to what you do there.",
+      "pairs": [
+        { "left": "restaurant", "right": "eat food" },
+        { "left": "library", "right": "borrow books" },
+        { "left": "stadium", "right": "watch a game" },
+        { "left": "hospital", "right": "see a doctor" }
+      ],
+      "hint": "Think about the purpose of each building.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The mayor works at ___.",
+      "options": ["City Hall", "the supermarket", "the stadium", "the airport"],
+      "correctIndex": 0,
+      "hint": "It's the most important government building.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "word_build",
+      "round": "core",
+      "prompt": "A big store where you buy food and other things.",
+      "answer": "supermarket",
+      "hint": "Super + market = a very big market!",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Where do you go to watch a baseball game?",
+      "options": ["stadium", "library", "church", "hospital"],
+      "correctIndex": 0,
+      "hint": "It's big and has many seats for fans.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The ___ has beautiful gardens. People go there to pray.",
+      "options": ["church", "stadium", "airport", "supermarket"],
+      "correctIndex": 0,
+      "hint": "It's a religious building.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "sort_it",
+      "round": "challenge",
+      "prompt": "Sort: which buildings are in every city?",
+      "buckets": ["Common in Cities", "Not in Every City"],
+      "items": [
+        { "text": "school", "correctBucket": "Common in Cities" },
+        { "text": "stadium", "correctBucket": "Not in Every City" },
+        { "text": "hospital", "correctBucket": "Common in Cities" },
+        { "text": "airport", "correctBucket": "Not in Every City" },
+        { "text": "supermarket", "correctBucket": "Common in Cities" },
+        { "text": "museum", "correctBucket": "Not in Every City" }
+      ],
+      "hint": "Every city needs schools and hospitals!",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "In the city, there are tall buildings called ___.",
+      "options": ["apartments", "igloos", "tents", "caves"],
+      "correctIndex": 0,
+      "hint": "Many families live in them, one on top of another.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Ralph's family visited the ___, the ___, and the ___.",
+      "options": [
+        "museum, church, stadium",
+        "igloo, cave, tent",
+        "airplane, ship, train",
+        "kitchen, bedroom, bathroom"
+      ],
+      "correctIndex": 0,
+      "hint": "They visited buildings in the city!",
+      "acornValue": 3
+    }
+  ]
+}

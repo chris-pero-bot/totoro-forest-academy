@@ -1,0 +1,119 @@
+{
+  "id": "clearing-1-1",
+  "name": "Who's Who?",
+  "realm": 2,
+  "trail": 1,
+  "focus": "Core family vocabulary",
+  "storyIntro": "The forest spirits need help remembering their family names! Who is who?",
+  "storyOutro": "Everyone knows their family now! Time for the feast!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Your mother's mother is your ___.",
+      "options": ["grandmother", "aunt", "sister", "cousin"],
+      "correctIndex": 0,
+      "hint": "She is a generation above your mother.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Your father's brother is your ___.",
+      "options": ["uncle", "cousin", "brother", "grandfather"],
+      "correctIndex": 0,
+      "hint": "He is your parent's sibling.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each family word to its meaning.",
+      "pairs": [
+        { "left": "mother", "right": "your mom" },
+        { "left": "father", "right": "your dad" },
+        { "left": "sister", "right": "a girl in your family" },
+        { "left": "brother", "right": "a boy in your family" }
+      ],
+      "hint": "These are the closest family members.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "My aunt's children are my ___.",
+      "options": ["cousins", "brothers", "parents", "grandparents"],
+      "correctIndex": 0,
+      "hint": "They are in your family but not your siblings.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Your mother and father together are your ___.",
+      "options": ["parents", "grandparents", "cousins", "siblings"],
+      "correctIndex": 0,
+      "hint": "Mom + Dad = ___.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "My grandfather and ___ are my grandparents.",
+      "options": ["grandmother", "mother", "aunt", "cousin"],
+      "correctIndex": 0,
+      "hint": "Grandpa + ??? = grandparents.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "word_build",
+      "round": "core",
+      "prompt": "Your aunt's son or daughter. They are the same age as you!",
+      "answer": "cousin",
+      "hint": "It starts with C.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Sophie has a baby brother. Sophie is the baby's ___.",
+      "options": ["sister", "mother", "aunt", "cousin"],
+      "correctIndex": 0,
+      "hint": "Sophie and the baby have the same parents.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "My mother's sister is my ___. Her son is my ___.",
+      "options": ["aunt, cousin", "grandmother, brother", "sister, uncle", "mother, father"],
+      "correctIndex": 0,
+      "hint": "Think about the family tree!",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which group are ALL family members?",
+      "options": [
+        "mother, uncle, cousin, grandmother",
+        "mother, teacher, cousin, dog",
+        "uncle, friend, cousin, neighbor",
+        "father, doctor, sister, cat"
+      ],
+      "correctIndex": 0,
+      "hint": "All four words must be family words.",
+      "acornValue": 3
+    }
+  ]
+}

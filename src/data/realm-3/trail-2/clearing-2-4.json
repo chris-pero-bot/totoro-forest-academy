@@ -1,0 +1,127 @@
+{
+  "id": "clearing-2-4",
+  "name": "City vs. Country",
+  "realm": 3,
+  "trail": 2,
+  "focus": "Comparing city life and country life",
+  "storyIntro": "Ralph lives in the city. Uncle Michael lives in the country. How are they different?",
+  "storyOutro": "City and country are both great places to live! Each one is special!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "In the city, there are many tall ___.",
+      "options": ["buildings", "mountains", "trees", "rivers"],
+      "correctIndex": 0,
+      "hint": "Apartments and offices are in these.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "In the country, you can see ___ and ___.",
+      "options": ["mountains, rivers", "subways, airports", "stadiums, malls", "skyscrapers, taxis"],
+      "correctIndex": 0,
+      "hint": "The country has nature!",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "sort_it",
+      "round": "core",
+      "prompt": "Sort: city or country?",
+      "buckets": ["City", "Country"],
+      "items": [
+        { "text": "tall buildings", "correctBucket": "City" },
+        { "text": "green mountains", "correctBucket": "Country" },
+        { "text": "subway", "correctBucket": "City" },
+        { "text": "farm animals", "correctBucket": "Country" },
+        { "text": "many cars", "correctBucket": "City" },
+        { "text": "quiet forests", "correctBucket": "Country" }
+      ],
+      "hint": "Cities are busy. The country is quiet.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Uncle Michael lives in the ___.",
+      "options": ["mountains", "subway", "airport", "stadium"],
+      "correctIndex": 0,
+      "hint": "He lives in the country, not the city.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The city has ___ but the country doesn't.",
+      "options": ["subways", "trees", "rivers", "sky"],
+      "correctIndex": 0,
+      "hint": "Underground trains only exist in big cities.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match city and country descriptions.",
+      "pairs": [
+        { "left": "City", "right": "noisy and busy" },
+        { "left": "Country", "right": "quiet and green" },
+        { "left": "City buildings", "right": "tall and big" },
+        { "left": "Country houses", "right": "small and cozy" }
+      ],
+      "hint": "City = busy. Country = peaceful.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "The houses in the city are ___ than in the country.",
+      "options": ["bigger", "smaller", "older", "shorter"],
+      "correctIndex": 0,
+      "hint": "City apartment buildings have many floors.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "In the city, there are many ___. In the country, there aren't ___.",
+      "options": ["cars, any", "trees, many", "birds, some", "clouds, any"],
+      "correctIndex": 0,
+      "hint": "Cities have lots of traffic!",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "What is something BOTH the city and country have?",
+      "options": ["schools", "subways", "skyscrapers", "airports"],
+      "correctIndex": 0,
+      "hint": "Children need to learn everywhere!",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Why did Uncle Michael visit the city?",
+      "options": [
+        "To visit Ralph's family and see the city.",
+        "To ride the subway to work.",
+        "To live there forever.",
+        "To go to school."
+      ],
+      "correctIndex": 0,
+      "hint": "He came to visit his family!",
+      "acornValue": 3
+    }
+  ]
+}

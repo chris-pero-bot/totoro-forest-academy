@@ -1,0 +1,118 @@
+{
+  "id": "clearing-2-1",
+  "name": "Where Are We Going?",
+  "realm": 1,
+  "trail": 2,
+  "focus": "Places vocabulary - museum, zoo, park, library",
+  "storyIntro": "The map of the forest is all mixed up! Help Totoro find the places!",
+  "storyOutro": "Great! Now Totoro knows where everything is!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Where do you go to see dinosaur bones?",
+      "options": ["museum", "park", "school", "cafeteria"],
+      "correctIndex": 0,
+      "hint": "It has galleries with old things to look at.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Where do you go to read books?",
+      "options": ["zoo", "library", "restroom", "cafeteria"],
+      "correctIndex": 1,
+      "hint": "It has shelves full of books.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each place to what you do there.",
+      "pairs": [
+        { "left": "museum", "right": "look at old things" },
+        { "left": "zoo", "right": "see animals" },
+        { "left": "park", "right": "play outside" },
+        { "left": "library", "right": "read books" }
+      ],
+      "hint": "Think about what you do at each place.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The class went to the ___ to eat lunch.",
+      "options": ["cafeteria", "gallery", "forest", "restroom"],
+      "correctIndex": 0,
+      "hint": "It's a place where you eat food at school.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Where do you wash your hands at the museum?",
+      "options": ["gallery", "cafeteria", "restroom", "library"],
+      "correctIndex": 2,
+      "hint": "This room has sinks and soap.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "word_build",
+      "round": "core",
+      "prompt": "A room in a museum where you see art or bones on display.",
+      "answer": "gallery",
+      "hint": "It starts with G.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Miss Wilson took the class on a field trip to the ___.",
+      "options": ["museum", "bedroom", "kitchen", "bathroom"],
+      "correctIndex": 0,
+      "hint": "It's a place with galleries.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which place is NOT a place you visit in town?",
+      "options": ["museum", "library", "ocean", "zoo"],
+      "correctIndex": 2,
+      "hint": "Three of these are buildings.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "match_up",
+      "round": "challenge",
+      "prompt": "Match each place to its description.",
+      "pairs": [
+        { "left": "school", "right": "where you learn" },
+        { "left": "cafeteria", "right": "where you eat lunch" },
+        { "left": "restroom", "right": "where you wash hands" },
+        { "left": "park", "right": "where you play" }
+      ],
+      "hint": "Think about what happens at each place.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "At the ___, we saw the Dinosaur Gallery. It was amazing!",
+      "options": ["Museum of Natural Science", "park", "zoo", "library"],
+      "correctIndex": 0,
+      "hint": "This is where Miss Wilson's class went.",
+      "acornValue": 3
+    }
+  ]
+}

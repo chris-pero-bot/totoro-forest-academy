@@ -1,0 +1,121 @@
+{
+  "id": "clearing-5-3",
+  "name": "The Realm Challenge",
+  "realm": 1,
+  "trail": 5,
+  "focus": "Mixed review - all Unit 4 skills",
+  "storyIntro": "This is the final challenge! Show Totoro everything you learned!",
+  "storyOutro": "You did it! The Forest Museum is restored! Totoro is so proud!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "snap_choice",
+      "round": "warmup",
+      "prompt": "Quick! Is this past tense?",
+      "question": "walked",
+      "options": ["Yes", "No"],
+      "correctIndex": 0,
+      "timeLimit": 8,
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "snap_choice",
+      "round": "warmup",
+      "prompt": "Quick! Is this past tense?",
+      "question": "runs",
+      "options": ["Yes", "No"],
+      "correctIndex": 1,
+      "timeLimit": 8,
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The ___ eagle flew ___ over the ___.",
+      "options": ["beautiful, quickly, mountains", "slimy, slowly, ocean", "furry, loudly, desert", "spotted, quietly, lake"],
+      "correctIndex": 0,
+      "hint": "Eagles are pretty and fast!",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "She don't like snakes. They is scary.",
+      "options": ["don't like", "doesn't like", "do like", "not like"],
+      "correctIndex": 1,
+      "hint": "She → doesn't (not don't).",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "The class ___ to the museum and ___ dinosaur bones.",
+      "options": ["went, saw", "goed, seed", "go, see", "goes, sees"],
+      "correctIndex": 0,
+      "hint": "Both verbs need to be in the past tense!",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Miss Wilson asked ___ to help ___.",
+      "options": ["him, her", "he, she", "his, hers", "they, we"],
+      "correctIndex": 0,
+      "hint": "Use object pronouns after verbs!",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "snap_choice",
+      "round": "core",
+      "prompt": "True or false?",
+      "question": "A penguin has feathers.",
+      "options": ["True", "False"],
+      "correctIndex": 0,
+      "timeLimit": 8,
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "It was ___ o'clock when they ___ lunch.",
+      "options": ["twelve, ate", "twelve, eat", "twelve, eated", "six, ate"],
+      "correctIndex": 0,
+      "hint": "Eat → ate. They had lunch at noon.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "The first place they visit were the Dinosaur Gallery.",
+      "options": ["visit", "visited", "visits", "visiting"],
+      "correctIndex": 1,
+      "hint": "Past tense! They did this yesterday.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "order_it",
+      "round": "challenge",
+      "prompt": "Put the whole field trip in order!",
+      "items": [
+        "Got on the bus at nine o'clock.",
+        "Sang songs on the way to the museum.",
+        "Saw dinosaur bones in the gallery.",
+        "Ate lunch in the cafeteria.",
+        "Found Amy and Ralph at the gift shop.",
+        "Went back to school happily."
+      ],
+      "correctOrder": [0, 1, 2, 3, 4, 5],
+      "hint": "Start from the morning!",
+      "acornValue": 3
+    }
+  ]
+}

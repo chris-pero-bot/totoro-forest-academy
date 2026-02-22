@@ -1,0 +1,121 @@
+{
+  "id": "clearing-5-3",
+  "name": "The Feast Challenge",
+  "realm": 2,
+  "trail": 5,
+  "focus": "Mixed review - all Unit 5 skills",
+  "storyIntro": "The final challenge of the feast! Show everything you know!",
+  "storyOutro": "You saved the Feast! Totoro and the spirits are celebrating!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "snap_choice",
+      "round": "warmup",
+      "prompt": "True or False?",
+      "question": "Your aunt is your mother's sister.",
+      "options": ["True", "False"],
+      "correctIndex": 0,
+      "timeLimit": 8,
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "snap_choice",
+      "round": "warmup",
+      "prompt": "True or False?",
+      "question": "'Could you help me?' is a polite question.",
+      "options": ["True", "False"],
+      "correctIndex": 0,
+      "timeLimit": 8,
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "We ___ buy some vegetables. ___ you help us?",
+      "options": ["are going to, Could", "going to, Can't", "went to, Did", "are go to, Would"],
+      "correctIndex": 0,
+      "hint": "Future plan + polite request.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "How much cookies did you eat at Grandmother kitchen?",
+      "options": ["much", "many", "lot", "some"],
+      "correctIndex": 1,
+      "hint": "Cookies are countable! And add 's for possession!",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The milk is ___ the refrigerator. The plates are ___ the table.",
+      "options": ["in, on", "on, in", "under, behind", "behind, under"],
+      "correctIndex": 0,
+      "hint": "Milk goes inside. Plates go on top.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Did they ___ dinner? Yes, they ___.",
+      "options": ["cook, did", "cooked, did", "cook, does", "cooked, done"],
+      "correctIndex": 0,
+      "hint": "After 'did', use base verb. Short answer: they did.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "snap_choice",
+      "round": "core",
+      "prompt": "True or False?",
+      "question": "Thanksgiving is in winter.",
+      "options": ["True", "False"],
+      "correctIndex": 1,
+      "timeLimit": 8,
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "___ recipe is this? It's ___!",
+      "options": ["Whose, Mom's", "Who, Mom", "Whose, Moms", "Who's, Mom"],
+      "correctIndex": 0,
+      "hint": "Whose = who does it belong to. Mom's = it belongs to Mom.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "She are going to make a cake on the hot summer day.",
+      "options": ["are", "is", "am", "were"],
+      "correctIndex": 1,
+      "hint": "She → is going to.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "order_it",
+      "round": "challenge",
+      "prompt": "Put the whole feast preparation in order!",
+      "items": [
+        "Make a shopping list.",
+        "Go to the store and buy food.",
+        "Cook the food in the kitchen.",
+        "Set the table with plates and forks.",
+        "Eat together as a family.",
+        "Wash the dishes and clean up."
+      ],
+      "correctOrder": [0, 1, 2, 3, 4, 5],
+      "hint": "Start with planning!",
+      "acornValue": 3
+    }
+  ]
+}

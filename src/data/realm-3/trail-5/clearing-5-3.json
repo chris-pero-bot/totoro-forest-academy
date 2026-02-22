@@ -1,0 +1,120 @@
+{
+  "id": "clearing-5-3",
+  "name": "The Final Challenge",
+  "realm": 3,
+  "trail": 5,
+  "focus": "Mixed review - all units combined",
+  "storyIntro": "This is the FINAL challenge! Show Totoro EVERYTHING you've learned!",
+  "storyOutro": "YOU DID IT! You saved the entire forest! Totoro is SO proud of you!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "snap_choice",
+      "round": "warmup",
+      "prompt": "True or False?",
+      "question": "A dolphin lives in the ocean.",
+      "options": ["True", "False"],
+      "correctIndex": 0,
+      "timeLimit": 8,
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "snap_choice",
+      "round": "warmup",
+      "prompt": "True or False?",
+      "question": "'Their' is a possessive adjective.",
+      "options": ["True", "False"],
+      "correctIndex": 0,
+      "timeLimit": 8,
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Yesterday, they ___ to the museum and ___ dinosaur bones.",
+      "options": ["went, saw", "go, see", "goed, seed", "goes, sees"],
+      "correctIndex": 0,
+      "hint": "Past tense irregular verbs!",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "She doesn't likes her brother toy.",
+      "options": ["likes", "like", "liked", "liking"],
+      "correctIndex": 1,
+      "hint": "After 'doesn't', use the base form.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "We ___ visit the city tomorrow. Could you ___ us the way?",
+      "options": ["are going to, show", "going to, showing", "went to, showed", "go to, shows"],
+      "correctIndex": 0,
+      "hint": "Future plan + polite request with base verb.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "First, I wake up. ___, I brush ___ teeth. Finally, I go to ___.",
+      "options": ["Then, my, school", "First, your, bed", "Finally, his, work", "Next, her, home"],
+      "correctIndex": 0,
+      "hint": "Morning routine with sequence words and possessives!",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "snap_choice",
+      "round": "core",
+      "prompt": "True or False?",
+      "question": "There are subways in every small town.",
+      "options": ["True", "False"],
+      "correctIndex": 1,
+      "timeLimit": 8,
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "It ___ rainy. There ___ many cars. They ___ wet.",
+      "options": ["was, were, were", "were, was, was", "was, was, were", "were, were, was"],
+      "correctIndex": 0,
+      "hint": "It→was. Cars (plural)→were. They→were.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "Did they went to Ralph mom house in the city?",
+      "options": ["went", "go", "goes", "going"],
+      "correctIndex": 1,
+      "hint": "After 'did', use the base form. Also: Ralph's mom's house!",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "order_it",
+      "round": "challenge",
+      "prompt": "Put the WHOLE game story in order!",
+      "items": [
+        "The class visited the Museum of Natural Science.",
+        "Sophie's family prepared a Thanksgiving feast.",
+        "Uncle Michael came to visit the city.",
+        "They took a city tour and saw many places.",
+        "The forest was saved! Totoro celebrated!"
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "hint": "Realm 1 → Realm 2 → Realm 3 → The End!",
+      "acornValue": 3
+    }
+  ]
+}

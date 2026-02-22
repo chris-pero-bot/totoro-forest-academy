@@ -1,0 +1,123 @@
+{
+  "id": "clearing-2-2",
+  "name": "How Much? How Many?",
+  "realm": 2,
+  "trail": 2,
+  "focus": "Quantities: how much, how many, a lot of, some, any",
+  "storyIntro": "How much food do we need? Let's count everything for the feast!",
+  "storyOutro": "We have the right amounts of everything! The feast will be great!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "___ eggs do we need?",
+      "options": ["How many", "How much", "How long", "How big"],
+      "correctIndex": 0,
+      "hint": "You can count eggs: 1, 2, 3...",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "___ milk do we need?",
+      "options": ["How much", "How many", "How long", "How big"],
+      "correctIndex": 0,
+      "hint": "You can't count milk. You measure it.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "sort_it",
+      "round": "core",
+      "prompt": "Sort: 'How many' or 'How much'?",
+      "buckets": ["How many", "How much"],
+      "items": [
+        { "text": "apples", "correctBucket": "How many" },
+        { "text": "water", "correctBucket": "How much" },
+        { "text": "cookies", "correctBucket": "How many" },
+        { "text": "cheese", "correctBucket": "How much" },
+        { "text": "eggs", "correctBucket": "How many" },
+        { "text": "bread", "correctBucket": "How much" }
+      ],
+      "hint": "Can you count it? How many. Can't count it? How much.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "We need ___ of vegetables for the salad.",
+      "options": ["a lot", "a few much", "many much", "lot"],
+      "correctIndex": 0,
+      "hint": "We need many vegetables!",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Do we have ___ milk left?",
+      "options": ["any", "many", "a lot", "few"],
+      "correctIndex": 0,
+      "hint": "In questions, we use ___.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "We need a ___ of eggs for the cake.",
+      "options": ["dozen", "pond", "river", "mountain"],
+      "correctIndex": 0,
+      "hint": "A dozen = 12.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "There is ___ juice in the refrigerator.",
+      "options": ["some", "many", "a few", "dozen"],
+      "correctIndex": 0,
+      "hint": "We use 'some' for things we can't count.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "How much cookies do we need for the party?",
+      "options": ["much", "many", "lot", "few"],
+      "correctIndex": 1,
+      "hint": "Cookies are countable! 1, 2, 3...",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "We don't have ___ cheese. Let's buy ___.",
+      "options": ["any, some", "some, any", "many, much", "much, many"],
+      "correctIndex": 0,
+      "hint": "Negative → any. Let's get → some.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which sentence is correct?",
+      "options": [
+        "How many apples and how much milk do we need?",
+        "How much apples and how many milk do we need?",
+        "How many apples and how many milk do we need?",
+        "How much apples and how much milk do we need?"
+      ],
+      "correctIndex": 0,
+      "hint": "Apples = countable (many). Milk = uncountable (much).",
+      "acornValue": 3
+    }
+  ]
+}
