@@ -1,0 +1,131 @@
+{
+  "trail_completions": {
+    "realm-1": {
+      "trail-1": {
+        "panels": [
+          { "text": "The forest animals remember their names! The fog is lifting!", "scene": "animals_celebrating" },
+          { "text": "Totoro dances with joy! More of the forest is visible now!", "scene": "totoro_dancing" }
+        ]
+      },
+      "trail-2": {
+        "panels": [
+          { "text": "The museum map is fixed! All the places are labeled again!", "scene": "map_restored" },
+          { "text": "The forest path to the museum is clear now!", "scene": "path_clear" }
+        ]
+      },
+      "trail-3": {
+        "panels": [
+          { "text": "The clocks are working and the stories make sense again!", "scene": "clocks_ticking" },
+          { "text": "Totoro nods happily. The past is remembered!", "scene": "totoro_nodding" }
+        ]
+      },
+      "trail-4": {
+        "panels": [
+          { "text": "The animals know what they like! The pronouns are fixed!", "scene": "animals_happy" },
+          { "text": "Almost there! One more Trail to go!", "scene": "almost_done" }
+        ]
+      },
+      "trail-5": {
+        "panels": [
+          { "text": "The Forest Museum is completely restored!", "scene": "museum_restored" },
+          { "text": "All the fog has cleared! The animals are free!", "scene": "fog_cleared" },
+          { "text": "Totoro jumps for joy! You saved the Forest Museum!", "scene": "totoro_jumping" }
+        ]
+      }
+    },
+    "realm-2": {
+      "trail-1": {
+        "panels": [
+          { "text": "The forest spirits remember their families!", "scene": "spirits_family" },
+          { "text": "The feast preparations can begin!", "scene": "feast_prep" }
+        ]
+      },
+      "trail-2": {
+        "panels": [
+          { "text": "The shopping is done! The table is set!", "scene": "table_set" },
+          { "text": "The kitchen smells amazing!", "scene": "kitchen_cooking" }
+        ]
+      },
+      "trail-3": {
+        "panels": [
+          { "text": "The plans are ready! Everyone is being so polite!", "scene": "polite_spirits" },
+          { "text": "The feast is almost ready!", "scene": "feast_almost" }
+        ]
+      },
+      "trail-4": {
+        "panels": [
+          { "text": "Past and present make sense! The recipes are found!", "scene": "recipes_found" },
+          { "text": "One more Trail and the feast will begin!", "scene": "almost_feast" }
+        ]
+      },
+      "trail-5": {
+        "panels": [
+          { "text": "The feast is served! Everyone sits down to eat!", "scene": "feast_served" },
+          { "text": "The spirits say thank you! The food is delicious!", "scene": "spirits_thankful" },
+          { "text": "Totoro eats happily! You saved the Feast!", "scene": "totoro_eating" }
+        ]
+      }
+    },
+    "realm-3": {
+      "trail-1": {
+        "panels": [
+          { "text": "The morning routine is fixed! The Catbus is on time!", "scene": "catbus_ready" },
+          { "text": "The city is waking up! Time for the tour!", "scene": "city_waking" }
+        ]
+      },
+      "trail-2": {
+        "panels": [
+          { "text": "The street signs are fixed! All the buildings have names!", "scene": "signs_fixed" },
+          { "text": "The Catbus route is clear!", "scene": "route_clear" }
+        ]
+      },
+      "trail-3": {
+        "panels": [
+          { "text": "Everyone has their things back! No more mix-ups!", "scene": "things_returned" },
+          { "text": "The city looks more beautiful than ever!", "scene": "city_beautiful" }
+        ]
+      },
+      "trail-4": {
+        "panels": [
+          { "text": "The sentences are fixed! The calendar is correct!", "scene": "calendar_fixed" },
+          { "text": "One last challenge and the city is saved!", "scene": "almost_saved" }
+        ]
+      },
+      "trail-5": {
+        "panels": [
+          { "text": "The city tour is complete! Every sign is in place!", "scene": "tour_complete" },
+          { "text": "The Catbus purrs happily! The route is perfect!", "scene": "catbus_purring" },
+          { "text": "Totoro, the Soot Sprites, and the Catbus celebrate!", "scene": "big_celebration" },
+          { "text": "You saved the entire forest! You are Totoro's best friend!", "scene": "final_celebration" }
+        ]
+      }
+    }
+  },
+  "realm_completions": {
+    "realm-1": {
+      "panels": [
+        { "text": "The Forest Museum is shining bright!", "scene": "museum_bright" },
+        { "text": "All the creatures are back to normal!", "scene": "creatures_normal" },
+        { "text": "Totoro opens the path to a new area...", "scene": "new_path" },
+        { "text": "Realm 1 Complete! The Feast awaits!", "scene": "realm1_complete" }
+      ]
+    },
+    "realm-2": {
+      "panels": [
+        { "text": "The feast was wonderful! The spirits are full and happy!", "scene": "spirits_full" },
+        { "text": "Totoro leads you to the city...", "scene": "to_city" },
+        { "text": "A new adventure begins!", "scene": "new_adventure" },
+        { "text": "Realm 2 Complete! The Catbus is waiting!", "scene": "realm2_complete" }
+      ]
+    },
+    "realm-3": {
+      "panels": [
+        { "text": "The city is saved! Every building, sign, and schedule is perfect!", "scene": "city_saved" },
+        { "text": "Uncle Michael can enjoy his visit now!", "scene": "uncle_happy" },
+        { "text": "The whole forest is restored! No more fog!", "scene": "forest_restored" },
+        { "text": "Congratulations! You completed Totoro's Forest Academy!", "scene": "game_complete" },
+        { "text": "Totoro will always be your friend. Come back any time!", "scene": "totoro_farewell" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "id": "clearing-1-1",
+  "name": "Wake Up!",
+  "realm": 3,
+  "trail": 1,
+  "focus": "Daily routine vocabulary",
+  "storyIntro": "The Catbus needs to follow a morning routine! But it forgot the steps!",
+  "storyOutro": "The morning routine is back on track! Time to start the day!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "What is the first thing you do in the morning?",
+      "options": ["Wake up", "Have dinner", "Go to bed", "Do homework"],
+      "correctIndex": 0,
+      "hint": "You open your eyes and get out of bed.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "After you wake up, you ___ and take a shower.",
+      "options": ["get up", "go to bed", "have dinner", "watch TV"],
+      "correctIndex": 0,
+      "hint": "You stand up and leave your bed.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each routine to when you do it.",
+      "pairs": [
+        { "left": "wake up", "right": "morning" },
+        { "left": "have lunch", "right": "afternoon" },
+        { "left": "do homework", "right": "after school" },
+        { "left": "go to bed", "right": "night" }
+      ],
+      "hint": "Think about what time of day you do each thing.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "order_it",
+      "round": "core",
+      "prompt": "Put the morning routine in order.",
+      "items": [
+        "Wake up.",
+        "Take a shower.",
+        "Brush teeth.",
+        "Get dressed.",
+        "Have breakfast."
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "hint": "What do you do first when you wake up?",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Every morning, I ___ my teeth.",
+      "options": ["brush", "wash", "clean", "comb"],
+      "correctIndex": 0,
+      "hint": "You use a toothbrush and toothpaste.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "After school, you ___ before you can play.",
+      "options": ["do homework", "go to bed", "take a shower", "wake up"],
+      "correctIndex": 0,
+      "hint": "You need to finish your school work first!",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "word_build",
+      "round": "core",
+      "prompt": "The first meal of the day. You eat it in the morning.",
+      "answer": "breakfast",
+      "hint": "Break + fast = the meal that breaks your overnight fast!",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "match_up",
+      "round": "challenge",
+      "prompt": "Match the activity to what you need.",
+      "pairs": [
+        { "left": "brush teeth", "right": "toothbrush" },
+        { "left": "take a shower", "right": "towel" },
+        { "left": "get dressed", "right": "clothes" },
+        { "left": "have breakfast", "right": "food" }
+      ],
+      "hint": "What do you need for each activity?",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "order_it",
+      "round": "challenge",
+      "prompt": "Put the evening routine in order.",
+      "items": [
+        "Have dinner.",
+        "Wash the dishes.",
+        "Do homework.",
+        "Go to bed."
+      ],
+      "correctOrder": [0, 1, 2, 3],
+      "hint": "First you eat, then you clean up.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "Before school, I ___, ___, and ___ every day.",
+      "options": ["wake up, get dressed, have breakfast", "go to bed, have dinner, sleep", "do homework, watch TV, play", "take a nap, eat lunch, rest"],
+      "correctIndex": 0,
+      "hint": "Morning activities before going to school!",
+      "acornValue": 3
+    }
+  ]
+}

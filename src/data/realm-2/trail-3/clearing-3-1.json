@@ -1,0 +1,120 @@
+{
+  "id": "clearing-3-1",
+  "name": "Plans for the Party",
+  "realm": 2,
+  "trail": 3,
+  "focus": "Future with 'going to'",
+  "storyIntro": "The spirits are making plans for the feast! What are they going to do?",
+  "storyOutro": "The plans are ready! The feast is going to be amazing!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "We ___ visit grandma tomorrow.",
+      "options": ["are going to", "going to", "go to", "went to"],
+      "correctIndex": 0,
+      "hint": "For future plans, use 'are going to'.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "She ___ cook dinner tonight.",
+      "options": ["is going to", "going to", "go to", "went to"],
+      "correctIndex": 0,
+      "hint": "She + is going to = future plan.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "They ___ buy groceries for the feast.",
+      "options": ["are going to", "is going to", "am going to", "was going to"],
+      "correctIndex": 0,
+      "hint": "They → are going to.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "I ___ make a cake for the party.",
+      "options": ["am going to", "is going to", "are going to", "were going to"],
+      "correctIndex": 0,
+      "hint": "I → am going to.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "He are going to help in the kitchen.",
+      "options": ["are", "is", "am", "were"],
+      "correctIndex": 1,
+      "hint": "He → is (not are).",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match the subject to the correct 'going to' form.",
+      "pairs": [
+        { "left": "I", "right": "am going to" },
+        { "left": "She", "right": "is going to" },
+        { "left": "They", "right": "are going to" },
+        { "left": "We", "right": "are going to" }
+      ],
+      "hint": "I=am, He/She=is, We/They=are.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Mom ___ prepare the turkey for Thanksgiving.",
+      "options": ["is going to", "are going to", "am going to", "is go to"],
+      "correctIndex": 0,
+      "hint": "Mom = she → is going to.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which sentence talks about the FUTURE?",
+      "options": [
+        "We are going to have a party.",
+        "We had a party yesterday.",
+        "We have a party now.",
+        "We always have parties."
+      ],
+      "correctIndex": 0,
+      "hint": "'Going to' = future.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "Sophie am going to help her mother.",
+      "options": ["am", "is", "are", "were"],
+      "correctIndex": 1,
+      "hint": "Sophie = she → is.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "Tomorrow, they ___ set the table and Mom ___ cook.",
+      "options": ["are going to, is going to", "is going to, are going to", "am going to, is going to", "are going to, am going to"],
+      "correctIndex": 0,
+      "hint": "They=are, Mom=is.",
+      "acornValue": 3
+    }
+  ]
+}

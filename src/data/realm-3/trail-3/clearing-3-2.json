@@ -1,0 +1,125 @@
+{
+  "id": "clearing-3-2",
+  "name": "Ralph's Mom, Uncle's Suitcase",
+  "realm": 3,
+  "trail": 3,
+  "focus": "Possessive nouns with 's",
+  "storyIntro": "Who does each thing belong to? Add 's to find out!",
+  "storyOutro": "You're a possessive expert! Everyone has their things back!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "___ mom made a plan for the city tour.",
+      "options": ["Ralph's", "Ralphs", "Ralph", "Ralph is"],
+      "correctIndex": 0,
+      "hint": "The mom belongs to Ralph. Add 's!",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "___ suitcase is very heavy.",
+      "options": ["Uncle Michael's", "Uncle Michael", "Uncle Michaels", "Uncles Michael"],
+      "correctIndex": 0,
+      "hint": "The suitcase belongs to Uncle Michael.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The ___ crib is in the bedroom.",
+      "options": ["baby's", "babys", "baby", "babies"],
+      "correctIndex": 0,
+      "hint": "The crib belongs to the baby.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Which sentence uses 's correctly?",
+      "options": [
+        "The teacher's desk is in the classroom.",
+        "The teachers desk is in the classroom.",
+        "The teacher desk's is in the classroom.",
+        "The teachers' desk is in the classroom."
+      ],
+      "correctIndex": 0,
+      "hint": "The desk belongs to the teacher. Teacher + 's.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "Uncle Michael family came to visit the city.",
+      "options": ["Michael", "Michael's", "Michaels", "Michaels'"],
+      "correctIndex": 1,
+      "hint": "The family belongs to Uncle Michael.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each person to what belongs to them.",
+      "pairs": [
+        { "left": "Ralph's", "right": "room" },
+        { "left": "Mom's", "right": "kitchen" },
+        { "left": "Uncle's", "right": "suitcase" },
+        { "left": "Baby's", "right": "crib" }
+      ],
+      "hint": "Think about what each person owns.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "This is ___ tour bus. It's very big!",
+      "options": ["the city's", "the citys", "the city", "the cities"],
+      "correctIndex": 0,
+      "hint": "The tour bus belongs to the city.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "___ house is in the mountains. ___ apartment is in the city.",
+      "options": [
+        "Uncle Michael's, Ralph's",
+        "Uncle Michael, Ralph",
+        "Uncle Michaels, Ralphs",
+        "Uncle Michael's, Ralphs"
+      ],
+      "correctIndex": 0,
+      "hint": "Both need 's to show possession.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "The dog bone is under the table.",
+      "options": ["dog", "dog's", "dogs", "dogs'"],
+      "correctIndex": 1,
+      "hint": "The bone belongs to the dog.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "___ plan was to visit the museum, the church, and the stadium.",
+      "options": ["Mom's", "Mom", "Moms", "Moms'"],
+      "correctIndex": 0,
+      "hint": "The plan belongs to Mom.",
+      "acornValue": 3
+    }
+  ]
+}

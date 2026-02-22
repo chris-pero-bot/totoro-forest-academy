@@ -1,0 +1,128 @@
+{
+  "id": "clearing-2-4",
+  "name": "Set the Table",
+  "realm": 2,
+  "trail": 2,
+  "focus": "Table items and steps to set a table",
+  "storyIntro": "The feast table is empty! Help the spirits set it up!",
+  "storyOutro": "The table looks beautiful! The feast is almost ready!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "You eat soup with a ___.",
+      "options": ["spoon", "fork", "knife", "napkin"],
+      "correctIndex": 0,
+      "hint": "It has a round shape to hold liquid.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "You cut food with a ___.",
+      "options": ["knife", "spoon", "glass", "plate"],
+      "correctIndex": 0,
+      "hint": "It has a sharp edge.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each item to what you use it for.",
+      "pairs": [
+        { "left": "plate", "right": "put food on it" },
+        { "left": "glass", "right": "drink from it" },
+        { "left": "napkin", "right": "clean your hands" },
+        { "left": "fork", "right": "pick up food" }
+      ],
+      "hint": "Think about how you use each thing at the table.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Put the ___ on the table before the food.",
+      "options": ["tablecloth", "turkey", "pie", "soup"],
+      "correctIndex": 0,
+      "hint": "It covers the table to keep it clean.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "order_it",
+      "round": "core",
+      "prompt": "How do you set the table? Put the steps in order.",
+      "items": [
+        "Put the tablecloth on the table.",
+        "Put a plate at each seat.",
+        "Put a fork and knife next to each plate.",
+        "Put a glass above each plate.",
+        "Put a napkin on each plate."
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "hint": "Start with the tablecloth!",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "You pour soup into a ___.",
+      "options": ["bowl", "glass", "fork", "napkin"],
+      "correctIndex": 0,
+      "hint": "It's round and deep.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "We drink juice from a ___.",
+      "options": ["cup", "plate", "knife", "spoon"],
+      "correctIndex": 0,
+      "hint": "It holds liquid.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "sort_it",
+      "round": "challenge",
+      "prompt": "Sort these: things you eat WITH or things you eat FROM.",
+      "buckets": ["Eat with", "Eat from"],
+      "items": [
+        { "text": "fork", "correctBucket": "Eat with" },
+        { "text": "plate", "correctBucket": "Eat from" },
+        { "text": "spoon", "correctBucket": "Eat with" },
+        { "text": "bowl", "correctBucket": "Eat from" },
+        { "text": "knife", "correctBucket": "Eat with" },
+        { "text": "cup", "correctBucket": "Eat from" }
+      ],
+      "hint": "Do you hold it to eat, or does it hold food?",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "After dinner, what do you do with the dirty plates?",
+      "options": ["Wash them.", "Throw them away.", "Put them on the bed.", "Leave them outside."],
+      "correctIndex": 0,
+      "hint": "We clean up after eating!",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "At the feast, each person needs a ___, a ___, and a ___.",
+      "options": ["plate, fork, glass", "bed, pillow, lamp", "book, pen, desk", "shirt, pants, shoes"],
+      "correctIndex": 0,
+      "hint": "Things you need to eat!",
+      "acornValue": 3
+    }
+  ]
+}

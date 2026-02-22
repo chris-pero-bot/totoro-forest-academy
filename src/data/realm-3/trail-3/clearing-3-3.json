@@ -1,0 +1,127 @@
+{
+  "id": "clearing-3-3",
+  "name": "The Biggest Building",
+  "realm": 3,
+  "trail": 3,
+  "focus": "Descriptive adjectives for places",
+  "storyIntro": "The city has so many buildings! Let's describe them all!",
+  "storyOutro": "You described the city perfectly! What a great tour guide!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "The apartment building is very ___.",
+      "options": ["tall", "small", "short", "tiny"],
+      "correctIndex": 0,
+      "hint": "It has many floors!",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "The park has ___ trees and ___ flowers.",
+      "options": ["beautiful, colorful", "ugly, gray", "tiny, dark", "scary, broken"],
+      "correctIndex": 0,
+      "hint": "Parks are pretty!",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each adjective to a city place.",
+      "pairs": [
+        { "left": "tall", "right": "apartment building" },
+        { "left": "huge", "right": "stadium" },
+        { "left": "beautiful", "right": "church gardens" },
+        { "left": "important", "right": "City Hall" }
+      ],
+      "hint": "Which word best describes each place?",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The stadium is ___. It can hold many people!",
+      "options": ["huge", "tiny", "narrow", "short"],
+      "correctIndex": 0,
+      "hint": "It's very, very big!",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "The library is a ___ and ___ place.",
+      "options": ["quiet, peaceful", "noisy, loud", "scary, dark", "hot, dry"],
+      "correctIndex": 0,
+      "hint": "Libraries are calm places where you read.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The ___ green park is next to the ___ tall building.",
+      "options": ["big, very", "small, not", "ugly, short", "dark, cold"],
+      "correctIndex": 0,
+      "hint": "Describe the park and building with positive words.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "In the country, the houses are ___ than in the city.",
+      "options": ["smaller", "taller", "bigger", "noisier"],
+      "correctIndex": 0,
+      "hint": "Country houses don't have many floors.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "sort_it",
+      "round": "challenge",
+      "prompt": "Sort these adjectives: positive or negative?",
+      "buckets": ["Positive", "Negative"],
+      "items": [
+        { "text": "beautiful", "correctBucket": "Positive" },
+        { "text": "dangerous", "correctBucket": "Negative" },
+        { "text": "important", "correctBucket": "Positive" },
+        { "text": "scary", "correctBucket": "Negative" },
+        { "text": "green", "correctBucket": "Positive" },
+        { "text": "noisy", "correctBucket": "Negative" }
+      ],
+      "hint": "Would you like this word to describe your home?",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "City Hall is a very ___ building. The mayor works there.",
+      "options": ["important", "small", "funny", "scary"],
+      "correctIndex": 0,
+      "hint": "The mayor makes big decisions there.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which sentence describes a city best?",
+      "options": [
+        "A city has tall buildings, busy streets, and many people.",
+        "A city has farms, mountains, and rivers.",
+        "A city has forests, animals, and lakes.",
+        "A city has beaches, sand, and waves."
+      ],
+      "correctIndex": 0,
+      "hint": "Cities are urban places with lots of activity.",
+      "acornValue": 3
+    }
+  ]
+}

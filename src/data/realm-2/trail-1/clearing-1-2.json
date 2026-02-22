@@ -1,0 +1,115 @@
+{
+  "id": "clearing-1-2",
+  "name": "The Family Tree",
+  "realm": 2,
+  "trail": 1,
+  "focus": "Family relationships: X is Y's ___",
+  "storyIntro": "The family tree lost its labels! Help put the names back!",
+  "storyOutro": "The family tree is complete! Everyone is connected!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "Sophie is her mother's ___.",
+      "options": ["daughter", "sister", "aunt", "cousin"],
+      "correctIndex": 0,
+      "hint": "A girl child is a ___.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Tom is his father's ___.",
+      "options": ["son", "brother", "uncle", "cousin"],
+      "correctIndex": 0,
+      "hint": "A boy child is a ___.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "My dad's mom is my ___.",
+      "options": ["grandmother", "mother", "aunt", "sister"],
+      "correctIndex": 0,
+      "hint": "She is one generation above your dad.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Grandma has two grandchildren. They are her ___.",
+      "options": ["grandchildren", "children", "parents", "cousins"],
+      "correctIndex": 0,
+      "hint": "They are one generation below her children.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match the family relationship.",
+      "pairs": [
+        { "left": "Mom's dad", "right": "grandfather" },
+        { "left": "Dad's sister", "right": "aunt" },
+        { "left": "Mom's brother", "right": "uncle" },
+        { "left": "Aunt's daughter", "right": "cousin" }
+      ],
+      "hint": "Think step by step through the family.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Sophie's ___ is cooking dinner in the kitchen.",
+      "options": ["mother", "teacher", "friend", "neighbor"],
+      "correctIndex": 0,
+      "hint": "A family member who cooks for you at home.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "A baby is the youngest member of the ___.",
+      "options": ["family", "school", "museum", "library"],
+      "correctIndex": 0,
+      "hint": "Babies are at home with their parents.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "My father is my grandmother's ___.",
+      "options": ["son", "father", "brother", "uncle"],
+      "correctIndex": 0,
+      "hint": "Your dad was a child too! He is his mom's...",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Sophie's mom and dad are Sophie's ___.",
+      "options": ["parents", "grandparents", "cousins", "siblings"],
+      "correctIndex": 0,
+      "hint": "Mom + Dad = ___.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "My uncle is my mother's daughter.",
+      "options": ["daughter", "brother", "son", "father"],
+      "correctIndex": 1,
+      "hint": "An uncle is a man. He is your mother's...",
+      "acornValue": 3
+    }
+  ]
+}

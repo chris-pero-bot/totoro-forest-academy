@@ -1,0 +1,127 @@
+{
+  "id": "clearing-4-4",
+  "name": "What's the Weather?",
+  "realm": 2,
+  "trail": 4,
+  "focus": "Weather and seasons vocabulary",
+  "storyIntro": "The seasons in the forest are all mixed up! Can you sort them out?",
+  "storyOutro": "The weather makes sense again! The forest knows what season it is!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "When it's snowy outside, it is ___.",
+      "options": ["cold", "hot", "warm", "cool"],
+      "correctIndex": 0,
+      "hint": "Snow means freezing temperatures!",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "In summer, the weather is usually ___.",
+      "options": ["hot", "snowy", "freezing", "icy"],
+      "correctIndex": 0,
+      "hint": "Summer is the warmest season!",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each season to its weather.",
+      "pairs": [
+        { "left": "summer", "right": "hot and sunny" },
+        { "left": "winter", "right": "cold and snowy" },
+        { "left": "spring", "right": "warm and rainy" },
+        { "left": "fall", "right": "cool and windy" }
+      ],
+      "hint": "Think about what the weather is like in each season.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Today is ___ and ___. I need an umbrella!",
+      "options": ["cloudy, rainy", "sunny, hot", "snowy, cold", "warm, clear"],
+      "correctIndex": 0,
+      "hint": "You need an umbrella when it rains!",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Which season comes after summer?",
+      "options": ["fall", "spring", "winter", "summer"],
+      "correctIndex": 0,
+      "hint": "The leaves change color in this season.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "sort_it",
+      "round": "core",
+      "prompt": "Sort these weather words!",
+      "buckets": ["Hot Weather", "Cold Weather"],
+      "items": [
+        { "text": "sunny", "correctBucket": "Hot Weather" },
+        { "text": "snowy", "correctBucket": "Cold Weather" },
+        { "text": "hot", "correctBucket": "Hot Weather" },
+        { "text": "freezing", "correctBucket": "Cold Weather" },
+        { "text": "warm", "correctBucket": "Hot Weather" },
+        { "text": "icy", "correctBucket": "Cold Weather" }
+      ],
+      "hint": "Is it a warm or cold word?",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "It's very ___ today. The trees are blowing!",
+      "options": ["windy", "sunny", "hot", "snowy"],
+      "correctIndex": 0,
+      "hint": "The wind makes the trees move.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Thanksgiving is in ___. The weather is cool.",
+      "options": ["fall", "summer", "spring", "winter"],
+      "correctIndex": 0,
+      "hint": "Thanksgiving is in November.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "order_it",
+      "round": "challenge",
+      "prompt": "Put the seasons in order starting from spring.",
+      "items": [
+        "Spring",
+        "Summer",
+        "Fall",
+        "Winter"
+      ],
+      "correctOrder": [0, 1, 2, 3],
+      "hint": "Spring → Summer → ...",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "In ___, it is ___. In ___, it is ___.",
+      "options": ["winter, cold, summer, hot", "summer, cold, winter, hot", "spring, snowy, fall, sunny", "fall, hot, spring, cold"],
+      "correctIndex": 0,
+      "hint": "Winter = cold. Summer = hot.",
+      "acornValue": 3
+    }
+  ]
+}

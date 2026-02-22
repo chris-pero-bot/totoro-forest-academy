@@ -1,0 +1,121 @@
+{
+  "id": "clearing-2-1",
+  "name": "How Do You Get There?",
+  "realm": 3,
+  "trail": 2,
+  "focus": "Means of transportation vocabulary",
+  "storyIntro": "The Catbus isn't the only way to travel! What other ways can you get around?",
+  "storyOutro": "You know all the ways to travel! Where do you want to go?",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "To go to another country far away, you take an ___.",
+      "options": ["airplane", "bicycle", "taxi", "bus"],
+      "correctIndex": 0,
+      "hint": "It flies in the sky!",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "To cross the ocean, you take a ___.",
+      "options": ["ship", "car", "bicycle", "subway"],
+      "correctIndex": 0,
+      "hint": "It floats on water.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each vehicle to where it travels.",
+      "pairs": [
+        { "left": "airplane", "right": "sky" },
+        { "left": "ship", "right": "ocean" },
+        { "left": "subway", "right": "underground" },
+        { "left": "car", "right": "road" }
+      ],
+      "hint": "Where does each vehicle go?",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Many people take the ___ to school. It is big and yellow.",
+      "options": ["bus", "airplane", "ship", "bicycle"],
+      "correctIndex": 0,
+      "hint": "A big vehicle that takes many children.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Which vehicle has two wheels and you pedal?",
+      "options": ["bicycle", "car", "bus", "train"],
+      "correctIndex": 0,
+      "hint": "You use your legs to make it move!",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "word_build",
+      "round": "core",
+      "prompt": "A train that goes under the city streets.",
+      "answer": "subway",
+      "hint": "Sub (under) + way (road).",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "sort_it",
+      "round": "core",
+      "prompt": "Sort: which have wheels and which don't?",
+      "buckets": ["Has Wheels", "No Wheels"],
+      "items": [
+        { "text": "car", "correctBucket": "Has Wheels" },
+        { "text": "ship", "correctBucket": "No Wheels" },
+        { "text": "bus", "correctBucket": "Has Wheels" },
+        { "text": "airplane", "correctBucket": "No Wheels" },
+        { "text": "bicycle", "correctBucket": "Has Wheels" },
+        { "text": "boat", "correctBucket": "No Wheels" }
+      ],
+      "hint": "Cars and bikes roll. Ships and planes don't use wheels to move.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "You call a ___ when you need a ride in the city.",
+      "options": ["taxi", "ship", "airplane", "train"],
+      "correctIndex": 0,
+      "hint": "It's usually yellow and takes you anywhere in the city.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Uncle Michael took a ___ from the mountains to the city.",
+      "options": ["train", "submarine", "helicopter", "spaceship"],
+      "correctIndex": 0,
+      "hint": "It travels on tracks and stops at stations.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which is the FASTEST way to travel?",
+      "options": ["airplane", "bicycle", "bus", "walking"],
+      "correctIndex": 0,
+      "hint": "It flies through the sky very fast!",
+      "acornValue": 3
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "clearing-2-3",
+  "name": "Follow the Signs",
+  "realm": 1,
+  "trail": 2,
+  "focus": "Commands, imperatives, and safety rules",
+  "storyIntro": "The museum signs fell down! Let's put the rules back up so everyone stays safe!",
+  "storyOutro": "All the signs are back! Now everyone knows the rules!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "What does the teacher say when the class is too loud?",
+      "options": ["Be quiet!", "Run fast!", "Jump high!", "Eat lunch!"],
+      "correctIndex": 0,
+      "hint": "She wants the students to stop making noise.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "At the museum, you should NOT ___.",
+      "options": ["run", "look", "listen", "walk"],
+      "correctIndex": 0,
+      "hint": "Walking is safe, but this is not!",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each rule to when you use it.",
+      "pairs": [
+        { "left": "Don't run", "right": "in the museum" },
+        { "left": "Listen to the teacher", "right": "on the field trip" },
+        { "left": "Be quiet", "right": "in the library" },
+        { "left": "Follow the rules", "right": "at school" }
+      ],
+      "hint": "Think about where each rule is important.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "___ the teacher when she is talking.",
+      "options": ["Listen to", "Don't listen to", "Run from", "Forget"],
+      "correctIndex": 0,
+      "hint": "It's important to hear what she says.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "Run in the museum hallways!",
+      "options": ["Run", "Don't run", "Jump", "Skip"],
+      "correctIndex": 1,
+      "hint": "Running in the museum is NOT okay!",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Which is a good museum rule?",
+      "options": [
+        "Don't touch the displays.",
+        "Run in the gallery.",
+        "Shout at the dinosaurs.",
+        "Throw your lunch on the floor."
+      ],
+      "correctIndex": 0,
+      "hint": "Museum things are old and special.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Miss Wilson said, '___ the rules, everyone!'",
+      "options": ["Follow", "Break", "Forget", "Lose"],
+      "correctIndex": 0,
+      "hint": "She wants everyone to do the right thing.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "order_it",
+      "round": "challenge",
+      "prompt": "Put the field trip rules in the right order.",
+      "items": [
+        "Listen to the teacher.",
+        "Walk, don't run.",
+        "Stay with the group.",
+        "Be quiet in the gallery."
+      ],
+      "correctOrder": [0, 1, 2, 3],
+      "hint": "First listen, then walk safely.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which sentence is a command?",
+      "options": [
+        "Be quiet, please.",
+        "She is quiet.",
+        "He was quiet.",
+        "They are quiet."
+      ],
+      "correctIndex": 0,
+      "hint": "A command tells someone to do something.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "Don't listen to your teacher on the field trip.",
+      "options": ["Don't listen", "Listen", "Don't talk", "Stop"],
+      "correctIndex": 1,
+      "hint": "You SHOULD listen to your teacher!",
+      "acornValue": 3
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "clearing-4-3",
+  "name": "How Do They Do It?",
+  "realm": 1,
+  "trail": 4,
+  "focus": "Adverbs of manner: quickly, slowly, quietly, loudly, carefully, happily",
+  "storyIntro": "The animals are all doing things, but HOW are they doing them? Let's find out!",
+  "storyOutro": "You know all the adverbs now! You learned them quickly!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "The turtle walks ___.",
+      "options": ["slowly", "quickly", "loudly", "happily"],
+      "correctIndex": 0,
+      "hint": "Turtles are not fast!",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "The dolphin swims ___.",
+      "options": ["quickly", "slowly", "quietly", "carefully"],
+      "correctIndex": 0,
+      "hint": "Dolphins are very fast swimmers!",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match the adverb to its meaning.",
+      "pairs": [
+        { "left": "quickly", "right": "fast" },
+        { "left": "slowly", "right": "not fast" },
+        { "left": "quietly", "right": "without noise" },
+        { "left": "loudly", "right": "with a lot of noise" }
+      ],
+      "hint": "Think about what each word describes.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Please walk ___ in the library.",
+      "options": ["quietly", "loudly", "quickly", "happily"],
+      "correctIndex": 0,
+      "hint": "Libraries are places where you must be silent.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "The children sang ___ on the bus.",
+      "options": ["happily", "sadly", "slowly", "carefully"],
+      "correctIndex": 0,
+      "hint": "They were having fun!",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Miss Wilson told the students to look at the bones ___.",
+      "options": ["carefully", "loudly", "quickly", "happily"],
+      "correctIndex": 0,
+      "hint": "She wanted them to be gentle and pay attention.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "The parrot talked very quiet.",
+      "options": ["quiet", "quietly", "quick", "slowly"],
+      "correctIndex": 1,
+      "hint": "We need an adverb (-ly) not an adjective.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "match_up",
+      "round": "challenge",
+      "prompt": "Match the animal to how it moves.",
+      "pairs": [
+        { "left": "snail", "right": "slowly" },
+        { "left": "cheetah", "right": "quickly" },
+        { "left": "cat", "right": "quietly" },
+        { "left": "elephant", "right": "heavily" }
+      ],
+      "hint": "Think about how each animal moves.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "The snake moved ___ and the eagle flew ___.",
+      "options": ["slowly, quickly", "quickly, slowly", "loudly, quietly", "happily, sadly"],
+      "correctIndex": 0,
+      "hint": "Snakes slither, eagles soar fast!",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which sentence uses the adverb correctly?",
+      "options": [
+        "She walked carefully across the gallery.",
+        "She walked careful across the gallery.",
+        "She careful walked across the gallery.",
+        "She walked carefully across the careful."
+      ],
+      "correctIndex": 0,
+      "hint": "Adverbs describe HOW you do something. They end in -ly.",
+      "acornValue": 3
+    }
+  ]
+}

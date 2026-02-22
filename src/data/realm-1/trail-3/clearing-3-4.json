@@ -1,0 +1,128 @@
+{
+  "id": "clearing-3-4",
+  "name": "Time Check",
+  "realm": 1,
+  "trail": 3,
+  "focus": "Telling time and ordinal numbers 1st-10th",
+  "storyIntro": "The museum clocks are all mixed up! Can you help fix the times?",
+  "storyOutro": "All the clocks show the right time now. Well done!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "The clock shows 3:00. What time is it?",
+      "options": ["It's three o'clock.", "It's half past three.", "It's four o'clock.", "It's two o'clock."],
+      "correctIndex": 0,
+      "hint": "When the long hand is on 12, it's ___ o'clock.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "The clock shows 2:30. What time is it?",
+      "options": ["It's two o'clock.", "It's half past two.", "It's half past three.", "It's three o'clock."],
+      "correctIndex": 1,
+      "hint": "When the long hand is on 6, it's half past.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match the time to the words.",
+      "pairs": [
+        { "left": "9:00", "right": "nine o'clock" },
+        { "left": "12:30", "right": "half past twelve" },
+        { "left": "6:00", "right": "six o'clock" },
+        { "left": "1:30", "right": "half past one" }
+      ],
+      "hint": ":00 means o'clock. :30 means half past.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The field trip started at ___ o'clock in the morning.",
+      "options": ["nine", "hundred", "thirty", "half"],
+      "correctIndex": 0,
+      "hint": "School trips usually start around 9:00.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "What is the ordinal number for 1?",
+      "options": ["1st (first)", "2nd (second)", "3rd (third)", "4th (fourth)"],
+      "correctIndex": 0,
+      "hint": "One → first.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match the number to its ordinal form.",
+      "pairs": [
+        { "left": "1", "right": "first" },
+        { "left": "2", "right": "second" },
+        { "left": "3", "right": "third" },
+        { "left": "5", "right": "fifth" }
+      ],
+      "hint": "1st, 2nd, 3rd... these are special!",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The Dinosaur Gallery was the ___ place they visited.",
+      "options": ["first", "one", "once", "number"],
+      "correctIndex": 0,
+      "hint": "It was place number 1.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "They ate lunch at half past twelve. What time is that?",
+      "options": ["12:30", "12:00", "1:30", "11:30"],
+      "correctIndex": 0,
+      "hint": "Half past twelve = 12:___.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "match_up",
+      "round": "challenge",
+      "prompt": "Match the ordinal numbers.",
+      "pairs": [
+        { "left": "4th", "right": "fourth" },
+        { "left": "6th", "right": "sixth" },
+        { "left": "8th", "right": "eighth" },
+        { "left": "10th", "right": "tenth" }
+      ],
+      "hint": "Most ordinals add -th to the number.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "order_it",
+      "round": "challenge",
+      "prompt": "Put the field trip schedule in order.",
+      "items": [
+        "9:00 — Get on the bus",
+        "10:00 — Arrive at the museum",
+        "12:30 — Eat lunch",
+        "2:00 — Go back to school"
+      ],
+      "correctOrder": [0, 1, 2, 3],
+      "hint": "What time comes first?",
+      "acornValue": 3
+    }
+  ]
+}

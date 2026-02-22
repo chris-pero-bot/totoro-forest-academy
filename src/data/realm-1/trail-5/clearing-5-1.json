@@ -1,0 +1,137 @@
+{
+  "id": "clearing-5-1",
+  "name": "The Museum Story",
+  "realm": 1,
+  "trail": 5,
+  "focus": "Reading comprehension - Field trip to the museum",
+  "storyIntro": "Let's read about the field trip to the Museum of Natural Science!",
+  "storyOutro": "You understood the whole story! You're a great reader!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Miss Wilson's class went on a field trip. Where did they go?",
+      "options": ["The Museum of Natural Science", "The zoo", "The park", "The library"],
+      "correctIndex": 0,
+      "hint": "They went to see dinosaur bones!",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "How did the class get to the museum?",
+      "options": ["By bus", "By car", "They walked", "By train"],
+      "correctIndex": 0,
+      "hint": "They all rode together.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "order_it",
+      "round": "core",
+      "prompt": "Put the story events in order.",
+      "items": [
+        "The class got on the bus and sang songs.",
+        "They arrived at the museum.",
+        "They visited the Dinosaur Gallery.",
+        "They ate lunch in the cafeteria.",
+        "Amy and Ralph went missing."
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "hint": "What happened first on the trip?",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "What did the children see in the Dinosaur Gallery?",
+      "options": ["Dinosaur bones", "Live dinosaurs", "Paintings", "Books"],
+      "correctIndex": 0,
+      "hint": "Dinosaurs lived long ago. We can only see their...",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The children were ___ when they saw the big dinosaur.",
+      "options": ["surprised", "bored", "angry", "sleepy"],
+      "correctIndex": 0,
+      "hint": "It was amazing and unexpected!",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Who went missing during the field trip?",
+      "options": ["Amy and Ralph", "Miss Wilson", "The whole class", "The bus driver"],
+      "correctIndex": 0,
+      "hint": "Two students got lost.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "What funny thing was in the story?",
+      "options": [
+        "A lizard with pink sneakers",
+        "A flying dinosaur",
+        "A talking whale",
+        "A singing teacher"
+      ],
+      "correctIndex": 0,
+      "hint": "An animal was wearing shoes!",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "What rule did Miss Wilson remind the students about?",
+      "options": [
+        "Follow the rules and be quiet.",
+        "Run in the hallway.",
+        "Touch all the displays.",
+        "Leave the museum early."
+      ],
+      "correctIndex": 0,
+      "hint": "She wanted them to behave well.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Why were the children surprised at the museum?",
+      "options": [
+        "The dinosaur bones were very big.",
+        "The museum was closed.",
+        "It was raining outside.",
+        "There was no food."
+      ],
+      "correctIndex": 0,
+      "hint": "The Dinosaur Gallery had something amazing!",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "order_it",
+      "round": "challenge",
+      "prompt": "Put the end of the story in order.",
+      "items": [
+        "Amy and Ralph went missing.",
+        "Miss Wilson looked for them.",
+        "She found them at the gift shop.",
+        "Everyone laughed and went home."
+      ],
+      "correctOrder": [0, 1, 2, 3],
+      "hint": "First they got lost, then someone found them.",
+      "acornValue": 3
+    }
+  ]
+}

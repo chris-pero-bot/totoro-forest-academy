@@ -1,0 +1,125 @@
+{
+  "id": "clearing-2-3",
+  "name": "Room by Room",
+  "realm": 2,
+  "trail": 2,
+  "focus": "Rooms and furniture in the house",
+  "storyIntro": "The forest house needs labels! Which room is which?",
+  "storyOutro": "Every room has its name! The house is ready for the feast!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Where do you cook food?",
+      "options": ["kitchen", "bedroom", "bathroom", "living room"],
+      "correctIndex": 0,
+      "hint": "This room has a stove and a refrigerator.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Where do you sleep?",
+      "options": ["kitchen", "bedroom", "dining room", "bathroom"],
+      "correctIndex": 1,
+      "hint": "This room has a bed.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each room to what you find there.",
+      "pairs": [
+        { "left": "kitchen", "right": "refrigerator" },
+        { "left": "bedroom", "right": "bed" },
+        { "left": "living room", "right": "sofa" },
+        { "left": "bathroom", "right": "shower" }
+      ],
+      "hint": "Think about the furniture in each room.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The family eats dinner in the ___.",
+      "options": ["dining room", "bathroom", "bedroom", "garage"],
+      "correctIndex": 0,
+      "hint": "This room has a big table and chairs.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "sort_it",
+      "round": "core",
+      "prompt": "Sort this furniture into the right room!",
+      "buckets": ["Kitchen", "Bedroom"],
+      "items": [
+        { "text": "refrigerator", "correctBucket": "Kitchen" },
+        { "text": "bed", "correctBucket": "Bedroom" },
+        { "text": "stove", "correctBucket": "Kitchen" },
+        { "text": "lamp", "correctBucket": "Bedroom" },
+        { "text": "oven", "correctBucket": "Kitchen" },
+        { "text": "pillow", "correctBucket": "Bedroom" }
+      ],
+      "hint": "Where does each thing belong?",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "You sit on this in the living room. It is soft.",
+      "options": ["sofa", "table", "shelf", "rug"],
+      "correctIndex": 0,
+      "hint": "It's comfortable and big enough for the family.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "word_build",
+      "round": "core",
+      "prompt": "This is on the floor. You step on it. It is soft.",
+      "answer": "rug",
+      "hint": "It's a small carpet.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "The books are on the ___ in the living room.",
+      "options": ["shelf", "bed", "refrigerator", "shower"],
+      "correctIndex": 0,
+      "hint": "Books go on something attached to the wall.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which room does NOT have water?",
+      "options": ["bedroom", "kitchen", "bathroom", "laundry room"],
+      "correctIndex": 0,
+      "hint": "You sleep here. No sink needed!",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "match_up",
+      "round": "challenge",
+      "prompt": "Match each thing to its room.",
+      "pairs": [
+        { "left": "dining room", "right": "table and chairs" },
+        { "left": "living room", "right": "sofa and TV" },
+        { "left": "bathroom", "right": "sink and towel" },
+        { "left": "kitchen", "right": "stove and pots" }
+      ],
+      "hint": "Think about what you do in each room.",
+      "acornValue": 3
+    }
+  ]
+}

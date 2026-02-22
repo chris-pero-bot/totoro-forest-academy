@@ -1,0 +1,127 @@
+{
+  "id": "clearing-1-2",
+  "name": "Spots, Stripes & Scales",
+  "realm": 1,
+  "trail": 1,
+  "focus": "Adjectives for describing animals",
+  "storyIntro": "The animals need their descriptions back! What do they look like?",
+  "storyOutro": "Now everyone can see how beautiful the animals are!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "A zebra has black and white ___.",
+      "options": ["stripes", "spots", "feathers", "scales"],
+      "correctIndex": 0,
+      "hint": "They are long lines on its body.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "A leopard has ___ on its fur.",
+      "options": ["spots", "stripes", "wings", "claws"],
+      "correctIndex": 0,
+      "hint": "They are small round marks.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each word to the right animal.",
+      "pairs": [
+        { "left": "furry", "right": "koala" },
+        { "left": "slimy", "right": "snake" },
+        { "left": "colorful", "right": "parrot" },
+        { "left": "spotted", "right": "leopard" }
+      ],
+      "hint": "Think about how each animal looks or feels.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The ___ dinosaur was very scary.",
+      "options": ["big", "small", "short", "light"],
+      "correctIndex": 0,
+      "hint": "Dinosaurs were not tiny!",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Which word describes how a dolphin moves?",
+      "options": ["slow", "fast", "heavy", "dangerous"],
+      "correctIndex": 1,
+      "hint": "Dolphins swim very quickly!",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "sort_it",
+      "round": "core",
+      "prompt": "Sort these words!",
+      "buckets": ["Big Animals", "Small Animals"],
+      "items": [
+        { "text": "whale", "correctBucket": "Big Animals" },
+        { "text": "lizard", "correctBucket": "Small Animals" },
+        { "text": "hippo", "correctBucket": "Big Animals" },
+        { "text": "parrot", "correctBucket": "Small Animals" },
+        { "text": "elephant", "correctBucket": "Big Animals" },
+        { "text": "snake", "correctBucket": "Small Animals" }
+      ],
+      "hint": "Think about the size of each animal.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "A crocodile is ___ because it can bite.",
+      "options": ["dangerous", "friendly", "beautiful", "light"],
+      "correctIndex": 0,
+      "hint": "It has very big teeth!",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which sentence is correct?",
+      "options": [
+        "The koala is furry and friendly.",
+        "The koala is slimy and fast.",
+        "The koala is striped and tall.",
+        "The koala is colorful and heavy."
+      ],
+      "correctIndex": 0,
+      "hint": "Koalas are soft and cute!",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "The whale is a very small animal in the ocean.",
+      "options": ["small", "big", "short", "light"],
+      "correctIndex": 1,
+      "hint": "Whales are the biggest animals!",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "The ___ eagle flew ___ over the mountains.",
+      "options": ["beautiful, fast", "slimy, slow", "spotted, heavy", "furry, quiet"],
+      "correctIndex": 0,
+      "hint": "Eagles are pretty and quick!",
+      "acornValue": 3
+    }
+  ]
+}

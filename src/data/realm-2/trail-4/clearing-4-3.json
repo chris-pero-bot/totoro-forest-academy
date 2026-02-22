@@ -1,0 +1,120 @@
+{
+  "id": "clearing-4-3",
+  "name": "It's Mom's Recipe",
+  "realm": 2,
+  "trail": 4,
+  "focus": "Possessive 's",
+  "storyIntro": "Whose recipe is it? Whose plate is this? Let's learn about possessive 's!",
+  "storyOutro": "Now you know who owns what! No more mix-ups!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "This is ___'s kitchen. She cooks here every day.",
+      "options": ["Mom", "Moms", "Mom is", "Mom has"],
+      "correctIndex": 0,
+      "hint": "Add 's to show it belongs to Mom.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "This is ___ recipe for turkey.",
+      "options": ["Grandmother's", "Grandmother", "Grandmothers", "Grandmother is"],
+      "correctIndex": 0,
+      "hint": "The recipe belongs to Grandmother. Add 's.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "___'s family is coming to visit.",
+      "options": ["Sophie", "Sophies", "Sophie is", "Sophie has"],
+      "correctIndex": 0,
+      "hint": "The family belongs to Sophie. Sophie + 's.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The ___ cake is delicious!",
+      "options": ["baker's", "bakers", "baker", "baker is"],
+      "correctIndex": 0,
+      "hint": "The cake belongs to the baker.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match to show who owns what.",
+      "pairs": [
+        { "left": "Mom's", "right": "kitchen" },
+        { "left": "Dad's", "right": "car" },
+        { "left": "Sophie's", "right": "book" },
+        { "left": "Baby's", "right": "toy" }
+      ],
+      "hint": "Person + 's + thing they own.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "That is Sophie plate on the table.",
+      "options": ["Sophie", "Sophie's", "Sophies", "Sophie is"],
+      "correctIndex": 1,
+      "hint": "The plate belongs to Sophie. Add 's!",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "My ___ favorite food is turkey.",
+      "options": ["father's", "fathers", "father", "father is"],
+      "correctIndex": 0,
+      "hint": "The favorite food belongs to father.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which sentence uses 's correctly?",
+      "options": [
+        "My brother's room is messy.",
+        "My brothers room is messy.",
+        "My brother room's is messy.",
+        "My brother is room messy."
+      ],
+      "correctIndex": 0,
+      "hint": "The room belongs to my brother.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "The ___ toy is under the table. The ___ book is on the shelf.",
+      "options": ["baby's, sister's", "babys, sisters", "baby, sister", "babies, sisters"],
+      "correctIndex": 0,
+      "hint": "Add 's to show each thing belongs to someone.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "Grandmother recipe is the best in the family.",
+      "options": ["Grandmother", "Grandmother's", "Grandmothers", "Grandmothers'"],
+      "correctIndex": 1,
+      "hint": "The recipe belongs to Grandmother!",
+      "acornValue": 3
+    }
+  ]
+}

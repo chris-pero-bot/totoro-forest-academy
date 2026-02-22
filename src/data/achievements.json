@@ -1,0 +1,79 @@
+[
+  {
+    "id": "forest_scholar",
+    "name": "Forest Scholar",
+    "description": "Complete all Trails in Realm 1!",
+    "icon": "🌲",
+    "condition": "complete_realm_1"
+  },
+  {
+    "id": "feast_helper",
+    "name": "Feast Helper",
+    "description": "Complete all Trails in Realm 2!",
+    "icon": "🍽️",
+    "condition": "complete_realm_2"
+  },
+  {
+    "id": "city_guide",
+    "name": "City Guide",
+    "description": "Complete all Trails in Realm 3!",
+    "icon": "🏙️",
+    "condition": "complete_realm_3"
+  },
+  {
+    "id": "perfect_trail",
+    "name": "Perfect Trail",
+    "description": "Finish any Trail with no wrong answers!",
+    "icon": "✨",
+    "condition": "perfect_trail"
+  },
+  {
+    "id": "speed_runner",
+    "name": "Speed Runner",
+    "description": "Finish a Clearing in under 3 minutes!",
+    "icon": "⚡",
+    "condition": "clearing_under_3min"
+  },
+  {
+    "id": "word_collector",
+    "name": "Word Collector",
+    "description": "See 100 different vocabulary words!",
+    "icon": "📚",
+    "condition": "100_unique_words"
+  },
+  {
+    "id": "grammar_guardian",
+    "name": "Grammar Guardian",
+    "description": "Get 50 grammar questions right in a row!",
+    "icon": "🛡️",
+    "condition": "50_grammar_streak"
+  },
+  {
+    "id": "streak_legend",
+    "name": "Streak Legend",
+    "description": "Get a 15-answer streak!",
+    "icon": "🔥",
+    "condition": "15_streak"
+  },
+  {
+    "id": "acorn_millionaire",
+    "name": "Acorn Millionaire",
+    "description": "Collect 500 total acorns!",
+    "icon": "🌰",
+    "condition": "500_acorns"
+  },
+  {
+    "id": "totoros_friend",
+    "name": "Totoro's Friend",
+    "description": "Complete the entire game!",
+    "icon": "💚",
+    "condition": "complete_game"
+  },
+  {
+    "id": "perfectionist",
+    "name": "Perfectionist",
+    "description": "Get 3 stars on every Clearing!",
+    "icon": "⭐",
+    "condition": "all_3_stars"
+  }
+]

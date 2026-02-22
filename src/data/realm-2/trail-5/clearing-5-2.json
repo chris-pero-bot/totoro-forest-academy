@@ -1,0 +1,128 @@
+{
+  "id": "clearing-5-2",
+  "name": "Thanksgiving",
+  "realm": 2,
+  "trail": 5,
+  "focus": "Informational text about Thanksgiving traditions",
+  "storyIntro": "Let's learn about Thanksgiving! It's a special holiday in the U.S.A.!",
+  "storyOutro": "Now you know all about Thanksgiving! Gobble gobble!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Where is Thanksgiving celebrated?",
+      "options": ["In the United States", "In Japan", "In Australia", "In Spain"],
+      "correctIndex": 0,
+      "hint": "It's an American holiday.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "What is the main food at Thanksgiving?",
+      "options": ["Turkey", "Pizza", "Sushi", "Tacos"],
+      "correctIndex": 0,
+      "hint": "Gobble gobble! It's a big bird!",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "On Thanksgiving, families get together to say ___.",
+      "options": ["thank you", "goodbye", "sorry", "hello"],
+      "correctIndex": 0,
+      "hint": "Thanks-GIVING is about being grateful.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "The Pilgrims came to America on a ___.",
+      "options": ["ship", "airplane", "bus", "train"],
+      "correctIndex": 0,
+      "hint": "They crossed the ocean a very long time ago.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "sort_it",
+      "round": "core",
+      "prompt": "Sort: Thanksgiving food or NOT Thanksgiving food?",
+      "buckets": ["Thanksgiving", "Not Thanksgiving"],
+      "items": [
+        { "text": "turkey", "correctBucket": "Thanksgiving" },
+        { "text": "sushi", "correctBucket": "Not Thanksgiving" },
+        { "text": "mashed potatoes", "correctBucket": "Thanksgiving" },
+        { "text": "pizza", "correctBucket": "Not Thanksgiving" },
+        { "text": "cranberry sauce", "correctBucket": "Thanksgiving" },
+        { "text": "tacos", "correctBucket": "Not Thanksgiving" }
+      ],
+      "hint": "Traditional Thanksgiving food is American!",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Thanksgiving is about being ___ for what you have.",
+      "options": ["thankful", "angry", "scared", "tired"],
+      "correctIndex": 0,
+      "hint": "Thankful = grateful = happy about good things.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "At Thanksgiving, families make ___ cards.",
+      "options": ["thank-you", "birthday", "get-well", "sorry"],
+      "correctIndex": 0,
+      "hint": "They write what they are thankful for.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which sentence about Thanksgiving is TRUE?",
+      "options": [
+        "Families eat together and say what they are thankful for.",
+        "People go to school on Thanksgiving.",
+        "Thanksgiving is in summer.",
+        "People eat alone on Thanksgiving."
+      ],
+      "correctIndex": 0,
+      "hint": "Thanksgiving is a family celebration.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "A male turkey makes a sound called a ___.",
+      "options": ["gobble", "bark", "meow", "roar"],
+      "correctIndex": 0,
+      "hint": "Gobble gobble gobble!",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "What do Thanksgiving and Sophie's family dinner have in common?",
+      "options": [
+        "Both are about families eating together.",
+        "Both happen at school.",
+        "Both are about animals.",
+        "Both happen in summer."
+      ],
+      "correctIndex": 0,
+      "hint": "Think about what the two stories share.",
+      "acornValue": 3
+    }
+  ]
+}

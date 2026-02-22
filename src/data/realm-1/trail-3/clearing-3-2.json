@@ -1,0 +1,115 @@
+{
+  "id": "clearing-3-2",
+  "name": "The Tricky Ones",
+  "realm": 1,
+  "trail": 3,
+  "focus": "Irregular past tense verbs",
+  "storyIntro": "Some words don't follow the rules! Let's learn the tricky past tense words!",
+  "storyOutro": "You got the tricky ones right! Amazing work!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Yesterday, the class ___ to the museum on a bus.",
+      "options": ["went", "goed", "go", "goes"],
+      "correctIndex": 0,
+      "hint": "Go → ??? (it's an irregular verb!)",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "The children ___ the dinosaur bones in the gallery.",
+      "options": ["saw", "seed", "see", "sees"],
+      "correctIndex": 0,
+      "hint": "See → ??? (this one is tricky!)",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each verb to its past tense.",
+      "pairs": [
+        { "left": "go", "right": "went" },
+        { "left": "see", "right": "saw" },
+        { "left": "eat", "right": "ate" },
+        { "left": "sing", "right": "sang" }
+      ],
+      "hint": "These verbs don't add -ed. They change completely!",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The children ___ songs on the bus.",
+      "options": ["sang", "singed", "sing", "sings"],
+      "correctIndex": 0,
+      "hint": "Sing → sang (not singed!).",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "The class ___ lunch in the cafeteria.",
+      "options": ["ate", "eated", "eat", "eating"],
+      "correctIndex": 0,
+      "hint": "Eat → ??? (another tricky one!)",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "Amy goed to the restroom after lunch.",
+      "options": ["goed", "went", "go", "goes"],
+      "correctIndex": 1,
+      "hint": "Go doesn't add -ed. It changes to...",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The students ___ very happy at the museum.",
+      "options": ["were", "was", "are", "is"],
+      "correctIndex": 0,
+      "hint": "For 'they' in the past, use...",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Ralph ___ a sandwich and Amy ___ some juice.",
+      "options": ["had, had", "haved, haved", "has, has", "have, have"],
+      "correctIndex": 0,
+      "hint": "Have → had (irregular!)",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "Miss Wilson finded Amy and Ralph at the gift shop.",
+      "options": ["finded", "found", "find", "finds"],
+      "correctIndex": 1,
+      "hint": "Find → found (not finded!).",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "It ___ a great day! Everyone ___ fun.",
+      "options": ["was, had", "were, haved", "is, has", "are, have"],
+      "correctIndex": 0,
+      "hint": "For 'it' use was. For 'had' — it's irregular!",
+      "acornValue": 3
+    }
+  ]
+}

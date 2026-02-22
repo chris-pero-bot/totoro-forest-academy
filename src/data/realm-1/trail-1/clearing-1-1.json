@@ -1,0 +1,118 @@
+{
+  "id": "clearing-1-1",
+  "name": "Who Lives Here?",
+  "realm": 1,
+  "trail": 1,
+  "focus": "Core animal vocabulary",
+  "storyIntro": "The forest animals have lost their names! Can you help them remember?",
+  "storyOutro": "The animals are so happy! They remember their names now!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Which animal lives in the ocean and jumps out of the water?",
+      "options": ["dolphin", "eagle", "lizard", "kangaroo"],
+      "correctIndex": 0,
+      "hint": "It swims and is very friendly.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Which animal has feathers and can fly high in the sky?",
+      "options": ["crocodile", "eagle", "whale", "hippo"],
+      "correctIndex": 1,
+      "hint": "It has big wings and sharp eyes.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each animal to where it lives.",
+      "pairs": [
+        { "left": "dolphin", "right": "ocean" },
+        { "left": "parrot", "right": "jungle" },
+        { "left": "penguin", "right": "ice" },
+        { "left": "kangaroo", "right": "desert" }
+      ],
+      "hint": "Think about where each animal lives.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Which animal carries its baby in a pouch?",
+      "options": ["whale", "snake", "kangaroo", "parrot"],
+      "correctIndex": 2,
+      "hint": "It lives in Australia and hops!",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "A ___ is a very big animal that lives in rivers in Africa.",
+      "options": ["hippo", "penguin", "eagle", "lizard"],
+      "correctIndex": 0,
+      "hint": "Its name starts with H.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Which animal is very small and can climb walls?",
+      "options": ["whale", "dinosaur", "lizard", "hippo"],
+      "correctIndex": 2,
+      "hint": "It has scales and a long tail.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match the animal to the right word.",
+      "pairs": [
+        { "left": "whale", "right": "biggest ocean animal" },
+        { "left": "koala", "right": "sleeps in trees" },
+        { "left": "crocodile", "right": "has big teeth" },
+        { "left": "snake", "right": "has no legs" }
+      ],
+      "hint": "Think about what makes each animal special.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which of these animals can you see at a museum?",
+      "options": ["a real whale", "dinosaur bones", "a swimming dolphin", "a flying parrot"],
+      "correctIndex": 1,
+      "hint": "Museums show things from long ago.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "At the zoo, we can see a ___, a ___, and a ___.",
+      "options": ["koala, parrot, crocodile", "desk, chair, book", "car, bus, train", "fork, spoon, plate"],
+      "correctIndex": 0,
+      "hint": "Which group has animals?",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "word_build",
+      "round": "challenge",
+      "prompt": "This animal has a colorful beak and can talk!",
+      "answer": "parrot",
+      "hint": "It lives in the jungle and has feathers.",
+      "acornValue": 3
+    }
+  ]
+}

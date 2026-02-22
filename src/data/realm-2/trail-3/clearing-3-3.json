@@ -1,0 +1,120 @@
+{
+  "id": "clearing-3-3",
+  "name": "Where Is Everything?",
+  "realm": 2,
+  "trail": 3,
+  "focus": "Prepositions: in, on, under, behind, between, next to, in front of",
+  "storyIntro": "The kitchen is a mess! Where is everything? Let's find out!",
+  "storyOutro": "Everything is in its right place! The kitchen looks great!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "The milk is ___ the refrigerator.",
+      "options": ["in", "on top of", "under", "behind"],
+      "correctIndex": 0,
+      "hint": "Milk goes inside the fridge.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "The book is ___ the table.",
+      "options": ["on", "in", "under", "behind"],
+      "correctIndex": 0,
+      "hint": "It sits on the surface of the table.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each preposition to its meaning.",
+      "pairs": [
+        { "left": "in", "right": "inside something" },
+        { "left": "on", "right": "on the surface" },
+        { "left": "under", "right": "below something" },
+        { "left": "behind", "right": "at the back of" }
+      ],
+      "hint": "Think about the position.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The cat is hiding ___ the sofa.",
+      "options": ["behind", "on", "in", "above"],
+      "correctIndex": 0,
+      "hint": "You can't see it because it's at the back.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "The ball is ___ the table. It rolled there!",
+      "options": ["under", "on", "in", "behind"],
+      "correctIndex": 0,
+      "hint": "It's below the table, on the floor.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The chair is ___ the table and the sofa.",
+      "options": ["between", "on", "in", "under"],
+      "correctIndex": 0,
+      "hint": "It has something on each side.",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "The lamp is ___ the bed.",
+      "options": ["next to", "inside", "under", "behind"],
+      "correctIndex": 0,
+      "hint": "It's right beside the bed, on a little table.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "The plate is under the table, ready for dinner.",
+      "options": ["under", "on", "behind", "next to"],
+      "correctIndex": 1,
+      "hint": "Plates go ON the table for dinner!",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "The door is ___ the dining room. Walk through it!",
+      "options": ["in front of", "under", "on", "inside"],
+      "correctIndex": 0,
+      "hint": "You see the door before you enter the room.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which sentence is correct?",
+      "options": [
+        "The fork is next to the plate on the table.",
+        "The fork is under the plate behind the table.",
+        "The fork is in the plate on the chair.",
+        "The fork is behind the table next to the ceiling."
+      ],
+      "correctIndex": 0,
+      "hint": "Think about where forks go when the table is set.",
+      "acornValue": 3
+    }
+  ]
+}

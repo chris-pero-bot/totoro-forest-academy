@@ -1,0 +1,137 @@
+{
+  "id": "clearing-5-2",
+  "name": "Different Houses",
+  "realm": 3,
+  "trail": 5,
+  "focus": "Informational text - comparing houses around the world",
+  "storyIntro": "People around the world live in different houses! Let's learn about them!",
+  "storyOutro": "You learned about houses from all over the world! Amazing!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "In very cold places, some people live in ___.",
+      "options": ["igloos", "treehouses", "tents", "boats"],
+      "correctIndex": 0,
+      "hint": "They are made of ice and snow!",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "Some people live on the water in ___.",
+      "options": ["houseboats", "igloos", "apartments", "caves"],
+      "correctIndex": 0,
+      "hint": "It's a house that floats!",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each house type to where you find it.",
+      "pairs": [
+        { "left": "apartment", "right": "big city" },
+        { "left": "wooden house", "right": "forest area" },
+        { "left": "igloo", "right": "very cold place" },
+        { "left": "houseboat", "right": "on water" }
+      ],
+      "hint": "Think about the environment for each house.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "In some countries, people build houses with ___.",
+      "options": ["mud", "ice cream", "paper", "glass"],
+      "correctIndex": 0,
+      "hint": "It's a natural material from the ground.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "In a big city, most people live in ___.",
+      "options": ["apartments", "igloos", "tents", "mud houses"],
+      "correctIndex": 0,
+      "hint": "Tall buildings with many floors.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "sort_it",
+      "round": "core",
+      "prompt": "Sort these houses by what they're made of!",
+      "buckets": ["Made of Wood", "Not Made of Wood"],
+      "items": [
+        { "text": "log cabin", "correctBucket": "Made of Wood" },
+        { "text": "igloo", "correctBucket": "Not Made of Wood" },
+        { "text": "wooden house", "correctBucket": "Made of Wood" },
+        { "text": "mud house", "correctBucket": "Not Made of Wood" },
+        { "text": "treehouse", "correctBucket": "Made of Wood" },
+        { "text": "stone castle", "correctBucket": "Not Made of Wood" }
+      ],
+      "hint": "Is wood the main material?",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "All houses have something in common. They all ___.",
+      "options": [
+        "give people a place to live",
+        "are made of wood",
+        "have ten rooms",
+        "are in the city"
+      ],
+      "correctIndex": 0,
+      "hint": "Every house provides shelter!",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "How is Ralph's city apartment different from Uncle Michael's country house?",
+      "options": [
+        "Ralph's apartment is tall with many floors. Uncle Michael's house is small.",
+        "Ralph's apartment is made of mud. Uncle Michael's house is made of ice.",
+        "Ralph lives on a boat. Uncle Michael lives in a tent.",
+        "Both houses are exactly the same."
+      ],
+      "correctIndex": 0,
+      "hint": "City = apartment building. Country = smaller house.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "Houses are different around the world because of the ___ and ___.",
+      "options": ["weather, materials", "color, size", "name, number", "time, day"],
+      "correctIndex": 0,
+      "hint": "Hot/cold weather and what's available to build with.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Why don't people in hot countries build igloos?",
+      "options": [
+        "Because the ice would melt in the heat.",
+        "Because they don't like cold food.",
+        "Because igloos are too expensive.",
+        "Because there are no penguins."
+      ],
+      "correctIndex": 0,
+      "hint": "Igloos are made of ice. What happens to ice in heat?",
+      "acornValue": 3
+    }
+  ]
+}

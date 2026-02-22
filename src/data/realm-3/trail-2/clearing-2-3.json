@@ -1,0 +1,133 @@
+{
+  "id": "clearing-2-3",
+  "name": "My House, Your House",
+  "realm": 3,
+  "trail": 2,
+  "focus": "Rooms - upstairs, downstairs, guest room",
+  "storyIntro": "Uncle Michael's family is visiting! Let's show them around the house!",
+  "storyOutro": "Everyone knows where everything is! The house tour was great!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "The bedrooms are usually ___.",
+      "options": ["upstairs", "outside", "underground", "on the roof"],
+      "correctIndex": 0,
+      "hint": "You go up the stairs to sleep.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "The kitchen and living room are ___.",
+      "options": ["downstairs", "upstairs", "outside", "on the roof"],
+      "correctIndex": 0,
+      "hint": "They are on the ground floor.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "sort_it",
+      "round": "core",
+      "prompt": "Sort the rooms: upstairs or downstairs?",
+      "buckets": ["Upstairs", "Downstairs"],
+      "items": [
+        { "text": "bedroom", "correctBucket": "Upstairs" },
+        { "text": "kitchen", "correctBucket": "Downstairs" },
+        { "text": "bathroom", "correctBucket": "Upstairs" },
+        { "text": "living room", "correctBucket": "Downstairs" },
+        { "text": "guest room", "correctBucket": "Upstairs" },
+        { "text": "dining room", "correctBucket": "Downstairs" }
+      ],
+      "hint": "Sleeping rooms go upstairs. Living rooms go downstairs.",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Uncle Michael is staying in the ___.",
+      "options": ["guest room", "kitchen", "bathroom", "garage"],
+      "correctIndex": 0,
+      "hint": "A special room for visitors.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "Where is the baby's crib?",
+      "options": ["In the bedroom", "In the kitchen", "In the garage", "In the garden"],
+      "correctIndex": 0,
+      "hint": "Babies sleep in their parents' room.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "match_up",
+      "round": "core",
+      "prompt": "Match each item to its room.",
+      "pairs": [
+        { "left": "washing machine", "right": "laundry room" },
+        { "left": "sofa", "right": "living room" },
+        { "left": "crib", "right": "bedroom" },
+        { "left": "towel", "right": "bathroom" }
+      ],
+      "hint": "Where does each thing belong?",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The ___ is in the bathroom. You use it after a shower.",
+      "options": ["towel", "fork", "book", "toy"],
+      "correctIndex": 0,
+      "hint": "You dry yourself with it.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "How is Uncle Michael's house in the mountains different?",
+      "options": [
+        "It's smaller and has a garden.",
+        "It's an apartment with 20 floors.",
+        "It's a boat on the water.",
+        "It has no rooms."
+      ],
+      "correctIndex": 0,
+      "hint": "Country houses are usually smaller than city apartments.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "In the city, people live in ___. In the country, they live in ___.",
+      "options": ["apartments, houses", "caves, igloos", "tents, boats", "hotels, castles"],
+      "correctIndex": 0,
+      "hint": "City = tall buildings. Country = single houses.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "order_it",
+      "round": "challenge",
+      "prompt": "Give the house tour in order!",
+      "items": [
+        "Welcome! Come in the front door.",
+        "This is the living room downstairs.",
+        "The kitchen is next to the dining room.",
+        "Let me show you your guest room upstairs.",
+        "The bathroom is at the end of the hall."
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "hint": "Start at the door and go room by room!",
+      "acornValue": 3
+    }
+  ]
+}

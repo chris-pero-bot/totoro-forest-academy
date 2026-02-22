@@ -1,0 +1,110 @@
+{
+  "id": "clearing-1-4",
+  "name": "The Animal Riddle",
+  "realm": 1,
+  "trail": 1,
+  "focus": "Combined animal descriptions - guess the animal",
+  "storyIntro": "Totoro has some riddles for you! Can you guess each animal?",
+  "storyOutro": "You solved all the riddles! You really know your animals!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "I am big. I live in the ocean. I am not a fish. What am I?",
+      "options": ["whale", "lizard", "parrot", "kangaroo"],
+      "correctIndex": 0,
+      "hint": "I am the biggest animal in the world!",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "pick_one",
+      "round": "warmup",
+      "prompt": "I have feathers. I cannot fly. I live on ice. What am I?",
+      "options": ["eagle", "parrot", "penguin", "koala"],
+      "correctIndex": 2,
+      "hint": "I walk funny and love the cold!",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "I have no legs. I have scales. I slither. I am a ___.",
+      "options": ["snake", "dolphin", "eagle", "hippo"],
+      "correctIndex": 0,
+      "hint": "Ssssss!",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "I am furry. I sleep a lot. I live in trees in Australia. What am I?",
+      "options": ["crocodile", "koala", "penguin", "whale"],
+      "correctIndex": 1,
+      "hint": "I eat leaves and I am very cute.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "The dolphin has feathers and lives in the desert.",
+      "options": ["feathers", "scales", "fur", "stripes"],
+      "correctIndex": 2,
+      "hint": "Dolphins are smooth, not feathery!",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "I am green. I have big teeth. I live in rivers. What am I?",
+      "options": ["parrot", "eagle", "crocodile", "penguin"],
+      "correctIndex": 2,
+      "hint": "I can be very dangerous!",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "I can talk! I am ___ and I live in the ___.",
+      "options": ["colorful, jungle", "big, ocean", "furry, desert", "slimy, river"],
+      "correctIndex": 0,
+      "hint": "I am a bird with many colors.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "fix_it",
+      "round": "challenge",
+      "prompt": "The kangaroo has wings and flies over Australia.",
+      "options": ["wings", "strong legs", "feathers", "scales"],
+      "correctIndex": 1,
+      "hint": "Kangaroos don't fly — they jump!",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "I am very big and heavy. I live in rivers in Africa. My name starts with H. What am I?",
+      "options": ["horse", "hawk", "hippo", "hamster"],
+      "correctIndex": 2,
+      "hint": "I spend a lot of time in the water.",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "word_build",
+      "round": "challenge",
+      "prompt": "This animal lived millions of years ago. You can see its bones in a museum!",
+      "answer": "dinosaur",
+      "hint": "It starts with D and is very old!",
+      "acornValue": 3
+    }
+  ]
+}

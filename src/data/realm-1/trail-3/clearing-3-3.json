@@ -1,0 +1,127 @@
+{
+  "id": "clearing-3-3",
+  "name": "Tell the Story",
+  "realm": 1,
+  "trail": 3,
+  "focus": "Mixed past tense in context - story sequencing",
+  "storyIntro": "The field trip story got all mixed up! Put it back in order!",
+  "storyOutro": "The story makes sense again. What a great adventure!",
+  "tasks": [
+    {
+      "id": "t1",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "First, the class ___ on the bus to go to the museum.",
+      "options": ["got", "get", "gets", "getting"],
+      "correctIndex": 0,
+      "hint": "Get → got in the past.",
+      "acornValue": 3
+    },
+    {
+      "id": "t2",
+      "type": "fill_the_gap",
+      "round": "warmup",
+      "prompt": "Then, they ___ songs on the bus.",
+      "options": ["sang", "sing", "singed", "sings"],
+      "correctIndex": 0,
+      "hint": "Sing → sang.",
+      "acornValue": 3
+    },
+    {
+      "id": "t3",
+      "type": "order_it",
+      "round": "core",
+      "prompt": "Put the field trip story in the right order.",
+      "items": [
+        "The class got on the bus.",
+        "They arrived at the museum.",
+        "They visited the Dinosaur Gallery.",
+        "They ate lunch in the cafeteria.",
+        "They went back to school."
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "hint": "What happened first? What happened last?",
+      "acornValue": 3
+    },
+    {
+      "id": "t4",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "The children ___ surprised when they ___ the big dinosaur.",
+      "options": ["were, saw", "was, see", "are, saw", "were, seen"],
+      "correctIndex": 0,
+      "hint": "Children = they → were. See → saw.",
+      "acornValue": 3
+    },
+    {
+      "id": "t5",
+      "type": "pick_one",
+      "round": "core",
+      "prompt": "After lunch, Amy and Ralph ___.",
+      "options": ["went missing", "go missing", "goes missing", "going missing"],
+      "correctIndex": 0,
+      "hint": "This happened in the past.",
+      "acornValue": 3
+    },
+    {
+      "id": "t6",
+      "type": "fix_it",
+      "round": "core",
+      "prompt": "The class visit the museum and see many animals.",
+      "options": ["visit", "visited", "visits", "visiting"],
+      "correctIndex": 1,
+      "hint": "This story is about the past!",
+      "acornValue": 3
+    },
+    {
+      "id": "t7",
+      "type": "fill_the_gap",
+      "round": "core",
+      "prompt": "Miss Wilson ___ the class to follow the rules.",
+      "options": ["reminded", "remind", "reminds", "reminding"],
+      "correctIndex": 0,
+      "hint": "Remind + ed = past tense.",
+      "acornValue": 3
+    },
+    {
+      "id": "t8",
+      "type": "order_it",
+      "round": "challenge",
+      "prompt": "What happened at the Dinosaur Gallery? Put it in order.",
+      "items": [
+        "The children walked into the gallery.",
+        "They saw big dinosaur bones.",
+        "Amy was surprised and laughed.",
+        "Miss Wilson reminded them to be quiet."
+      ],
+      "correctOrder": [0, 1, 2, 3],
+      "hint": "First they went in, then they saw something.",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
+      "type": "fill_the_gap",
+      "round": "challenge",
+      "prompt": "The lizard ___ pink sneakers and the snake ___ black sneakers!",
+      "options": ["wore, wore", "wear, wear", "weared, weared", "wears, wears"],
+      "correctIndex": 0,
+      "hint": "Wear → wore (irregular verb!).",
+      "acornValue": 3
+    },
+    {
+      "id": "t10",
+      "type": "pick_one",
+      "round": "challenge",
+      "prompt": "Which sentence tells about the past correctly?",
+      "options": [
+        "The class went to the museum and saw dinosaurs.",
+        "The class go to the museum and see dinosaurs.",
+        "The class goed to the museum and seed dinosaurs.",
+        "The class goes to the museum and sees dinosaurs."
+      ],
+      "correctIndex": 0,
+      "hint": "Go → went, See → saw.",
+      "acornValue": 3
+    }
+  ]
+}
