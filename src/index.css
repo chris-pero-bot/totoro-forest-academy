@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --forest-green-dark: #2D5016;
+  --forest-green: #4A7C28;
+  --forest-green-light: #6AAF35;
+  --earth-brown: #8B6914;
+  --sky-blue: #87CEEB;
+  --cream: #FFF8DC;
+  --warm-gray: #D3D3C7;
+  --acorn-gold: #DAA520;
+  --soot-black: #2C2C2C;
+  --error-soft: #FF6B6B;
+  --success-green: #4CAF50;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--cream);
+  color: var(--soot-black);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fredoka One', cursive;
+}
+
+button {
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.game-container {
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes pop {
+  0% { transform: scale(0); }
+  70% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes confetti {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-200px) rotate(720deg); opacity: 0; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(218, 165, 32, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(218, 165, 32, 0.8); }
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.05); }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-shake { animation: shake 0.4s ease-in-out; }
+.animate-pop { animation: pop 0.3s ease-out; }
+.animate-fadeIn { animation: fadeIn 0.5s ease-out; }
+.animate-slideUp { animation: slideUp 0.5s ease-out; }
+.animate-glow { animation: glow 2s ease-in-out infinite; }
+.animate-bounceIn { animation: bounceIn 0.6s ease-out; }
