@@ -20,7 +20,9 @@ export default function WorldMap() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-sky via-sky/80 to-forest-light p-4">
+    <div className="min-h-screen bg-gradient-to-b from-sky via-sky/80 to-forest-light p-4"
+      style={{ backgroundImage: 'url(/assets/backgrounds/worldmap-bg.png.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+    >
       {/* Top bar */}
       <div className="flex justify-between items-center mb-6">
         <button

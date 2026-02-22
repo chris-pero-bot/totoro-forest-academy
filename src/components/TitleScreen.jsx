@@ -15,7 +15,9 @@ export default function TitleScreen() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-forest-dark via-forest to-forest-light relative overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-forest-dark via-forest to-forest-light relative overflow-hidden"
+      style={{ backgroundImage: 'url(/assets/backgrounds/title-bg.png.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+    >
       {/* Floating leaves */}
       {[...Array(8)].map((_, i) => (
         <div
@@ -43,7 +45,13 @@ export default function TitleScreen() {
 
       {/* Totoro */}
       <div className="animate-float mb-8">
-        <Totoro size={180} />
+        <img
+          src="/assets/characters/totoro-happy.png.png"
+          alt="Totoro"
+          className="w-44 h-44 object-contain drop-shadow-2xl"
+          onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }}
+        />
+        <div style={{ display: 'none' }}><Totoro size={180} /></div>
       </div>
 
       {/* Buttons */}
