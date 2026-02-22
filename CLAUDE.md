@@ -25,7 +25,353 @@ Build "Totoro's Forest Academy," a complete English learning game for an 8-year-
 
 ## Source Material
 
-The game content is based on the textbook "Gear Up 3rd Grade — Book 2" (Amco), Units 4, 5, and 6. The PDF pages are in the `/textbook` folder. Extract all vocabulary, grammar patterns, and reading passages from these pages to generate the game content.
+The game content is based on the textbook "Gear Up 3rd Grade — Book 2" (Amco), Units 4, 5, and 6. The complete textbook analysis follows below. **All game content — every vocabulary word, grammar exercise, and reading passage — must be derived from this material.**
+
+### Complete Textbook Analysis
+
+# Gear Up 3rd Grade — Book 2: Complete Textbook Analysis
+
+## Book Overview
+
+**Title:** Gear Up 3rd Grade — Book 2 (Elementary)
+**Publisher:** Amco (Language System by Amco)
+**Target:** 3rd Grade ESL students
+**Units covered in this book:** Units 4, 5, and 6
+**Total pages:** ~149 (teacher's edition)
+
+The book follows a consistent structure per unit: Warm Up → Vocabulary & Templates → Listening & Speaking → Pronunciation Lab → Grammar → Reading & Writing → CLIL Corner → Writing Lab → Review / Practice Test → Self-Assessment.
+
+---
+
+## UNIT 4: School Field Trip (pages ~115–180)
+
+### Theme & Story Context
+Miss Wilson's class goes on a field trip to the Museum of Natural Science. The story follows the children visiting the Dinosaur Gallery, getting surprised by dinosaur bones, following safety rules, eating lunch in the cafeteria, and a humorous incident where Amy and Ralph go missing. There's a walking lizard with pink sneakers and a walking snake with black sneakers (fantastical/funny element).
+
+### Vocabulary — Unit 4
+
+**Core vocabulary areas:**
+- **Animals:** lizard, snake, kangaroo, dinosaur, dolphin, whale, hippo, koala, crocodile, parrot, eagle, penguin
+- **Natural places:** museum, gallery, forest, jungle, ocean, desert, river, lake, mountains
+- **Describing words (adjectives):** big, small, tall, short, long, fast, slow, heavy, light, strong, dangerous, friendly, beautiful, surprised, happy, scared
+- **Parts of the body and face:** head, eyes, ears, nose, mouth, teeth, tail, legs, arms, wings, claws, fur, feathers, scales
+- **Physical characteristics:** spotted, striped, furry, slimy, colorful
+- **Places to visit in town:** museum, library, zoo, park, school, cafeteria, restroom
+
+**Vocabulary exercise types observed:**
+- Match word to picture
+- Categorize words (land animals vs. water animals — Venn diagram exercise)
+- Word search puzzles
+- Fill in sentences with vocabulary words
+- Describe animals using adjective + noun patterns
+
+### Grammar — Unit 4
+
+**Grammar topics:**
+1. **Commands / Imperatives:** "Don't run," "Be quiet," "Follow the rules," "Listen to the teacher"
+2. **Object pronouns:** me, you, him, her, it, us, them — "Miss Wilson asked for help to find _them_"
+3. **Past tense — Regular verbs:** visited, surprised, reminded, laughed, walked, danced
+4. **Past tense — Irregular verbs:** went, saw, were, sang, ate, was, had, found
+5. **Telling the time:** "It's three o'clock," "It's half past two," "What time is it?"
+6. **Like / likes / don't like / doesn't like:** "She likes dolphins," "They don't like snakes," "He doesn't like spiders"
+7. **Adverbs of manner:** quickly, slowly, quietly, loudly, carefully, happily
+8. **Ordinal numbers:** 1st through 10th
+9. **Descriptive adjectives:** Used with animals and places — "The _big_ dinosaur," "A _beautiful_ garden"
+
+**Grammar exercise types observed:**
+- Complete sentences with correct past tense verb
+- Change present tense to past tense
+- Fill in blanks with object pronouns
+- Match times on clocks to written times
+- Rewrite sentences using ordinal numbers
+- Choose between like/likes, don't like/doesn't like
+
+### Reading — Unit 4
+
+**Main reading passage:** "A Field Trip to the Museum of Natural Science"
+- Miss Wilson's class visits the museum
+- They ride a bus (safety rules, singing)
+- They see the Dinosaur Gallery
+- Amy and Ralph go missing
+- Comprehension questions about sequencing events, identifying characters, cause/effect
+
+**Additional reading:** Informational text about kangaroos in Australia (Meet the World section)
+- Habitat, physical characteristics, joey in pouch
+- Compare animals using Venn Diagram
+
+**Tongue twister:** "Danny the dandy dinosaur danced on a dandelion"
+
+### Thinking Skills — Unit 4
+- Sequencing a story (number sentences in order)
+- Analyzing information from a bar graph
+- Comparing animals' habitats using Venn Diagram
+- Mind map connections
+
+---
+
+## UNIT 5: A Family Celebration (pages ~149–182)
+
+### Theme & Story Context
+A family prepares for a celebration. The unit covers family members, food preparation, shopping, setting the table, and Thanksgiving in the U.S.A. Sophie's family time is featured. The story involves planning what food to buy, making a shopping list, preparing a family dinner, and creating thank-you cards.
+
+### Vocabulary — Unit 5
+
+**Core vocabulary areas:**
+- **Family members:** mother, father, sister, brother, grandmother, grandfather, aunt, uncle, cousin, baby, parents, grandparents
+- **Food:** turkey, mashed potatoes, cranberry sauce, pie, bread, salad, corn, beans, rice, chicken, soup, cake, cookies, fruit, vegetables, cheese, milk, juice, water
+- **Numbers/quantities:** dozen, half, pound, kilo, how much, how many, a lot of, some, any
+- **Rooms and furniture:** kitchen, dining room, living room, bedroom, bathroom, table, chair, sofa, bed, lamp, rug, shelf, refrigerator
+- **Objects in the house:** plate, glass, fork, knife, spoon, napkin, tablecloth, bowl, cup
+- **Weather and seasons:** sunny, cloudy, rainy, snowy, windy, hot, cold, warm, cool, spring, summer, fall/autumn, winter
+
+**Vocabulary exercise types observed:**
+- Family tree completion (who is who?)
+- Shopping list creation from a recipe
+- Label rooms/furniture in a house diagram
+- Match food items to food groups
+- Weather descriptions with pictures
+- Word categorization (classify food)
+
+### Grammar — Unit 5
+
+**Grammar topics:**
+1. **Future: "going to":** "We are going to visit grandma," "She is going to cook dinner," "They are going to buy groceries"
+2. **Using "could" for polite requests:** "Could you pass the salt?", "Could I have some water, please?"
+3. **Showing possession with 's:** "Mom's kitchen," "Grandmother's recipe," "Sophie's family"
+4. **Prepositions:** in, on, under, behind, between, next to, in front of — related to objects in rooms
+5. **"Like" — present vs. past tense:** "I like pie," "She liked the turkey"
+6. **Present and past tense — regular and irregular verbs:** Review and expansion, including "did" questions
+7. **"Did" — questions, affirmative and negative short answers:** "Did you eat breakfast?" "Yes, I did." / "No, I didn't."
+8. **Possessive nouns and adjectives (preview for Unit 6):** my, your, his, her
+
+**Grammar exercise types observed:**
+- Complete sentences with "going to" + verb
+- Rewrite sentences using "could"
+- Add 's to show possession
+- Fill in prepositions based on room diagrams
+- Change sentences from present to past
+- Answer questions with did/didn't
+
+### Reading — Unit 5
+
+**Main reading passages:**
+1. **"Sophie's Family Time"** — A family gathering, setting the table, cooking together
+2. **"Thanksgiving"** — Informational text about Thanksgiving traditions in the U.S.A.
+   - Turkey, Pilgrims, family gathering, gratitude
+   - "Turkey Gobbler" vocabulary
+3. **"Getting Ready for the Family Dinner"** — Procedural/narrative about food preparation
+
+**Comprehension exercise types:**
+- True/false based on the passage
+- Sequence events in order
+- Answer wh- questions (who, what, where, when, why)
+- Identify characters and settings
+- Predict what happens next
+
+### Thinking Skills — Unit 5
+- Analyzing a story
+- Classifying food into food groups
+- Comparing favorite weather using Venn Diagram
+- Predicting outcomes
+- Mind map
+
+---
+
+## UNIT 6: Family Visit (pages ~183–218+)
+
+### Theme & Story Context
+Uncle Michael and his family come to visit Ralph's family in the city. The unit covers daily routines, offering help, places in town, means of transportation, and comparing city life vs. country life. Ralph's mom makes a plan to visit important places in the city. There's a rainy day incident trying to catch the tour bus. Uncle Michael lives in the mountains (country life contrast).
+
+### Vocabulary — Unit 6
+
+**Core vocabulary areas:**
+- **Rooms and furniture in the house:** bedroom, bathroom, kitchen, living room, dining room, guest room, upstairs, downstairs, bed, crib, sofa, washing machine, towel
+- **Daily routines:** wake up, get up, take a shower, brush teeth, get dressed, have breakfast, go to school, do homework, have dinner, go to bed, wash dishes, clean the room
+- **Family members (review):** mom, uncle, cousin, baby, sister, brother
+- **Means of transportation:** bus, car, train, airplane, ship, subway, bicycle, taxi, tour bus
+- **Buildings and places in town:** museum, church, library, City Hall, stadium, airport, park, restaurant, hospital, school, supermarket, apartment
+- **Describing words for places:** tall, big, small, beautiful, huge, green, important
+- **Prepositions of place (expanded):** near, far, across from, between, on the corner
+
+**Vocabulary exercise types observed:**
+- Identify means of transportation from pictures
+- Label buildings in a town map
+- Match daily routines to times of day
+- Describe a house layout
+- Compare city vs. country vocabulary
+- CLIL: Bar graph about means of transportation classmates have used
+
+### Grammar — Unit 6
+
+**Grammar topics:**
+1. **Possessive nouns:** "Ralph's mom," "Uncle Michael's family," "the baby's crib"
+2. **Possessive adjectives:** my, your, his, her, its, our, their — "It's _her_ towel," "_Their_ house is big"
+3. **Ordinal numbers 1st–31st:** Dates — "The party is on the _third_ of July," calendar work
+4. **Telling the time (expanded):** "half past three," "quarter to six," "ten minutes past four"
+5. **Sequence words:** first, then, next, after that, finally — for daily routines and stories
+6. **Past tense — was, were, did:** "It _was_ rainy," "They _were_ wet," "_Did_ they visit the museum?"
+7. **There is / There are:** "There is a library," "There are tall buildings," "There aren't any subways"
+8. **Descriptive adjectives (expanded):** Comparing places — "The houses are _bigger_ there"
+9. **Prepositions (expanded):** Position and movement — in, on, near, far from, through, over
+10. **Different kinds of sentences:** Affirmative, negative, interrogative — "Who went to the park?" "They didn't go." "The museum was beautiful."
+
+**Grammar exercise types observed:**
+- Fill in possessive adjectives based on context
+- Write dates using ordinal numbers
+- Sequence a daily routine using sequence words
+- Complete sentences with was/were
+- Write there is/there are sentences from pictures
+- Transform sentences between types (affirmative → negative → question)
+- Describing words — crossword puzzle matching
+
+### Reading — Unit 6
+
+**Main reading passages:**
+1. **"A City Tour"** — Uncle Michael visiting the city, going to the museum, church with beautiful gardens, City Hall Library, stadium for baseball game
+2. **"Different Houses"** (Meet the World section) — Comparing houses around the world: apartments, wooden houses, igloos, houseboats, mud houses
+3. **Story about the rainy day** — Running to catch the tour bus, getting wet, baby crying, staying home for breakfast and hot chocolate
+
+**Comprehension exercise types:**
+- Main idea identification per paragraph
+- Sequencing paragraphs in order
+- Naming characters and places from the story
+- Answering wh- questions
+- Comparing places using Venn Diagram (city vs. country life)
+- Cause and effect identification
+
+### Thinking Skills — Unit 6
+- Sequencing a story
+- Changing viewpoints (city person vs. country person)
+- Associating cause and effect
+- Comparing places using Venn Diagram
+- Making a bar graph about transportation
+- Comparing life in city and country
+
+---
+
+## Cross-Unit Patterns & Observations
+
+### Exercise Types the Book Relies On (and the game should mirror)
+
+| Exercise Type | Frequency | Game Adaptation |
+|---|---|---|
+| **Multiple choice** (pick correct word/form) | Very high | Core mechanic for all challenge types |
+| **Fill-in-the-blank** (type or select missing word) | Very high | Grammar and vocabulary challenges |
+| **Matching** (word ↔ definition, word ↔ picture) | High | Drag-and-drop or tap-to-match |
+| **Sequencing** (put sentences/events in order) | Medium-high | Drag-to-reorder challenge type |
+| **True/False** based on passage | Medium | Reading comprehension variant |
+| **Categorization** (sort into groups) | Medium | Sorting/bucket challenge |
+| **Venn Diagram comparison** | Medium | Special challenge type |
+| **Word search** | Low | Bonus/mini-game |
+| **Crossword** | Low | Bonus/mini-game |
+
+### Grammar Progression (difficulty builds across units)
+
+```
+Unit 4 (Foundation)     → Unit 5 (Expansion)        → Unit 6 (Integration)
+─────────────────────────────────────────────────────────────────────────
+Past tense basics       → Past + present + "did"    → was/were/did + all tenses
+Object pronouns         → Possessive 's             → Possessive adjectives
+Commands/imperatives    → "Could" (polite requests) → Sentence types (aff/neg/Q)
+Telling time (basic)    → Prepositions              → Time expanded + ordinals 1-31
+Like/don't like         → Going to (future)         → There is/are + sequence words
+Adjectives (basic)      → Adjectives + prepositions → Adj. comparison + descriptions
+Ordinals 1-10           →                           → Ordinals 1-31
+```
+
+### Vocabulary Progression
+
+```
+Unit 4: Animals, body parts, natural places, museum
+   ↓ builds into
+Unit 5: Family, food, house/rooms, weather, quantities
+   ↓ builds into  
+Unit 6: Daily routines, transportation, city/town places, comparing places
+```
+
+---
+
+## Recommendations for Game Design
+
+### 1. Map Each Unit to a Totoro "World"
+
+| Textbook Unit | Game World | Totoro Connection |
+|---|---|---|
+| Unit 4: School Field Trip | **The Forest Museum** | Totoro takes Adam to a magical forest museum full of creatures. The fog has mixed up the animal names and scrambled the stories. |
+| Unit 5: A Family Celebration | **Totoro's Feast** | The forest spirits are preparing a big celebration feast, but they've forgotten the recipes, the food names, and can't set the table properly. |
+| Unit 6: Family Visit | **The Catbus City Tour** | Catbus is trying to give a tour of the enchanted city, but the route signs are broken, the schedules are mixed up, and the buildings have lost their names. |
+
+### 2. Challenge Types (Derived From Actual Textbook Exercises)
+
+Instead of generic "vocabulary" and "grammar" categories, the game should mirror the book's actual exercise patterns:
+
+**Challenge Type A — "Word Match"**
+- Match word ↔ definition (multiple choice, 4 options)
+- Match word ↔ picture (if we use simple emoji/icons)
+- Sourced directly from each unit's vocabulary lists above
+
+**Challenge Type B — "Fill the Gap"**
+- Sentence with a blank, pick from 3-4 options
+- Covers grammar AND vocabulary in context
+- Examples: "She ___ (went/goed/goes) to the museum yesterday."
+- Examples: "Could you ___ (pass/passing/passed) the salt, please?"
+
+**Challenge Type C — "Fix the Sentence"**
+- A sentence with one error — find and fix it
+- Covers verb tense, pronoun, preposition, adjective errors
+- Example: "They was happy about the field trip." → were
+
+**Challenge Type D — "Story Order"**
+- 4-6 sentence fragments — drag them into the correct sequence
+- Directly mirrors the book's most common reading exercise
+- Uses actual story content from each unit
+
+**Challenge Type E — "Sort It Out"**
+- Categorize items into 2-3 buckets
+- Unit 4: Land animals vs. water animals
+- Unit 5: Food groups, rooms in a house
+- Unit 6: City things vs. country things, means of transportation
+
+### 3. Difficulty Within Each World
+
+Each world (unit) should have 3 difficulty tiers that mirror the book's progression:
+
+- **Meadow (Easy):** Pure vocabulary — match words to meanings, basic identification
+- **Grove (Medium):** Grammar in context — fill-in-the-blank, fix sentences, use correct form
+- **Ancient Tree (Hard):** Reading comprehension — sequence stories, answer questions about passages, combine vocab + grammar
+
+### 4. Specific Content Counts (for the extraction script)
+
+Based on the actual textbook content density:
+
+| Unit | Vocab words | Grammar patterns | Reading passages | Total questions (est.) |
+|---|---|---|---|---|
+| Unit 4 | ~40-50 words | 9 grammar topics | 2-3 passages | ~80-100 |
+| Unit 5 | ~50-60 words | 8 grammar topics | 2-3 passages | ~80-100 |
+| Unit 6 | ~50-60 words | 10 grammar topics | 2-3 passages | ~90-110 |
+| **Total** | **~150 words** | **27 grammar topics** | **7-9 passages** | **~250-300 questions** |
+
+### 5. Language Level Notes for Game UI
+
+Based on the textbook's own language level:
+- Instructions should use present tense, simple sentences
+- Max sentence length: ~10-12 words
+- Use vocabulary the book has already introduced
+- Encouraging, never punitive
+- Examples from the book's own tone: "Listen to the story again," "Write the words," "Number the sentences in the right order"
+
+### 6. What NOT to Include (Per Chris's Direction)
+
+- ❌ Listening exercises (no audio component needed)
+- ❌ Writing/composition exercises (free-text input is unreliable for 8yo)
+- ❌ Pronunciation lab content
+- ❌ CLIL/cross-curricular activities (too complex for game format)
+- ❌ Writing Lab multi-step processes
+- ✅ Keep: Vocabulary, Grammar, Reading Comprehension, Sequencing, Categorization
+
+
+---
+
 
 ## Game Hierarchy
 
