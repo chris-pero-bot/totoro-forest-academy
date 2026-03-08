@@ -1,19 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --forest-green-dark: #2D5016;
-  --forest-green: #4A7C28;
-  --forest-green-light: #6AAF35;
-  --earth-brown: #8B6914;
-  --sky-blue: #87CEEB;
-  --cream: #FFF8DC;
-  --warm-gray: #D3D3C7;
-  --acorn-gold: #DAA520;
-  --soot-black: #2C2C2C;
-  --error-soft: #FF6B6B;
-  --success-green: #4CAF50;
+  --forest-green-dark: #1a3a0a;
+  --forest-green: #2d5016;
+  --forest-green-light: #6aaf35;
+  --earth-brown: #8b6914;
+  --sky-blue: #87ceeb;
+  --cream: #fff8dc;
+  --warm-gray: #d3d3c7;
+  --acorn-gold: #daa520;
+  --soot-black: #2c2c2c;
+  --error-soft: #ff6b6b;
+  --success-green: #4caf50;
 }
 
 * {
@@ -97,6 +99,46 @@ button:active {
   100% { transform: scale(1); opacity: 1; }
 }
 
+@keyframes acornFly {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-80px) scale(0.5); opacity: 0; }
+}
+
+@keyframes streakGlow {
+  0%, 100% { box-shadow: 0 0 8px rgba(255, 215, 0, 0.4); }
+  50% { box-shadow: 0 0 24px rgba(255, 215, 0, 0.9); }
+}
+
+@keyframes confettiBurst {
+  0% { transform: translateY(0) translateX(var(--x, 0)) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-120px) translateX(var(--x-end, 20px)) rotate(720deg); opacity: 0; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes sootSleep {
+  from { opacity: 1; filter: brightness(1); }
+  to { opacity: 0.5; filter: brightness(0.5); }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 10px rgba(106, 175, 53, 0.3); }
+  50% { box-shadow: 0 0 25px rgba(106, 175, 53, 0.8); }
+}
+
 .animate-float { animation: float 3s ease-in-out infinite; }
 .animate-shake { animation: shake 0.4s ease-in-out; }
 .animate-pop { animation: pop 0.3s ease-out; }
@@ -104,3 +146,17 @@ button:active {
 .animate-slideUp { animation: slideUp 0.5s ease-out; }
 .animate-glow { animation: glow 2s ease-in-out infinite; }
 .animate-bounceIn { animation: bounceIn 0.6s ease-out; }
+.animate-acornFly { animation: acornFly 0.8s ease-out forwards; }
+.animate-streakGlow { animation: streakGlow 1.5s ease-in-out infinite; }
+.animate-confetti { animation: confettiBurst 1s ease-out forwards; }
+.animate-fadeOut { animation: fadeOut 0.3s ease-out forwards; }
+.animate-sootSleep { animation: sootSleep 0.5s ease-out forwards; }
+.animate-pulseGlow { animation: pulseGlow 2s ease-in-out infinite; }
+
+.text-shadow-dark {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-lg {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}

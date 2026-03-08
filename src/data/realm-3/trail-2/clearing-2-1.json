@@ -53,11 +53,10 @@
     },
     {
       "id": "t5",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "core",
-      "prompt": "Which vehicle has two wheels and you pedal?",
-      "options": ["bicycle", "car", "bus", "train"],
-      "correctIndex": 0,
+      "prompt": "A vehicle with two wheels. You pedal to make it move.",
+      "answer": "bicycle",
       "hint": "You use your legs to make it move!",
       "acornValue": 3
     },
@@ -109,12 +108,17 @@
     },
     {
       "id": "t10",
-      "type": "pick_one",
+      "type": "order_it",
       "round": "challenge",
-      "prompt": "Which is the FASTEST way to travel?",
-      "options": ["airplane", "bicycle", "bus", "walking"],
-      "correctIndex": 0,
-      "hint": "It flies through the sky very fast!",
+      "prompt": "Order these from SLOWEST to FASTEST.",
+      "items": [
+        "bicycle",
+        "car",
+        "train",
+        "airplane"
+      ],
+      "correctOrder": [0, 1, 2, 3],
+      "hint": "Think about how fast each one can go!",
       "acornValue": 3
     }
   ]

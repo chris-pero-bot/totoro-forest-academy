@@ -63,20 +63,20 @@ export default function MatchUp({ task, onCorrect, onWrong, showHint }) {
 
       <div className="flex gap-4 justify-center">
         {/* Left column */}
-        <div className="flex flex-col gap-2 flex-1">
+        <div className="flex flex-col gap-3 flex-1">
           {pairs.map((pair, i) => (
             <button
               key={i}
               onClick={() => handleLeftClick(i)}
               disabled={matched.includes(i)}
-              className={`py-3 px-4 rounded-xl text-sm font-bold transition-all border-2 text-center ${
+              className={`py-4 px-5 rounded-2xl font-bold text-base transition-all duration-200 border-2 text-center shadow-md ${
                 matched.includes(i)
-                  ? 'bg-success/20 border-success text-success'
+                  ? 'bg-success-bg border-success text-success shadow-lg'
                   : selectedLeft === i
-                    ? 'bg-acorn/20 border-acorn text-earth scale-105'
+                    ? 'bg-acorn/20 border-acorn text-earth scale-105 shadow-lg'
                     : wrongPair?.left === i
-                      ? 'bg-error-soft/20 border-error-soft animate-shake'
-                      : 'bg-white border-forest/20 text-soot hover:border-forest'
+                      ? 'bg-error-bg border-error-soft animate-shake'
+                      : 'bg-white border-forest/20 text-soot hover:border-forest hover:shadow-lg hover:scale-[1.03] active:scale-[0.97]'
               }`}
             >
               {pair.left}
@@ -85,18 +85,18 @@ export default function MatchUp({ task, onCorrect, onWrong, showHint }) {
         </div>
 
         {/* Right column */}
-        <div className="flex flex-col gap-2 flex-1">
+        <div className="flex flex-col gap-3 flex-1">
           {shuffledRight.map((item, i) => (
             <button
               key={i}
               onClick={() => handleRightClick(i)}
               disabled={matched.includes(item.origIdx)}
-              className={`py-3 px-4 rounded-xl text-sm font-bold transition-all border-2 text-center ${
+              className={`py-4 px-5 rounded-2xl font-bold text-base transition-all duration-200 border-2 text-center shadow-md ${
                 matched.includes(item.origIdx)
-                  ? 'bg-success/20 border-success text-success'
+                  ? 'bg-success-bg border-success text-success shadow-lg'
                   : wrongPair?.right === i
-                    ? 'bg-error-soft/20 border-error-soft animate-shake'
-                    : 'bg-white border-forest/20 text-soot hover:border-forest'
+                    ? 'bg-error-bg border-error-soft animate-shake'
+                    : 'bg-white border-forest/20 text-soot hover:border-forest hover:shadow-lg hover:scale-[1.03] active:scale-[0.97]'
               }`}
             >
               {item.text}

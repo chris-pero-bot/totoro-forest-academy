@@ -16,6 +16,7 @@
       "options": ["True", "False"],
       "correctIndex": 0,
       "timeLimit": 8,
+      "hint": "An aunt is your parent's sister.",
       "acornValue": 3
     },
     {
@@ -27,14 +28,15 @@
       "options": ["True", "False"],
       "correctIndex": 0,
       "timeLimit": 8,
+      "hint": "Using 'could' makes a request polite.",
       "acornValue": 3
     },
     {
       "id": "t3",
       "type": "fill_the_gap",
       "round": "core",
-      "prompt": "We ___ buy some vegetables. ___ you help us?",
-      "options": ["are going to, Could", "going to, Can't", "went to, Did", "are go to, Would"],
+      "prompt": "Dad and Uncle are ___ buy some vegetables. ___ you help them?",
+      "options": ["going to, Could", "going to, Can't", "went to, Did", "are go to, Would"],
       "correctIndex": 0,
       "hint": "Future plan + polite request.",
       "acornValue": 3
@@ -43,27 +45,31 @@
       "id": "t4",
       "type": "fix_it",
       "round": "core",
-      "prompt": "How much cookies did you eat at Grandmother kitchen?",
+      "prompt": "How much cookies did Sophie eat at Grandmother's kitchen?",
       "options": ["much", "many", "lot", "some"],
       "correctIndex": 1,
-      "hint": "Cookies are countable! And add 's for possession!",
+      "hint": "Cookies are countable! Use 'many' for things you can count.",
       "acornValue": 3
     },
     {
       "id": "t5",
-      "type": "fill_the_gap",
+      "type": "match_up",
       "round": "core",
-      "prompt": "The milk is ___ the refrigerator. The plates are ___ the table.",
-      "options": ["in, on", "on, in", "under, behind", "behind, under"],
-      "correctIndex": 0,
-      "hint": "Milk goes inside. Plates go on top.",
+      "prompt": "Match each item to where it goes in the kitchen.",
+      "pairs": [
+        { "left": "milk", "right": "in the refrigerator" },
+        { "left": "plates", "right": "on the table" },
+        { "left": "spoons", "right": "next to the plates" },
+        { "left": "cookies", "right": "on the shelf" }
+      ],
+      "hint": "Think about where Mom puts things in the kitchen.",
       "acornValue": 3
     },
     {
       "id": "t6",
       "type": "pick_one",
       "round": "core",
-      "prompt": "Did they ___ dinner? Yes, they ___.",
+      "prompt": "Did the family ___ dinner? Yes, they ___.",
       "options": ["cook, did", "cooked, did", "cook, does", "cooked, done"],
       "correctIndex": 0,
       "hint": "After 'did', use base verb. Short answer: they did.",
@@ -71,13 +77,19 @@
     },
     {
       "id": "t7",
-      "type": "snap_choice",
+      "type": "sort_it",
       "round": "core",
-      "prompt": "True or False?",
-      "question": "Thanksgiving is in winter.",
-      "options": ["True", "False"],
-      "correctIndex": 1,
-      "timeLimit": 8,
+      "prompt": "Sort these words: family members or food items?",
+      "buckets": ["Family", "Food"],
+      "items": [
+        { "text": "grandmother", "correctBucket": "Family" },
+        { "text": "turkey", "correctBucket": "Food" },
+        { "text": "cousin", "correctBucket": "Family" },
+        { "text": "pie", "correctBucket": "Food" },
+        { "text": "uncle", "correctBucket": "Family" },
+        { "text": "cranberry sauce", "correctBucket": "Food" }
+      ],
+      "hint": "People are family. Things you eat are food!",
       "acornValue": 3
     },
     {
@@ -94,10 +106,10 @@
       "id": "t9",
       "type": "fix_it",
       "round": "challenge",
-      "prompt": "She are going to make a cake on the hot summer day.",
+      "prompt": "Grandmother are going to make a cake on the warm fall day.",
       "options": ["are", "is", "am", "were"],
       "correctIndex": 1,
-      "hint": "She → is going to.",
+      "hint": "Grandmother is one person, so use 'is'.",
       "acornValue": 3
     },
     {
@@ -106,12 +118,12 @@
       "round": "challenge",
       "prompt": "Put the whole feast preparation in order!",
       "items": [
-        "Make a shopping list.",
-        "Go to the store and buy food.",
-        "Cook the food in the kitchen.",
-        "Set the table with plates and forks.",
-        "Eat together as a family.",
-        "Wash the dishes and clean up."
+        "Dad makes a shopping list.",
+        "Mom and Dad go to the store and buy food.",
+        "Grandmother cooks the food in the kitchen.",
+        "Sophie sets the table with plates and forks.",
+        "The family eats together.",
+        "They wash the dishes and clean up."
       ],
       "correctOrder": [0, 1, 2, 3, 4, 5],
       "hint": "Start with planning!",

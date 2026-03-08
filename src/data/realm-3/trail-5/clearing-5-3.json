@@ -16,6 +16,7 @@
       "options": ["True", "False"],
       "correctIndex": 0,
       "timeLimit": 8,
+      "hint": "Dolphins swim in the sea!",
       "acornValue": 3
     },
     {
@@ -27,13 +28,14 @@
       "options": ["True", "False"],
       "correctIndex": 0,
       "timeLimit": 8,
+      "hint": "Their shows something belongs to them.",
       "acornValue": 3
     },
     {
       "id": "t3",
       "type": "fill_the_gap",
       "round": "core",
-      "prompt": "Yesterday, they ___ to the museum and ___ dinosaur bones.",
+      "prompt": "Yesterday, the cousins ___ to the museum and ___ dinosaur bones.",
       "options": ["went, saw", "go, see", "goed, seed", "goes, sees"],
       "correctIndex": 0,
       "hint": "Past tense irregular verbs!",
@@ -43,7 +45,7 @@
       "id": "t4",
       "type": "fix_it",
       "round": "core",
-      "prompt": "She doesn't likes her brother toy.",
+      "prompt": "The tour guide doesn't likes her brother toy.",
       "options": ["likes", "like", "liked", "liking"],
       "correctIndex": 1,
       "hint": "After 'doesn't', use the base form.",
@@ -51,50 +53,59 @@
     },
     {
       "id": "t5",
-      "type": "pick_one",
+      "type": "match_up",
       "round": "core",
-      "prompt": "We ___ visit the city tomorrow. Could you ___ us the way?",
-      "options": ["are going to, show", "going to, showing", "went to, showed", "go to, shows"],
-      "correctIndex": 0,
-      "hint": "Future plan + polite request with base verb.",
+      "prompt": "Match each grammar word to its example.",
+      "pairs": [
+        { "left": "possessive adjective", "right": "her, his, their" },
+        { "left": "past tense (irregular)", "right": "went, saw, ate" },
+        { "left": "future (going to)", "right": "are going to visit" },
+        { "left": "polite request", "right": "Could you help me?" }
+      ],
+      "hint": "Think about what each grammar topic means.",
       "acornValue": 3
     },
     {
       "id": "t6",
-      "type": "fill_the_gap",
+      "type": "sort_it",
       "round": "core",
-      "prompt": "First, I wake up. ___, I brush ___ teeth. Finally, I go to ___.",
-      "options": ["Then, my, school", "First, your, bed", "Finally, his, work", "Next, her, home"],
-      "correctIndex": 0,
-      "hint": "Morning routine with sequence words and possessives!",
+      "prompt": "Sort these words: city life or country life?",
+      "buckets": ["City Life", "Country Life"],
+      "items": [
+        { "text": "subway", "correctBucket": "City Life" },
+        { "text": "mountains", "correctBucket": "Country Life" },
+        { "text": "apartment", "correctBucket": "City Life" },
+        { "text": "forest", "correctBucket": "Country Life" },
+        { "text": "tall buildings", "correctBucket": "City Life" },
+        { "text": "river", "correctBucket": "Country Life" }
+      ],
+      "hint": "Where would you find each of these?",
       "acornValue": 3
     },
     {
       "id": "t7",
-      "type": "snap_choice",
+      "type": "word_build",
       "round": "core",
-      "prompt": "True or False?",
-      "question": "There are subways in every small town.",
-      "options": ["True", "False"],
-      "correctIndex": 1,
-      "timeLimit": 8,
+      "prompt": "Ralph's Mom made a plan for the city tour. Unscramble: a list of things to do on a trip.",
+      "answer": "schedule",
+      "hint": "It tells you what to do and when.",
       "acornValue": 3
     },
     {
       "id": "t8",
       "type": "fill_the_gap",
       "round": "challenge",
-      "prompt": "It ___ rainy. There ___ many cars. They ___ wet.",
+      "prompt": "It ___ rainy. There ___ many cars. Uncle Michael and the baby ___ wet.",
       "options": ["was, were, were", "were, was, was", "was, was, were", "were, were, was"],
       "correctIndex": 0,
-      "hint": "It→was. Cars (plural)→were. They→were.",
+      "hint": "It->was. Cars (plural)->were. They->were.",
       "acornValue": 3
     },
     {
       "id": "t9",
       "type": "fix_it",
       "round": "challenge",
-      "prompt": "Did they went to Ralph mom house in the city?",
+      "prompt": "Did the cousins went to Ralph mom house in the city?",
       "options": ["went", "go", "goes", "going"],
       "correctIndex": 1,
       "hint": "After 'did', use the base form. Also: Ralph's mom's house!",
@@ -113,7 +124,7 @@
         "The forest was saved! Totoro celebrated!"
       ],
       "correctOrder": [0, 1, 2, 3, 4],
-      "hint": "Realm 1 → Realm 2 → Realm 3 → The End!",
+      "hint": "Realm 1 -> Realm 2 -> Realm 3 -> The End!",
       "acornValue": 3
     }
   ]

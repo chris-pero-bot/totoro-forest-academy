@@ -43,11 +43,11 @@
     },
     {
       "id": "t4",
-      "type": "pick_one",
+      "type": "fill_the_gap",
       "round": "core",
-      "prompt": "Which animal carries its baby in a pouch?",
-      "options": ["whale", "snake", "kangaroo", "parrot"],
-      "correctIndex": 2,
+      "prompt": "The ___ carries its baby in a pouch and hops very fast.",
+      "options": ["kangaroo", "whale", "snake", "parrot"],
+      "correctIndex": 0,
       "hint": "It lives in Australia and hops!",
       "acornValue": 3
     },
@@ -63,12 +63,19 @@
     },
     {
       "id": "t6",
-      "type": "pick_one",
+      "type": "sort_it",
       "round": "core",
-      "prompt": "Which animal is very small and can climb walls?",
-      "options": ["whale", "dinosaur", "lizard", "hippo"],
-      "correctIndex": 2,
-      "hint": "It has scales and a long tail.",
+      "prompt": "Sort these animals by where they live!",
+      "buckets": ["Land", "Water"],
+      "items": [
+        { "text": "dolphin", "correctBucket": "Water" },
+        { "text": "lizard", "correctBucket": "Land" },
+        { "text": "whale", "correctBucket": "Water" },
+        { "text": "kangaroo", "correctBucket": "Land" },
+        { "text": "crocodile", "correctBucket": "Water" },
+        { "text": "eagle", "correctBucket": "Land" }
+      ],
+      "hint": "Does it live on land or in water?",
       "acornValue": 3
     },
     {
@@ -97,12 +104,12 @@
     },
     {
       "id": "t9",
-      "type": "fill_the_gap",
+      "type": "order_it",
       "round": "challenge",
-      "prompt": "At the zoo, we can see a ___, a ___, and a ___.",
-      "options": ["koala, parrot, crocodile", "desk, chair, book", "car, bus, train", "fork, spoon, plate"],
-      "correctIndex": 0,
-      "hint": "Which group has animals?",
+      "prompt": "Put these animals in order from smallest to biggest.",
+      "items": ["lizard", "parrot", "kangaroo", "whale"],
+      "correctOrder": [0, 1, 2, 3],
+      "hint": "Think about the size of each animal.",
       "acornValue": 3
     },
     {

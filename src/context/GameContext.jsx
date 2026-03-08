@@ -63,6 +63,11 @@ const initialState = {
   cutsceneType: null, // 'trail' or 'realm'
   cutsceneRealm: null,
   cutsceneTrail: null,
+
+  // Instructions shown (challenge types user has seen)
+  shownInstructions: [],
+  // Contextual tips shown
+  shownTips: [],
 }
 
 function gameReducer(state, action) {
@@ -308,6 +313,36 @@ function gameReducer(state, action) {
 
     case 'SET_PLAYER_NAME':
       return { ...state, playerName: action.name }
+
+    case 'MARK_INSTRUCTION_SHOWN':
+      if (state.shownInstructions.includes(action.challengeType)) return state
+      return {
+        ...state,
+        shownInstructions: [...state.shownInstructions, action.challengeType],
+      }
+
+    case 'MARK_TIP_SHOWN':
+      if (state.shownTips.includes(action.tip)) return state
+      return {
+        ...state,
+        shownTips: [...state.shownTips, action.tip],
+      }
+
+    case 'JUMP_TO_CLEARING':
+      return {
+        ...state,
+        currentRealm: action.realm,
+        currentTrail: action.trail,
+        currentClearing: action.clearing,
+        currentTaskIndex: 0,
+        correctFirstTry: 0,
+        totalCorrectInClearing: 0,
+        acornsEarnedThisClearing: 0,
+        taskAttempts: {},
+        clearingStartTime: Date.now(),
+        lives: INITIAL_LIVES,
+        screen: 'clearing',
+      }
 
     default:
       return state

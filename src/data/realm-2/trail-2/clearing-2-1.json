@@ -19,12 +19,11 @@
     },
     {
       "id": "t2",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "warmup",
-      "prompt": "Which one is a fruit?",
-      "options": ["apple", "bread", "cheese", "rice"],
-      "correctIndex": 0,
-      "hint": "It grows on trees and is sweet.",
+      "prompt": "A sweet fruit that grows on trees. It can be red or green.",
+      "answer": "apple",
+      "hint": "It starts with A.",
       "acornValue": 3
     },
     {

@@ -19,12 +19,16 @@
     },
     {
       "id": "t2",
-      "type": "pick_one",
+      "type": "match_up",
       "round": "warmup",
-      "prompt": "Where does the family prepare the food?",
-      "options": ["In the kitchen", "In the bedroom", "At school", "In the garden"],
-      "correctIndex": 0,
-      "hint": "This room has a stove and refrigerator.",
+      "prompt": "Match each person to what they did for the dinner.",
+      "pairs": [
+        { "left": "Sophie", "right": "set the table" },
+        { "left": "Mom", "right": "cooked the food" },
+        { "left": "Dad", "right": "went to the store" },
+        { "left": "Grandmother", "right": "made the dessert" }
+      ],
+      "hint": "Think about what each family member does best.",
       "acornValue": 3
     },
     {
@@ -34,9 +38,9 @@
       "prompt": "Put the story events in order.",
       "items": [
         "The family made a shopping list.",
-        "They went to the store to buy food.",
-        "They cooked the food in the kitchen.",
-        "They set the table for dinner.",
+        "Dad went to the store to buy food.",
+        "Mom cooked the food in the kitchen.",
+        "Sophie set the table for dinner.",
         "The family sat down and ate together."
       ],
       "correctOrder": [0, 1, 2, 3, 4],
@@ -55,12 +59,12 @@
     },
     {
       "id": "t5",
-      "type": "pick_one",
+      "type": "fix_it",
       "round": "core",
-      "prompt": "Who cooked the dinner?",
-      "options": ["Sophie's mother", "Sophie's teacher", "Sophie's friend", "Sophie alone"],
-      "correctIndex": 0,
-      "hint": "A family member prepared the meal.",
+      "prompt": "Sophie's mother cooked the dinner on the kitchen.",
+      "options": ["on", "in", "at", "to"],
+      "correctIndex": 1,
+      "hint": "We cook IN a room, not on it.",
       "acornValue": 3
     },
     {
@@ -80,27 +84,28 @@
     },
     {
       "id": "t7",
-      "type": "fill_the_gap",
+      "type": "sort_it",
       "round": "core",
-      "prompt": "The family was ___ to be together.",
-      "options": ["happy", "sad", "angry", "scared"],
-      "correctIndex": 0,
-      "hint": "Family time is special and joyful!",
+      "prompt": "Sort these into what the family did BEFORE and DURING dinner.",
+      "buckets": ["Before Dinner", "During Dinner"],
+      "items": [
+        { "text": "made a shopping list", "correctBucket": "Before Dinner" },
+        { "text": "ate turkey", "correctBucket": "During Dinner" },
+        { "text": "cooked the food", "correctBucket": "Before Dinner" },
+        { "text": "said thank you", "correctBucket": "During Dinner" },
+        { "text": "set the table", "correctBucket": "Before Dinner" },
+        { "text": "talked and laughed", "correctBucket": "During Dinner" }
+      ],
+      "hint": "Cooking and setting up happen before you eat!",
       "acornValue": 3
     },
     {
       "id": "t8",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "challenge",
-      "prompt": "Why did Sophie like helping in the kitchen?",
-      "options": [
-        "She liked spending time with her family.",
-        "She wanted to watch TV.",
-        "She was bored.",
-        "She had nothing else to do."
-      ],
-      "correctIndex": 0,
-      "hint": "Family time is about being together!",
+      "prompt": "Sophie's family felt this way when they were together. It means joyful!",
+      "answer": "happy",
+      "hint": "It starts with H and has 5 letters.",
       "acornValue": 3
     },
     {

@@ -33,12 +33,12 @@ export default function SnapChoice({ task, onCorrect, onWrong, showHint }) {
   return (
     <div className="animate-fadeIn">
       {/* Timer bar */}
-      <div className="w-full h-3 bg-gray-200 rounded-full mb-4 overflow-hidden">
+      <div className="w-full h-4 bg-gray-200 rounded-full mb-4 overflow-hidden shadow-inner">
         <div
           className="h-full rounded-full transition-all duration-1000 ease-linear"
           style={{
             width: `${timerPercentage}%`,
-            backgroundColor: timerPercentage > 50 ? '#4CAF50' : timerPercentage > 25 ? '#DAA520' : '#FF6B6B',
+            backgroundColor: timerPercentage > 50 ? '#6aaf35' : timerPercentage > 25 ? '#daa520' : '#ff6b6b',
           }}
         />
       </div>
@@ -52,14 +52,14 @@ export default function SnapChoice({ task, onCorrect, onWrong, showHint }) {
             key={i}
             onClick={() => handleSelect(i)}
             disabled={revealed}
-            className={`py-4 px-8 rounded-xl font-bold text-xl transition-all border-2 min-w-[120px] ${
+            className={`py-5 px-10 rounded-2xl font-bold text-xl transition-all duration-200 border-2 min-w-[130px] shadow-md hover:shadow-lg ${
               !revealed
-                ? 'bg-white border-forest/20 text-soot hover:border-forest hover:bg-forest-light/10 hover:scale-105'
+                ? 'bg-white border-forest/20 text-soot hover:border-forest hover:bg-forest-pale hover:scale-105 active:scale-95'
                 : i === task.correctIndex
-                  ? 'bg-success text-white border-success animate-pop'
+                  ? 'bg-success-bg border-success text-success animate-pop shadow-lg'
                   : i === selected
-                    ? 'bg-error-soft text-white border-error-soft animate-shake'
-                    : 'bg-gray-100 text-gray-400 border-gray-200'
+                    ? 'bg-white border-error-soft text-error-soft animate-shake'
+                    : 'bg-gray-50 text-gray-400 border-gray-200'
             }`}
           >
             {option}

@@ -19,12 +19,11 @@
     },
     {
       "id": "t2",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "warmup",
-      "prompt": "What is the main food at Thanksgiving?",
-      "options": ["Turkey", "Pizza", "Sushi", "Tacos"],
-      "correctIndex": 0,
-      "hint": "Gobble gobble! It's a big bird!",
+      "prompt": "This big bird is the main food at Thanksgiving. Gobble gobble!",
+      "answer": "turkey",
+      "hint": "It starts with T and has 6 letters.",
       "acornValue": 3
     },
     {
@@ -39,12 +38,12 @@
     },
     {
       "id": "t4",
-      "type": "pick_one",
+      "type": "fix_it",
       "round": "core",
-      "prompt": "The Pilgrims came to America on a ___.",
-      "options": ["ship", "airplane", "bus", "train"],
-      "correctIndex": 0,
-      "hint": "They crossed the ocean a very long time ago.",
+      "prompt": "The Pilgrims comed to America on a ship long ago.",
+      "options": ["comed", "came", "coming", "comes"],
+      "correctIndex": 1,
+      "hint": "Come is an irregular verb. Its past tense is not 'comed'.",
       "acornValue": 3
     },
     {
@@ -68,7 +67,7 @@
       "id": "t6",
       "type": "fill_the_gap",
       "round": "core",
-      "prompt": "Thanksgiving is about being ___ for what you have.",
+      "prompt": "Grandmother is ___ for her family and friends.",
       "options": ["thankful", "angry", "scared", "tired"],
       "correctIndex": 0,
       "hint": "Thankful = grateful = happy about good things.",
@@ -76,32 +75,33 @@
     },
     {
       "id": "t7",
-      "type": "pick_one",
+      "type": "match_up",
       "round": "core",
-      "prompt": "At Thanksgiving, families make ___ cards.",
-      "options": ["thank-you", "birthday", "get-well", "sorry"],
-      "correctIndex": 0,
-      "hint": "They write what they are thankful for.",
+      "prompt": "Match each Thanksgiving tradition to its description.",
+      "pairs": [
+        { "left": "thank-you cards", "right": "write what you are thankful for" },
+        { "left": "family dinner", "right": "eat turkey and sides together" },
+        { "left": "Pilgrims", "right": "first people to celebrate it" },
+        { "left": "gratitude", "right": "feeling thankful for what you have" }
+      ],
+      "hint": "Think about what each word means.",
       "acornValue": 3
     },
     {
       "id": "t8",
-      "type": "pick_one",
+      "type": "snap_choice",
       "round": "challenge",
-      "prompt": "Which sentence about Thanksgiving is TRUE?",
-      "options": [
-        "Families eat together and say what they are thankful for.",
-        "People go to school on Thanksgiving.",
-        "Thanksgiving is in summer.",
-        "People eat alone on Thanksgiving."
-      ],
+      "prompt": "Quick! True or False?",
+      "question": "Families eat together on Thanksgiving.",
+      "options": ["True", "False"],
       "correctIndex": 0,
+      "timeLimit": 8,
       "hint": "Thanksgiving is a family celebration.",
       "acornValue": 3
     },
     {
       "id": "t9",
-      "type": "fill_the_gap",
+      "type": "pick_one",
       "round": "challenge",
       "prompt": "A male turkey makes a sound called a ___.",
       "options": ["gobble", "bark", "meow", "roar"],
@@ -111,17 +111,18 @@
     },
     {
       "id": "t10",
-      "type": "pick_one",
+      "type": "order_it",
       "round": "challenge",
-      "prompt": "What do Thanksgiving and Sophie's family dinner have in common?",
-      "options": [
-        "Both are about families eating together.",
-        "Both happen at school.",
-        "Both are about animals.",
-        "Both happen in summer."
+      "prompt": "Put the Thanksgiving Day events in order.",
+      "items": [
+        "Uncle and Aunt arrive at the house.",
+        "The family cooks turkey and sides.",
+        "Everyone sits at the table.",
+        "They say what they are thankful for.",
+        "The family eats dinner together."
       ],
-      "correctIndex": 0,
-      "hint": "Think about what the two stories share.",
+      "correctOrder": [0, 1, 2, 3, 4],
+      "hint": "First guests arrive, then you cook, then eat!",
       "acornValue": 3
     }
   ]

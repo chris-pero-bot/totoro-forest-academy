@@ -19,12 +19,11 @@
     },
     {
       "id": "t2",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "warmup",
-      "prompt": "Some people live on the water in ___.",
-      "options": ["houseboats", "igloos", "apartments", "caves"],
-      "correctIndex": 0,
-      "hint": "It's a house that floats!",
+      "prompt": "A house that floats on water is called a ___.",
+      "answer": "houseboat",
+      "hint": "It's two words combined: house + boat!",
       "acornValue": 3
     },
     {
@@ -53,12 +52,12 @@
     },
     {
       "id": "t5",
-      "type": "pick_one",
+      "type": "fix_it",
       "round": "core",
-      "prompt": "In a big city, most people live in ___.",
-      "options": ["apartments", "igloos", "tents", "mud houses"],
-      "correctIndex": 0,
-      "hint": "Tall buildings with many floors.",
+      "prompt": "There is many apartments in the big city.",
+      "options": ["is", "are", "was", "been"],
+      "correctIndex": 1,
+      "hint": "Apartments is plural. Use 'there are' for plural nouns.",
       "acornValue": 3
     },
     {
@@ -80,17 +79,14 @@
     },
     {
       "id": "t7",
-      "type": "pick_one",
+      "type": "snap_choice",
       "round": "core",
-      "prompt": "All houses have something in common. They all ___.",
-      "options": [
-        "give people a place to live",
-        "are made of wood",
-        "have ten rooms",
-        "are in the city"
-      ],
-      "correctIndex": 0,
-      "hint": "Every house provides shelter!",
+      "prompt": "True or False?",
+      "question": "All houses in the world look the same.",
+      "options": ["True", "False"],
+      "correctIndex": 1,
+      "timeLimit": 8,
+      "hint": "Think about igloos, apartments, and mud houses!",
       "acornValue": 3
     },
     {

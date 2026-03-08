@@ -53,12 +53,19 @@
     },
     {
       "id": "t5",
-      "type": "pick_one",
+      "type": "sort_it",
       "round": "core",
-      "prompt": "Where do you wash your hands at the museum?",
-      "options": ["gallery", "cafeteria", "restroom", "library"],
-      "correctIndex": 2,
-      "hint": "This room has sinks and soap.",
+      "prompt": "Sort these into places in town and nature places!",
+      "buckets": ["In Town", "In Nature"],
+      "items": [
+        { "text": "museum", "correctBucket": "In Town" },
+        { "text": "forest", "correctBucket": "In Nature" },
+        { "text": "library", "correctBucket": "In Town" },
+        { "text": "ocean", "correctBucket": "In Nature" },
+        { "text": "school", "correctBucket": "In Town" },
+        { "text": "jungle", "correctBucket": "In Nature" }
+      ],
+      "hint": "Is it a building or a natural place?",
       "acornValue": 3
     },
     {

@@ -30,10 +30,15 @@ export default function SortIt({ task, onCorrect, onWrong, showHint }) {
     }
   }
 
+  const BUCKET_STYLES = [
+    { bg: 'bg-sky', icon: '🔵' },
+    { bg: 'bg-orange-500', icon: '🟠' },
+    { bg: 'bg-purple-500', icon: '🟣' },
+  ]
+
   function getBucketColor(bucketName) {
     const idx = task.buckets.indexOf(bucketName)
-    const colors = ['bg-blue-500', 'bg-orange-500', 'bg-purple-500']
-    return colors[idx] || 'bg-gray-500'
+    return BUCKET_STYLES[idx]?.bg || 'bg-gray-500'
   }
 
   return (
@@ -48,15 +53,15 @@ export default function SortIt({ task, onCorrect, onWrong, showHint }) {
 
       {/* Buckets */}
       <div className="flex gap-3 mb-4 justify-center">
-        {task.buckets.map((bucket) => (
+        {task.buckets.map((bucket, idx) => (
           <button
             key={bucket}
             onClick={() => handleBucketClick(bucket)}
-            className={`py-2 px-4 rounded-xl font-bold text-white transition-all ${getBucketColor(bucket)} ${
-              selectedBucket === bucket ? 'ring-4 ring-acorn scale-105' : 'opacity-80 hover:opacity-100'
+            className={`py-3 px-6 rounded-2xl font-bold text-white transition-all duration-200 shadow-md ${getBucketColor(bucket)} ${
+              selectedBucket === bucket ? 'ring-4 ring-acorn-glow scale-105 shadow-lg' : 'opacity-80 hover:opacity-100 hover:scale-[1.03]'
             }`}
           >
-            {bucket}
+            {BUCKET_STYLES[idx]?.icon} {bucket}
           </button>
         ))}
       </div>
@@ -68,7 +73,7 @@ export default function SortIt({ task, onCorrect, onWrong, showHint }) {
       )}
 
       {/* Items */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
         {task.items.map((item, i) => {
           const assigned = assignments[i]
           const isCorrect = revealed && assigned === item.correctBucket
@@ -78,7 +83,7 @@ export default function SortIt({ task, onCorrect, onWrong, showHint }) {
               key={i}
               onClick={() => handleItemClick(i)}
               disabled={assigned !== undefined || revealed}
-              className={`py-3 px-4 rounded-xl font-bold text-sm transition-all border-2 ${
+              className={`py-4 px-5 rounded-2xl font-bold text-base transition-all duration-200 border-2 shadow-md ${
                 assigned !== undefined
                   ? revealed
                     ? isCorrect
