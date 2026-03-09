@@ -60,7 +60,7 @@ export default function WorldMap() {
         <div className="flex justify-between items-center mb-6">
           <button
             onClick={() => dispatch({ type: 'NAVIGATE', screen: 'title' })}
-            className="bg-white/80 text-forest-dark font-bold px-4 py-2 rounded-full text-sm shadow-lg hover:shadow-xl transition-all hover:scale-105 active:scale-95"
+            className="bg-white/80 text-forest-dark font-bold px-4 py-2 rounded-full text-sm shadow-lg hover:shadow-xl transition-[transform,box-shadow,background-color] hover:scale-105 active:scale-95"
           >
             Back
           </button>
@@ -71,13 +71,13 @@ export default function WorldMap() {
           <div className="flex gap-2">
             <button
               onClick={() => dispatch({ type: 'NAVIGATE', screen: 'shop' })}
-              className="bg-white/80 text-earth font-bold text-sm px-4 py-2 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105 active:scale-95"
+              className="bg-white/80 text-earth font-bold text-sm px-4 py-2 rounded-full shadow-lg hover:shadow-xl transition-[transform,box-shadow,background-color] hover:scale-105 active:scale-95"
             >
               Shop
             </button>
             <button
               onClick={() => dispatch({ type: 'NAVIGATE', screen: 'achievements' })}
-              className="bg-white/80 text-earth font-bold text-sm px-4 py-2 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105 active:scale-95"
+              className="bg-white/80 text-earth font-bold text-sm px-4 py-2 rounded-full shadow-lg hover:shadow-xl transition-[transform,box-shadow,background-color] hover:scale-105 active:scale-95"
             >
               Badges
             </button>
@@ -106,7 +106,7 @@ export default function WorldMap() {
                 key={realm.id}
                 onClick={() => handleRealmClick(realm.id)}
                 disabled={!unlocked}
-                className={`relative h-44 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-200 text-left overflow-hidden ${
+                className={`relative h-44 rounded-2xl shadow-lg hover:shadow-xl transition-[transform,box-shadow] duration-200 text-left overflow-hidden ${
                   unlocked ? 'hover:scale-[1.02] active:scale-[0.98]' : 'opacity-60'
                 } ${completed ? 'ring-4 ring-acorn-glow' : ''}`}
               >
@@ -124,13 +124,13 @@ export default function WorldMap() {
                 {/* Content */}
                 <div className="relative z-10 h-full flex flex-col justify-center p-6">
                   <div className="flex items-start gap-3">
-                    <span className="text-4xl">{unlocked ? REALM_ICONS[i] : '🔒'}</span>
+                    <span className="text-4xl" aria-hidden="true">{unlocked ? REALM_ICONS[i] : '🔒'}</span>
                     <div className="flex-1">
                       <h2 className="font-heading text-2xl text-white text-shadow-dark mb-1">{realm.name}</h2>
                       <p className="text-white text-sm text-shadow-dark">{realm.description}</p>
                       {unlocked && (
                         <p className="text-white/90 text-xs mt-2 font-bold">
-                          {progress.completedTrails}/{progress.trailCount} Trails | {'⭐'.repeat(Math.min(progress.totalStars, 9))} {progress.totalStars}/{progress.maxStars}
+                          {progress.completedTrails}/{progress.trailCount} Trails | <span aria-hidden="true">{'⭐'.repeat(Math.min(progress.totalStars, 9))}</span> {progress.totalStars}/{progress.maxStars}
                         </p>
                       )}
                       {completed && (
@@ -160,7 +160,7 @@ export default function WorldMap() {
 
       {/* First-time tip overlay */}
       {showTip && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fadeIn" onClick={dismissTip}>
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fadeIn" role="dialog" aria-modal="true" onClick={dismissTip}>
           <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-sm mx-4 text-center">
             <img src="/assets/characters/totoro-happy.png" alt="Totoro" className="w-20 h-20 object-contain mx-auto mb-4" />
             <p className="text-xl font-bold text-soot mb-4 font-body">This is the forest! Tap a place to explore it.</p>

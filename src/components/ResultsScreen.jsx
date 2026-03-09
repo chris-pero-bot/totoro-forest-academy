@@ -90,7 +90,7 @@ export default function ResultsScreen() {
               <img
                 src={s <= starsShown ? '/assets/ui/star-filled.png' : '/assets/ui/star-empty.png'}
                 alt={s <= starsShown ? 'Star' : 'Empty star'}
-                className={`w-16 h-16 object-contain transition-all duration-300 ${s <= starsShown ? 'animate-bounceIn' : 'opacity-30'}`}
+                className={`w-16 h-16 object-contain transition-[opacity,transform] duration-300 ${s <= starsShown ? 'animate-bounceIn' : 'opacity-30'}`}
                 style={{ animationDelay: `${s * 0.3}s` }}
                 onError={(e) => {
                   e.target.style.display = 'none'
@@ -112,7 +112,7 @@ export default function ResultsScreen() {
           <div className="flex items-center justify-between">
             <span className="text-soot text-base">Acorns earned:</span>
             <div className="flex items-center gap-1">
-              <span className="text-2xl">🌰</span>
+              <span className="text-2xl" aria-hidden="true">🌰</span>
               <span className="font-bold text-acorn text-xl">{displayedAcorns}</span>
             </div>
           </div>
@@ -135,14 +135,14 @@ export default function ResultsScreen() {
         {/* Next button */}
         <button
           onClick={handleNext}
-          className="bg-gradient-to-r from-acorn to-acorn-light text-white font-heading text-xl px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 active:scale-95 mb-3"
+          className="bg-gradient-to-r from-acorn to-acorn-light text-white font-heading text-xl px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-[transform,box-shadow,background-color] duration-200 hover:scale-105 active:scale-95 mb-3"
         >
           {trailComplete ? (realmComplete ? 'Celebrate!' : 'Trail Complete!') : hasNextClearing ? 'Next Clearing' : 'Back to Trail'}
         </button>
 
         <button
           onClick={() => dispatch({ type: 'BACK_TO_TRAIL' })}
-          className="bg-white/20 text-white font-bold px-6 py-2 rounded-full transition-all hover:bg-white/30"
+          className="bg-white/20 text-white font-bold px-6 py-2 rounded-full transition-colors hover:bg-white/30"
         >
           Back to Trail
         </button>

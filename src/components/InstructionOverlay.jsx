@@ -40,13 +40,13 @@ export default function InstructionOverlay({ challengeType, onDismiss }) {
   if (!instruction) return null
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fadeIn">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fadeIn" role="dialog" aria-modal="true">
       <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-sm mx-4 text-center">
-        <div className="text-6xl mb-4">{instruction.icon}</div>
+        <div className="text-6xl mb-4" aria-hidden="true">{instruction.icon}</div>
         <p className="text-xl font-bold text-soot mb-6 font-body">{instruction.text}</p>
         <button
           onClick={onDismiss}
-          className="bg-gradient-to-r from-acorn to-acorn-light text-white font-heading text-xl px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105 active:scale-95"
+          className="bg-gradient-to-r from-acorn to-acorn-light text-white font-heading text-xl px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-[transform,box-shadow,background-color] hover:scale-105 active:scale-95"
         >
           Got it!
         </button>

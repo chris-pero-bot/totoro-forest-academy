@@ -60,7 +60,7 @@ export default function WordBuild({ task, onCorrect, onWrong, showHint }) {
         {answer.split('').map((_, i) => (
           <div
             key={i}
-            className={`w-12 h-14 rounded-xl border-2 flex items-center justify-center text-2xl font-bold transition-all shadow-sm ${
+            className={`w-12 h-14 rounded-xl border-2 flex items-center justify-center text-2xl font-bold transition-[border-color,background-color] shadow-sm ${
               selected[i]
                 ? revealed
                   ? currentWord === answer
@@ -84,7 +84,7 @@ export default function WordBuild({ task, onCorrect, onWrong, showHint }) {
             key={letter.id}
             onClick={() => handleLetterClick(letter)}
             disabled={!!isUsed(letter) || revealed}
-            className={`w-14 h-14 rounded-2xl font-bold text-2xl transition-all duration-200 shadow-md ${
+            className={`w-14 h-14 rounded-2xl font-bold text-2xl transition-[transform,border-color,background-color,box-shadow] duration-200 shadow-md ${
               isUsed(letter)
                 ? 'bg-gray-200 text-gray-400 shadow-none'
                 : 'bg-white border-2 border-forest/30 text-soot hover:border-forest hover:bg-forest-pale hover:scale-110 hover:shadow-lg active:scale-95'

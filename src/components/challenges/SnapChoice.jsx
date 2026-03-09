@@ -35,7 +35,7 @@ export default function SnapChoice({ task, onCorrect, onWrong, showHint }) {
       {/* Timer bar */}
       <div className="w-full h-4 bg-gray-200 rounded-full mb-4 overflow-hidden shadow-inner">
         <div
-          className="h-full rounded-full transition-all duration-1000 ease-linear"
+          className="h-full rounded-full transition-[width] duration-1000 ease-linear"
           style={{
             width: `${timerPercentage}%`,
             backgroundColor: timerPercentage > 50 ? '#6aaf35' : timerPercentage > 25 ? '#daa520' : '#ff6b6b',
@@ -52,7 +52,7 @@ export default function SnapChoice({ task, onCorrect, onWrong, showHint }) {
             key={i}
             onClick={() => handleSelect(i)}
             disabled={revealed}
-            className={`py-5 px-10 rounded-2xl font-bold text-xl transition-all duration-200 border-2 min-w-[130px] shadow-md hover:shadow-lg ${
+            className={`py-5 px-10 rounded-2xl font-bold text-xl transition-[transform,border-color,background-color,box-shadow] duration-200 border-2 min-w-[130px] shadow-md hover:shadow-lg ${
               !revealed
                 ? 'bg-white border-forest/20 text-soot hover:border-forest hover:bg-forest-pale hover:scale-105 active:scale-95'
                 : i === task.correctIndex

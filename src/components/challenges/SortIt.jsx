@@ -57,7 +57,7 @@ export default function SortIt({ task, onCorrect, onWrong, showHint }) {
           <button
             key={bucket}
             onClick={() => handleBucketClick(bucket)}
-            className={`py-3 px-6 rounded-2xl font-bold text-white transition-all duration-200 shadow-md ${getBucketColor(bucket)} ${
+            className={`py-3 px-6 rounded-2xl font-bold text-white transition-[transform,opacity,box-shadow] duration-200 shadow-md ${getBucketColor(bucket)} ${
               selectedBucket === bucket ? 'ring-4 ring-acorn-glow scale-105 shadow-lg' : 'opacity-80 hover:opacity-100 hover:scale-[1.03]'
             }`}
           >
@@ -83,7 +83,7 @@ export default function SortIt({ task, onCorrect, onWrong, showHint }) {
               key={i}
               onClick={() => handleItemClick(i)}
               disabled={assigned !== undefined || revealed}
-              className={`py-4 px-5 rounded-2xl font-bold text-base transition-all duration-200 border-2 shadow-md ${
+              className={`py-4 px-5 rounded-2xl font-bold text-base transition-[border-color,background-color] duration-200 border-2 shadow-md ${
                 assigned !== undefined
                   ? revealed
                     ? isCorrect

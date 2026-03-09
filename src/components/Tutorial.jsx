@@ -81,7 +81,7 @@ export default function Tutorial() {
           <div className="flex gap-4 animate-fadeIn">
             {['The Forest Museum', "Totoro's Feast", 'Catbus City Tour'].map((name, i) => (
               <div key={i} className="bg-white/20 backdrop-blur-sm rounded-xl p-3 text-center text-sm text-white w-28 shadow">
-                <div className="text-3xl mb-1">{['🌲', '🍽️', '🚌'][i]}</div>
+                <div className="text-3xl mb-1" aria-hidden="true">{['🌲', '🍽️', '🚌'][i]}</div>
                 {name}
               </div>
             ))}
@@ -146,7 +146,7 @@ export default function Tutorial() {
                     key={i}
                     onClick={() => handlePractice(i)}
                     disabled={practiceAnswer !== null}
-                    className={`py-4 px-5 rounded-2xl font-bold text-lg transition-all shadow-lg hover:shadow-xl duration-200 ${
+                    className={`py-4 px-5 rounded-2xl font-bold text-lg transition-[transform,border-color,background-color,box-shadow] shadow-lg hover:shadow-xl duration-200 ${
                       practiceAnswer === null
                         ? 'bg-white text-soot border-2 border-forest/20 hover:border-forest hover:scale-105 active:scale-95'
                         : i === 0
@@ -179,7 +179,7 @@ export default function Tutorial() {
       {/* Skip button */}
       <button
         onClick={() => dispatch({ type: 'SKIP_TUTORIAL' })}
-        className="absolute top-4 right-4 bg-white/20 text-white font-bold text-sm px-4 py-2 rounded-full hover:bg-white/30 transition-all"
+        className="absolute top-4 right-4 bg-white/20 text-white font-bold text-sm px-4 py-2 rounded-full hover:bg-white/30 transition-colors"
       >
         Skip
       </button>
@@ -189,7 +189,7 @@ export default function Tutorial() {
         {TUTORIAL_STEPS.map((_, i) => (
           <div
             key={i}
-            className={`w-3 h-3 rounded-full transition-all ${
+            className={`w-3 h-3 rounded-full transition-[background-color,transform] ${
               i === step ? 'bg-acorn-glow scale-125' : i < step ? 'bg-white/60' : 'bg-white/20'
             }`}
           />
@@ -209,7 +209,7 @@ export default function Tutorial() {
       {current.component !== 'practice' && (
         <button
           onClick={handleNext}
-          className="bg-gradient-to-r from-acorn to-acorn-light text-white font-heading text-xl px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 active:scale-95"
+          className="bg-gradient-to-r from-acorn to-acorn-light text-white font-heading text-xl px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-[transform,box-shadow,background-color] duration-200 hover:scale-105 active:scale-95"
         >
           {step === TUTORIAL_STEPS.length - 1 ? "Let's Go!" : 'Next'}
         </button>

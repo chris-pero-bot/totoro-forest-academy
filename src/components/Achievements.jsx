@@ -9,7 +9,7 @@ export default function Achievements() {
       <div className="flex items-center justify-between mb-6">
         <button
           onClick={() => dispatch({ type: 'NAVIGATE', screen: 'worldMap' })}
-          className="bg-white/20 text-white font-bold px-4 py-2 rounded-full text-sm hover:bg-white/30 transition-all hover:scale-105 active:scale-95"
+          className="bg-white/20 text-white font-bold px-4 py-2 rounded-full text-sm hover:bg-white/30 transition-[transform,background-color] hover:scale-105 active:scale-95"
         >
           Back
         </button>
@@ -29,13 +29,13 @@ export default function Achievements() {
           return (
             <div
               key={achievement.id}
-              className={`rounded-2xl p-4 text-center transition-all shadow-lg ${
+              className={`rounded-2xl p-4 text-center transition-shadow shadow-lg ${
                 unlocked
                   ? 'bg-white/90 backdrop-blur-sm border-2 border-acorn-glow'
                   : 'bg-white/10 backdrop-blur-sm border-2 border-white/10 opacity-60'
               }`}
             >
-              <span className="text-4xl block mb-2">
+              <span className="text-4xl block mb-2" aria-hidden="true">
                 {unlocked ? achievement.icon : '❓'}
               </span>
               <h3 className={`font-heading text-sm mb-1 ${unlocked ? 'text-earth-dark' : 'text-white/40'}`}>

@@ -34,7 +34,7 @@ export default function TitleScreen() {
             animationDuration: `${3 + (i % 2)}s`,
           }}
         >
-          {i % 2 === 0 ? '🍃' : '🌰'}
+          <span aria-hidden="true">{i % 2 === 0 ? '🍃' : '🌰'}</span>
         </div>
       ))}
 
@@ -64,14 +64,14 @@ export default function TitleScreen() {
         <div className="flex flex-col gap-3 animate-slideUp items-center">
           <button
             onClick={handlePlay}
-            className="bg-gradient-to-r from-acorn to-acorn-light text-white font-heading text-xl px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 active:scale-95"
+            className="bg-gradient-to-r from-acorn to-acorn-light text-white font-heading text-xl px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-[transform,box-shadow,background-color] duration-200 hover:scale-105 active:scale-95"
           >
             {hasSave ? 'Continue' : 'Play'}
           </button>
 
           <button
             onClick={() => dispatch({ type: 'NAVIGATE', screen: 'settings' })}
-            className="bg-white/20 text-white font-bold px-6 py-3 rounded-full transition-all hover:bg-white/30 text-base"
+            className="bg-white/20 text-white font-bold px-6 py-3 rounded-full transition-colors hover:bg-white/30 text-base"
           >
             Settings
           </button>

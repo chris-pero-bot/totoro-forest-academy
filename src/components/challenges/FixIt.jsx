@@ -40,7 +40,7 @@ export default function FixIt({ task, onCorrect, onWrong, showHint }) {
             key={i}
             onClick={() => handleSelect(i)}
             disabled={revealed}
-            className={`py-5 px-8 rounded-2xl font-bold text-lg transition-all duration-200 border-2 shadow-md hover:shadow-lg ${
+            className={`py-5 px-8 rounded-2xl font-bold text-lg transition-[transform,border-color,background-color,box-shadow] duration-200 border-2 shadow-md hover:shadow-lg ${
               !revealed
                 ? 'bg-white border-forest/20 text-soot hover:border-forest hover:bg-forest-pale hover:scale-[1.03] active:scale-[0.97]'
                 : i === task.correctIndex

@@ -189,7 +189,7 @@ export default function ClearingScreen() {
             <p className="text-forest-mid/60 text-sm mb-4">{tasks.length} tasks</p>
             <button
               onClick={handleStartClearing}
-              className="bg-gradient-to-r from-acorn to-acorn-light text-white font-heading text-xl px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 active:scale-95"
+              className="bg-gradient-to-r from-acorn to-acorn-light text-white font-heading text-xl px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-[transform,box-shadow,background-color] duration-200 hover:scale-105 active:scale-95"
             >
               {gameOverMessage ? 'Try Again!' : 'Start!'}
             </button>
@@ -197,7 +197,7 @@ export default function ClearingScreen() {
 
           <button
             onClick={() => dispatch({ type: 'BACK_TO_TRAIL' })}
-            className="mt-4 bg-white/20 text-white font-bold px-6 py-2 rounded-full transition-all hover:bg-white/30"
+            className="mt-4 bg-white/20 text-white font-bold px-6 py-2 rounded-full transition-colors hover:bg-white/30"
           >
             Go back
           </button>
@@ -250,7 +250,7 @@ export default function ClearingScreen() {
             {tasks.map((_, i) => (
               <div
                 key={i}
-                className={`h-2.5 flex-1 rounded-full transition-all ${
+                className={`h-2.5 flex-1 rounded-full transition-colors ${
                   i < state.currentTaskIndex
                     ? 'bg-success'
                     : i === state.currentTaskIndex
@@ -287,7 +287,7 @@ export default function ClearingScreen() {
           {state.powerUps.meis_hint > 0 && !showHint && (
             <button
               onClick={handleUseHint}
-              className="text-sm bg-forest-light/30 text-forest-dark px-5 py-2.5 rounded-full font-bold hover:bg-forest-light/40 shadow-lg transition-all hover:scale-105 active:scale-95"
+              className="text-sm bg-forest-light/30 text-forest-dark px-5 py-2.5 rounded-full font-bold hover:bg-forest-light/40 shadow-lg transition-[transform,box-shadow,background-color] hover:scale-105 active:scale-95"
             >
               🍃 Hint ({state.powerUps.meis_hint})
             </button>
@@ -303,7 +303,7 @@ export default function ClearingScreen() {
                   setTaskKey(k => k + 1)
                 }
               }}
-              className="text-sm bg-sky/40 text-blue-800 px-5 py-2.5 rounded-full font-bold hover:bg-sky/50 shadow-lg transition-all hover:scale-105 active:scale-95"
+              className="text-sm bg-sky/40 text-blue-800 px-5 py-2.5 rounded-full font-bold hover:bg-sky/50 shadow-lg transition-[transform,box-shadow,background-color] hover:scale-105 active:scale-95"
             >
               🚌 Skip ({state.powerUps.catbus_skip})
             </button>

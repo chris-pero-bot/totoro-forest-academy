@@ -108,6 +108,10 @@ export default function Cutscene() {
       className="min-h-screen flex flex-col items-center justify-center p-6 cursor-pointer relative"
       style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
       onClick={handleNext}
+      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleNext() }}
+      role="button"
+      tabIndex={0}
+      aria-label={isLast ? 'Tap to continue' : 'Tap for next panel'}
     >
       <div className="absolute inset-0 bg-black/50" />
 
@@ -117,13 +121,13 @@ export default function Cutscene() {
           {panels.map((_, i) => (
             <div
               key={i}
-              className={`w-3 h-3 rounded-full transition-all ${i === panelIndex ? 'bg-acorn-glow scale-125' : i < panelIndex ? 'bg-white/60' : 'bg-white/20'}`}
+              className={`w-3 h-3 rounded-full transition-[background-color,transform] ${i === panelIndex ? 'bg-acorn-glow scale-125' : i < panelIndex ? 'bg-white/60' : 'bg-white/20'}`}
             />
           ))}
         </div>
 
         {/* Scene emoji */}
-        <div className="text-6xl mb-6 animate-bounceIn">
+        <div className="text-6xl mb-6 animate-bounceIn" aria-hidden="true">
           {sceneEmojis[currentPanel.scene] || '✨'}
         </div>
 

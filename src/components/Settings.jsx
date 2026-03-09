@@ -49,7 +49,7 @@ export default function Settings() {
       <div className="flex items-center justify-between mb-6">
         <button
           onClick={() => dispatch({ type: 'NAVIGATE', screen: state.tutorialCompleted ? 'worldMap' : 'title' })}
-          className="bg-white/20 text-white font-bold px-4 py-2 rounded-full text-sm hover:bg-white/30 transition-all"
+          className="bg-white/20 text-white font-bold px-4 py-2 rounded-full text-sm hover:bg-white/30 transition-colors"
         >
           Back
         </button>
@@ -67,7 +67,7 @@ export default function Settings() {
         {/* Replay tutorial */}
         <button
           onClick={() => dispatch({ type: 'START_TUTORIAL' })}
-          className="bg-white/15 backdrop-blur-sm rounded-2xl p-5 text-left hover:bg-white/25 transition-all shadow"
+          className="bg-white/15 backdrop-blur-sm rounded-2xl p-5 text-left hover:bg-white/25 transition-colors shadow"
         >
           <h3 className="font-heading text-lg text-white">Replay Tutorial</h3>
           <p className="text-white/80 text-sm">Watch the tutorial again.</p>
@@ -91,7 +91,7 @@ export default function Settings() {
           {!showConfirm ? (
             <button
               onClick={() => setShowConfirm(true)}
-              className="bg-error-soft/60 text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-error-soft transition-all shadow-lg"
+              className="bg-error-soft/60 text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-error-soft transition-colors shadow-lg"
             >
               Reset Everything
             </button>
@@ -118,12 +118,12 @@ export default function Settings() {
 
         {/* Parent Mode (hidden) */}
         <div className="mt-4">
-          <h3
-            className="font-heading text-lg text-white/30 text-center cursor-pointer select-none"
+          <button
+            className="font-heading text-lg text-white/30 text-center cursor-pointer select-none w-full bg-transparent"
             onClick={handleParentTap}
           >
             Parent Mode
-          </h3>
+          </button>
 
           {showParentMode && (
             <div className="bg-white/15 backdrop-blur-sm rounded-2xl p-5 mt-3 shadow animate-fadeIn">
@@ -171,7 +171,7 @@ export default function Settings() {
 
                 <button
                   onClick={handleJump}
-                  className="bg-gradient-to-r from-acorn to-acorn-light text-white font-bold px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105 active:scale-95 mt-2"
+                  className="bg-gradient-to-r from-acorn to-acorn-light text-white font-bold px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-[transform,box-shadow,background-color] hover:scale-105 active:scale-95 mt-2"
                 >
                   Go!
                 </button>

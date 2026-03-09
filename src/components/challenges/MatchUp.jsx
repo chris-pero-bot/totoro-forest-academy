@@ -69,7 +69,7 @@ export default function MatchUp({ task, onCorrect, onWrong, showHint }) {
               key={i}
               onClick={() => handleLeftClick(i)}
               disabled={matched.includes(i)}
-              className={`py-4 px-5 rounded-2xl font-bold text-base transition-all duration-200 border-2 text-center shadow-md ${
+              className={`py-4 px-5 rounded-2xl font-bold text-base transition-[transform,border-color,background-color,box-shadow] duration-200 border-2 text-center shadow-md ${
                 matched.includes(i)
                   ? 'bg-success-bg border-success text-success shadow-lg'
                   : selectedLeft === i
@@ -91,7 +91,7 @@ export default function MatchUp({ task, onCorrect, onWrong, showHint }) {
               key={i}
               onClick={() => handleRightClick(i)}
               disabled={matched.includes(item.origIdx)}
-              className={`py-4 px-5 rounded-2xl font-bold text-base transition-all duration-200 border-2 text-center shadow-md ${
+              className={`py-4 px-5 rounded-2xl font-bold text-base transition-[transform,border-color,background-color,box-shadow] duration-200 border-2 text-center shadow-md ${
                 matched.includes(item.origIdx)
                   ? 'bg-success-bg border-success text-success shadow-lg'
                   : wrongPair?.right === i

@@ -16,7 +16,7 @@ export default function HUD({ showPause = true }) {
               key={i}
               src={asleep ? '/assets/characters/soot-sprite-asleep.png' : '/assets/characters/soot-sprite-alive.png'}
               alt={asleep ? 'Sleeping' : 'Alive'}
-              className={`w-7 h-7 object-contain transition-all duration-500 ${asleep ? 'opacity-40 grayscale' : ''}`}
+              className={`w-7 h-7 object-contain transition-[opacity,filter] duration-500 ${asleep ? 'opacity-40 grayscale' : ''}`}
               onError={(e) => {
                 e.target.style.display = 'none'
                 // Fallback to SVG rendered nearby
@@ -36,7 +36,7 @@ export default function HUD({ showPause = true }) {
       {showPause && (
         <button
           onClick={() => dispatch({ type: 'BACK_TO_TRAIL' })}
-          className="text-white bg-white/10 hover:bg-white/20 text-sm font-bold px-3 py-1.5 rounded-full transition-all"
+          className="text-white bg-white/10 hover:bg-white/20 text-sm font-bold px-3 py-1.5 rounded-full transition-colors"
         >
           Pause
         </button>

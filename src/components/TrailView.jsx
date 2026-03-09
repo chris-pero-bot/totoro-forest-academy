@@ -49,12 +49,12 @@ export default function TrailView() {
         <div className="flex items-center justify-between mb-4">
           <button
             onClick={() => dispatch({ type: 'BACK_TO_WORLD_MAP' })}
-            className="bg-white/80 text-forest-dark font-bold px-4 py-2 rounded-full text-sm shadow-lg hover:shadow-xl transition-all hover:scale-105 active:scale-95"
+            className="bg-white/80 text-forest-dark font-bold px-4 py-2 rounded-full text-sm shadow-lg hover:shadow-xl transition-[transform,box-shadow,background-color] hover:scale-105 active:scale-95"
           >
             Back to Map
           </button>
           <div className="flex items-center gap-1 bg-white/85 backdrop-blur-sm px-4 py-2 rounded-full shadow">
-            <span>🌰</span>
+            <span aria-hidden="true">🌰</span>
             <span className="font-bold text-earth text-lg">{state.acorns}</span>
           </div>
         </div>
@@ -75,20 +75,20 @@ export default function TrailView() {
             return (
               <div
                 key={trail.id}
-                className={`rounded-2xl overflow-hidden transition-all shadow-xl ${
+                className={`rounded-2xl overflow-hidden transition-[box-shadow,opacity] shadow-xl ${
                   unlocked ? 'bg-white/15 backdrop-blur-sm' : 'bg-white/5 opacity-50'
                 }`}
               >
                 {/* Trail header */}
                 <div className={`p-4 ${completed ? 'bg-success/30' : unlocked ? 'bg-forest-light/30' : 'bg-gray-500/20'}`}>
                   <div className="flex items-center gap-3">
-                    <span className="text-2xl">{unlocked ? (completed ? '✅' : '🔓') : '🔒'}</span>
+                    <span className="text-2xl" aria-hidden="true">{unlocked ? (completed ? '✅' : '🔓') : '🔒'}</span>
                     <div>
                       <h3 className="font-heading text-lg text-white text-shadow-dark">
                         Trail {trail.id}: {trail.name}
                       </h3>
                       <p className="text-white/80 text-xs">
-                        {clearings.length} clearings | {'⭐'.repeat(Math.min(stars, 6))} {stars}/{maxStars}
+                        {clearings.length} clearings | <span aria-hidden="true">{'⭐'.repeat(Math.min(stars, 6))}</span> {stars}/{maxStars}
                       </p>
                     </div>
                   </div>
@@ -116,7 +116,7 @@ export default function TrailView() {
                             <button
                               onClick={() => handleStartClearing(trail.id, idx)}
                               disabled={!clearingUnlocked}
-                              className={`flex items-center gap-3 py-3 px-4 rounded-2xl w-full transition-all duration-200 ${
+                              className={`flex items-center gap-3 py-3 px-4 rounded-2xl w-full transition-[transform,border-color,background-color,box-shadow] duration-200 ${
                                 clearingUnlocked
                                   ? progress?.completed
                                     ? 'bg-success/30 hover:bg-success/40 border-2 border-success/50'
@@ -164,9 +164,9 @@ export default function TrailView() {
 
       {/* First-time tip */}
       {showTip && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fadeIn" onClick={dismissTip}>
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fadeIn" role="dialog" aria-modal="true" onClick={dismissTip}>
           <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-sm mx-4 text-center">
-            <div className="text-5xl mb-4">🗺️</div>
+            <div className="text-5xl mb-4" aria-hidden="true">🗺️</div>
             <p className="text-xl font-bold text-soot mb-4 font-body">Each dot is a Clearing. Complete them all to finish the Trail!</p>
             <button onClick={dismissTip} className="bg-gradient-to-r from-acorn to-acorn-light text-white font-heading text-lg px-8 py-3 rounded-full shadow-lg">
               Got it!

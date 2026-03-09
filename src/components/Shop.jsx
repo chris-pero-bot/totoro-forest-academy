@@ -64,12 +64,12 @@ export default function Shop() {
         <div className="flex items-center justify-between mb-6">
           <button
             onClick={() => dispatch({ type: 'NAVIGATE', screen: 'worldMap' })}
-            className="bg-white/80 text-forest-dark font-bold px-4 py-2 rounded-full text-sm shadow-lg hover:shadow-xl transition-all hover:scale-105 active:scale-95"
+            className="bg-white/80 text-forest-dark font-bold px-4 py-2 rounded-full text-sm shadow-lg hover:shadow-xl transition-[transform,box-shadow,background-color] hover:scale-105 active:scale-95"
           >
             Back
           </button>
           <div className="flex items-center gap-1 bg-white/85 backdrop-blur-sm px-4 py-2 rounded-full shadow">
-            <span className="text-lg">🌰</span>
+            <span className="text-lg" aria-hidden="true">🌰</span>
             <span className="font-bold text-earth text-lg">{state.acorns}</span>
           </div>
         </div>
@@ -104,13 +104,13 @@ export default function Shop() {
                 <button
                   onClick={() => dispatch({ type: 'BUY_POWER_UP', powerUp: item.id })}
                   disabled={!canAfford}
-                  className={`flex items-center gap-1 px-5 py-2.5 rounded-full font-bold text-sm shadow-lg transition-all duration-200 ${
+                  className={`flex items-center gap-1 px-5 py-2.5 rounded-full font-bold text-sm shadow-lg transition-[transform,box-shadow,background-color] duration-200 ${
                     canAfford
                       ? 'bg-gradient-to-r from-acorn to-acorn-light text-white hover:shadow-xl hover:scale-105 active:scale-95'
                       : 'bg-gray-200 text-gray-400 cursor-not-allowed'
                   }`}
                 >
-                  🌰 {item.cost}
+                  <span aria-hidden="true">🌰</span> {item.cost}
                 </button>
               </div>
             )
@@ -120,9 +120,9 @@ export default function Shop() {
 
       {/* First-time tip */}
       {showTip && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fadeIn" onClick={dismissTip}>
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fadeIn" role="dialog" aria-modal="true" onClick={dismissTip}>
           <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-sm mx-4 text-center">
-            <div className="text-5xl mb-4">🛍️</div>
+            <div className="text-5xl mb-4" aria-hidden="true">🛍️</div>
             <p className="text-xl font-bold text-soot mb-4 font-body">Spend your acorns here! Power-ups help you in tough spots.</p>
             <button onClick={dismissTip} className="bg-gradient-to-r from-acorn to-acorn-light text-white font-heading text-lg px-8 py-3 rounded-full shadow-lg">
               Got it!
