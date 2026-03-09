@@ -69,12 +69,11 @@
     },
     {
       "id": "t6",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "core",
-      "prompt": "You pour soup into a ___.",
-      "options": ["bowl", "glass", "fork", "napkin"],
-      "correctIndex": 0,
-      "hint": "It's round and deep.",
+      "prompt": "You pour soup into this. It is round and deep.",
+      "answer": "bowl",
+      "hint": "It starts with 'b' and has 4 letters.",
       "acornValue": 3
     },
     {

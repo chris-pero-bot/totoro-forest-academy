@@ -103,17 +103,19 @@
     },
     {
       "id": "t9",
-      "type": "pick_one",
+      "type": "snap_choice",
       "round": "challenge",
-      "prompt": "Which sentence is a command?",
-      "options": [
-        "Be quiet, please.",
-        "She is quiet.",
-        "He was quiet.",
-        "They are quiet."
+      "prompt": "Quick! Is it a command or not?",
+      "questions": [
+        { "prompt": "Be quiet!", "options": ["Command", "Not a command"], "correctIndex": 0 },
+        { "prompt": "She is quiet.", "options": ["Command", "Not a command"], "correctIndex": 1 },
+        { "prompt": "Don't run!", "options": ["Command", "Not a command"], "correctIndex": 0 },
+        { "prompt": "He was happy.", "options": ["Command", "Not a command"], "correctIndex": 1 },
+        { "prompt": "Follow the rules!", "options": ["Command", "Not a command"], "correctIndex": 0 },
+        { "prompt": "They walked slowly.", "options": ["Command", "Not a command"], "correctIndex": 1 }
       ],
-      "correctIndex": 0,
-      "hint": "A command tells someone to do something.",
+      "timePerQuestion": 8,
+      "hint": "A command tells someone to DO something.",
       "acornValue": 3
     },
     {

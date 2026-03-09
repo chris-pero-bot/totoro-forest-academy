@@ -70,12 +70,11 @@
     },
     {
       "id": "t6",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "core",
-      "prompt": "You sit on this in the living room. It is soft.",
-      "options": ["sofa", "table", "shelf", "rug"],
-      "correctIndex": 0,
-      "hint": "It's comfortable and big enough for the family.",
+      "prompt": "You sit on this in the living room. It is soft and comfortable.",
+      "answer": "sofa",
+      "hint": "It starts with 's' and has 4 letters.",
       "acornValue": 3
     },
     {

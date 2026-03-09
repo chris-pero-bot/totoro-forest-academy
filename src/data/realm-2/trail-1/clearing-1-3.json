@@ -103,17 +103,17 @@
     },
     {
       "id": "t10",
-      "type": "pick_one",
+      "type": "snap_choice",
       "round": "challenge",
-      "prompt": "Which sentence best describes a happy family?",
-      "options": [
-        "They love each other and spend time together.",
-        "They never talk to each other.",
-        "They live in different countries.",
-        "They don't know each other's names."
+      "prompt": "Quick! Answer about families!",
+      "questions": [
+        { "prompt": "A happy family loves each other.", "options": ["True", "False"], "correctIndex": 0 },
+        { "prompt": "Your mother's mother is your aunt.", "options": ["True", "False"], "correctIndex": 1 },
+        { "prompt": "A grandfather is older than a father.", "options": ["True", "False"], "correctIndex": 0 },
+        { "prompt": "Your uncle is your mother's son.", "options": ["True", "False"], "correctIndex": 1 }
       ],
-      "correctIndex": 0,
-      "hint": "Happy families are close and caring.",
+      "timePerQuestion": 8,
+      "hint": "Think about each family member carefully!",
       "acornValue": 3
     }
   ]

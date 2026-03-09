@@ -103,17 +103,11 @@
     },
     {
       "id": "t10",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "challenge",
-      "prompt": "Which sentence is correct?",
-      "options": [
-        "The fork is next to the plate on the table.",
-        "The fork is under the plate behind the table.",
-        "The fork is in the plate on the chair.",
-        "The fork is behind the table next to the ceiling."
-      ],
-      "correctIndex": 0,
-      "hint": "Think about where forks go when the table is set.",
+      "prompt": "The sofa is ___ the lamp and the door. It has something on each side.",
+      "answer": "between",
+      "hint": "This preposition means 'in the middle of two things'.",
       "acornValue": 3
     }
   ]

@@ -39,12 +39,11 @@
     },
     {
       "id": "t4",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "core",
       "prompt": "I am furry. I sleep a lot. I live in trees in Australia. What am I?",
-      "options": ["crocodile", "koala", "penguin", "whale"],
-      "correctIndex": 1,
-      "hint": "I eat leaves and I am very cute.",
+      "answer": "koala",
+      "hint": "It starts with K and is very cute.",
       "acornValue": 3
     },
     {
@@ -89,12 +88,18 @@
     },
     {
       "id": "t9",
-      "type": "pick_one",
+      "type": "snap_choice",
       "round": "challenge",
-      "prompt": "I am very big and heavy. I live in rivers in Africa. My name starts with H. What am I?",
-      "options": ["horse", "hawk", "hippo", "hamster"],
-      "correctIndex": 2,
-      "hint": "I spend a lot of time in the water.",
+      "prompt": "Rapid review! True or false?",
+      "questions": [
+        { "prompt": "A whale lives in the ocean.", "options": ["True", "False"], "correctIndex": 0 },
+        { "prompt": "A penguin has fur.", "options": ["True", "False"], "correctIndex": 1 },
+        { "prompt": "A crocodile has big teeth.", "options": ["True", "False"], "correctIndex": 0 },
+        { "prompt": "An eagle lives in the desert.", "options": ["True", "False"], "correctIndex": 1 },
+        { "prompt": "A hippo is very heavy.", "options": ["True", "False"], "correctIndex": 0 }
+      ],
+      "timePerQuestion": 8,
+      "hint": "Think about what you know about each animal!",
       "acornValue": 3
     },
     {

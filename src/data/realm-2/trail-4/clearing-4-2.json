@@ -110,17 +110,16 @@
     },
     {
       "id": "t10",
-      "type": "pick_one",
+      "type": "order_it",
       "round": "challenge",
-      "prompt": "Which pair is correct?",
-      "options": [
-        "Now: I eat lunch. Yesterday: I ate lunch.",
-        "Now: I ate lunch. Yesterday: I eat lunch.",
-        "Now: I eated lunch. Yesterday: I eats lunch.",
-        "Now: I eating lunch. Yesterday: I eat lunch."
+      "prompt": "Put these events in order from morning to night.",
+      "items": [
+        "She ate breakfast in the morning.",
+        "She cooked lunch at noon.",
+        "She made dinner in the evening.",
+        "She had dessert after dinner."
       ],
-      "correctIndex": 0,
-      "hint": "Present = eat. Past = ate.",
+      "hint": "Think about what time of day each meal happens.",
       "acornValue": 3
     }
   ]

@@ -9,12 +9,11 @@
   "tasks": [
     {
       "id": "t1",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "warmup",
-      "prompt": "In the city, there are many tall ___.",
-      "options": ["buildings", "mountains", "trees", "rivers"],
-      "correctIndex": 0,
-      "hint": "Apartments and offices are in these.",
+      "prompt": "In the city, there are many tall ___. Apartments and offices are in these.",
+      "answer": "buildings",
+      "hint": "It starts with 'b' and ends with 's'.",
       "acornValue": 3
     },
     {
@@ -46,12 +45,11 @@
     },
     {
       "id": "t4",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "core",
-      "prompt": "Uncle Michael lives in the ___.",
-      "options": ["mountains", "subway", "airport", "stadium"],
-      "correctIndex": 0,
-      "hint": "He lives in the country, not the city.",
+      "prompt": "Uncle Michael lives here, in the country. They are very tall and have snow on top.",
+      "answer": "mountains",
+      "hint": "It starts with 'm' and has 9 letters.",
       "acornValue": 3
     },
     {
@@ -80,12 +78,13 @@
     },
     {
       "id": "t7",
-      "type": "pick_one",
+      "type": "fix_it",
       "round": "core",
-      "prompt": "The houses in the city are ___ than in the country.",
-      "options": ["bigger", "smaller", "older", "shorter"],
-      "correctIndex": 0,
-      "hint": "City apartment buildings have many floors.",
+      "prompt": "Find and fix the error.",
+      "sentence": "The houses in the city are smaller than in the country.",
+      "options": ["smaller", "bigger", "shortest", "small"],
+      "correctIndex": 1,
+      "hint": "City apartment buildings have many floors. They are very large!",
       "acornValue": 3
     },
     {
@@ -100,27 +99,32 @@
     },
     {
       "id": "t9",
-      "type": "pick_one",
+      "type": "snap_choice",
       "round": "challenge",
-      "prompt": "What is something BOTH the city and country have?",
-      "options": ["schools", "subways", "skyscrapers", "airports"],
-      "correctIndex": 0,
-      "hint": "Children need to learn everywhere!",
+      "prompt": "City or country? Quick answers!",
+      "questions": [
+        { "prompt": "Subways are in the ___.", "options": ["city", "country"], "correctIndex": 0 },
+        { "prompt": "Farms are in the ___.", "options": ["country", "city"], "correctIndex": 0 },
+        { "prompt": "Tall buildings are in the ___.", "options": ["city", "country"], "correctIndex": 0 },
+        { "prompt": "Quiet forests are in the ___.", "options": ["country", "city"], "correctIndex": 0 },
+        { "prompt": "Schools are in ___.", "options": ["both", "only the city"], "correctIndex": 0 }
+      ],
+      "timePerQuestion": 8,
+      "hint": "Think about what you find in each place!",
       "acornValue": 3
     },
     {
       "id": "t10",
-      "type": "pick_one",
+      "type": "order_it",
       "round": "challenge",
-      "prompt": "Why did Uncle Michael visit the city?",
-      "options": [
-        "To visit Ralph's family and see the city.",
-        "To ride the subway to work.",
-        "To live there forever.",
-        "To go to school."
+      "prompt": "Put Uncle Michael's visit in order!",
+      "items": [
+        "Uncle Michael arrived from the mountains.",
+        "Ralph's mom made a plan to see the city.",
+        "They visited museums and buildings.",
+        "Uncle Michael went back to the country."
       ],
-      "correctIndex": 0,
-      "hint": "He came to visit his family!",
+      "hint": "First he arrived, then they planned, then they visited!",
       "acornValue": 3
     }
   ]

@@ -53,12 +53,11 @@
     },
     {
       "id": "t5",
-      "type": "pick_one",
+      "type": "order_it",
       "round": "core",
-      "prompt": "What is the ordinal number for 1?",
-      "options": ["1st (first)", "2nd (second)", "3rd (third)", "4th (fourth)"],
-      "correctIndex": 0,
-      "hint": "One → first.",
+      "prompt": "Put these ordinal numbers in order from 1st to 4th.",
+      "items": ["first", "second", "third", "fourth"],
+      "hint": "1st, 2nd, 3rd, 4th!",
       "acornValue": 3
     },
     {

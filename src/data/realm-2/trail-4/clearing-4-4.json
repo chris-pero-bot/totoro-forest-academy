@@ -53,12 +53,11 @@
     },
     {
       "id": "t5",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "core",
-      "prompt": "Which season comes after summer?",
-      "options": ["fall", "spring", "winter", "summer"],
-      "correctIndex": 0,
-      "hint": "The leaves change color in this season.",
+      "prompt": "This season comes after summer. The leaves change color.",
+      "answer": "fall",
+      "hint": "It starts with 'f' and has 4 letters.",
       "acornValue": 3
     },
     {

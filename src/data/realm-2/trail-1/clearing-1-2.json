@@ -73,11 +73,10 @@
     },
     {
       "id": "t7",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "core",
       "prompt": "A baby is the youngest member of the ___.",
-      "options": ["family", "school", "museum", "library"],
-      "correctIndex": 0,
+      "answer": "family",
       "hint": "Babies are at home with their parents.",
       "acornValue": 3
     },

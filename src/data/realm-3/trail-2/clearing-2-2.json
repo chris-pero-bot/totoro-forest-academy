@@ -9,12 +9,11 @@
   "tasks": [
     {
       "id": "t1",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "warmup",
-      "prompt": "Where do you go when you are sick?",
-      "options": ["hospital", "stadium", "restaurant", "airport"],
-      "correctIndex": 0,
-      "hint": "Doctors and nurses work here.",
+      "prompt": "Where do you go when you are sick? Doctors and nurses work here.",
+      "answer": "hospital",
+      "hint": "It starts with 'h' and has 8 letters.",
       "acornValue": 3
     },
     {
@@ -62,12 +61,11 @@
     },
     {
       "id": "t6",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "core",
-      "prompt": "Where do you go to watch a baseball game?",
-      "options": ["stadium", "library", "church", "hospital"],
-      "correctIndex": 0,
-      "hint": "It's big and has many seats for fans.",
+      "prompt": "A big place with many seats where you watch baseball or soccer games.",
+      "answer": "stadium",
+      "hint": "It starts with 's' and has 7 letters.",
       "acornValue": 3
     },
     {
@@ -109,17 +107,16 @@
     },
     {
       "id": "t10",
-      "type": "pick_one",
+      "type": "order_it",
       "round": "challenge",
-      "prompt": "Ralph's family visited the ___, the ___, and the ___.",
-      "options": [
-        "museum, church, stadium",
-        "igloo, cave, tent",
-        "airplane, ship, train",
-        "kitchen, bedroom, bathroom"
+      "prompt": "Put Ralph's city tour stops in order!",
+      "items": [
+        "First, they visited the museum.",
+        "Then, they saw the church with beautiful gardens.",
+        "Next, they went to the City Hall Library.",
+        "Finally, they watched a game at the stadium."
       ],
-      "correctIndex": 0,
-      "hint": "They visited buildings in the city!",
+      "hint": "Museum → Church → Library → Stadium.",
       "acornValue": 3
     }
   ]

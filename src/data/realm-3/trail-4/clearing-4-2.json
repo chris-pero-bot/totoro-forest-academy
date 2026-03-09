@@ -9,7 +9,7 @@
   "tasks": [
     {
       "id": "t1",
-      "type": "pick_one",
+      "type": "fill_the_gap",
       "round": "warmup",
       "prompt": "___ a library on Main Street.",
       "options": ["There is", "There are", "There isn't any", "There were"],
@@ -29,12 +29,13 @@
     },
     {
       "id": "t3",
-      "type": "pick_one",
+      "type": "fix_it",
       "round": "core",
-      "prompt": "There ___ a big park near the school.",
-      "options": ["is", "are", "were", "been"],
-      "correctIndex": 0,
-      "hint": "One park → is.",
+      "prompt": "Find and fix the error.",
+      "sentence": "There are a big park near the school.",
+      "options": ["are", "is", "were", "been"],
+      "correctIndex": 1,
+      "hint": "One park → There IS a big park.",
       "acornValue": 3
     },
     {
@@ -59,12 +60,13 @@
     },
     {
       "id": "t6",
-      "type": "pick_one",
+      "type": "fix_it",
       "round": "core",
-      "prompt": "There ___ any subways in the small town.",
-      "options": ["aren't", "isn't", "is", "are"],
-      "correctIndex": 0,
-      "hint": "Subways (plural) + negative → aren't.",
+      "prompt": "Find and fix the error.",
+      "sentence": "There isn't any subways in the small town.",
+      "options": ["isn't", "aren't", "wasn't", "is"],
+      "correctIndex": 1,
+      "hint": "Subways is plural, so use aren't.",
       "acornValue": 3
     },
     {
@@ -103,17 +105,18 @@
     },
     {
       "id": "t10",
-      "type": "pick_one",
+      "type": "snap_choice",
       "round": "challenge",
-      "prompt": "Which sentence is correct?",
-      "options": [
-        "There is a stadium and there are two parks.",
-        "There are a stadium and there is two parks.",
-        "There is a stadium and there is two parks.",
-        "There are a stadium and there are two parks."
+      "prompt": "Quick! There is or there are?",
+      "questions": [
+        { "prompt": "___ a stadium in the city.", "options": ["There is", "There are"], "correctIndex": 0 },
+        { "prompt": "___ two parks near the school.", "options": ["There are", "There is"], "correctIndex": 0 },
+        { "prompt": "___ a library on Main Street.", "options": ["There is", "There are"], "correctIndex": 0 },
+        { "prompt": "___ many restaurants downtown.", "options": ["There are", "There is"], "correctIndex": 0 },
+        { "prompt": "___ an airport outside the city.", "options": ["There is", "There are"], "correctIndex": 0 }
       ],
-      "correctIndex": 0,
-      "hint": "One stadium → is. Two parks → are.",
+      "timePerQuestion": 8,
+      "hint": "One thing = there is. Many things = there are.",
       "acornValue": 3
     }
   ]

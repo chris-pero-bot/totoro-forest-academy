@@ -24,17 +24,18 @@
     },
     {
       "id": "t2",
-      "type": "pick_one",
+      "type": "snap_choice",
       "round": "warmup",
-      "prompt": "Which sentence is NEGATIVE?",
-      "options": [
-        "They didn't go to the park.",
-        "They went to the park.",
-        "Did they go to the park?",
-        "Go to the park!"
+      "prompt": "Quick! What type of sentence is it?",
+      "questions": [
+        { "prompt": "They didn't go to the park.", "options": ["Negative", "Affirmative"], "correctIndex": 0 },
+        { "prompt": "The museum was beautiful.", "options": ["Affirmative", "Negative"], "correctIndex": 0 },
+        { "prompt": "Did you like the city?", "options": ["Question", "Affirmative"], "correctIndex": 0 },
+        { "prompt": "She didn't eat breakfast.", "options": ["Negative", "Question"], "correctIndex": 0 },
+        { "prompt": "Where is the library?", "options": ["Question", "Negative"], "correctIndex": 0 }
       ],
-      "correctIndex": 0,
-      "hint": "Negative sentences have 'not' or 'didn't'.",
+      "timePerQuestion": 8,
+      "hint": "'Not'/'didn't' = negative. '?' = question. Positive = affirmative.",
       "acornValue": 3
     },
     {
@@ -66,16 +67,15 @@
     },
     {
       "id": "t5",
-      "type": "pick_one",
+      "type": "order_it",
       "round": "core",
-      "prompt": "Make it a question: 'He visited the museum.' → ___",
-      "options": [
-        "Did he visit the museum?",
-        "He did visit the museum?",
-        "Visit he did the museum?",
-        "He visited the museum?"
+      "prompt": "Put the words in order to make a question from: 'He visited the museum.'",
+      "items": [
+        "Did",
+        "he",
+        "visit",
+        "the museum?"
       ],
-      "correctIndex": 0,
       "hint": "Did + subject + base verb + ?",
       "acornValue": 3
     },
@@ -130,16 +130,15 @@
     },
     {
       "id": "t10",
-      "type": "pick_one",
+      "type": "order_it",
       "round": "challenge",
-      "prompt": "Change to a question: 'She liked the church gardens.'",
-      "options": [
-        "Did she like the church gardens?",
-        "She did like the church gardens?",
-        "Liked she the church gardens?",
-        "Does she liked the church gardens?"
+      "prompt": "Put the words in order to make a question from: 'She liked the church gardens.'",
+      "items": [
+        "Did",
+        "she",
+        "like",
+        "the church gardens?"
       ],
-      "correctIndex": 0,
       "hint": "Did + she + like (base form) + ?",
       "acornValue": 3
     }
