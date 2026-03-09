@@ -20,7 +20,7 @@ export default function FixIt({ task, onCorrect, onWrong, showHint }) {
     <div className="animate-fadeIn">
       <p className="text-sm text-forest-dark/60 text-center mb-2 font-bold">Find and fix the error!</p>
 
-      <div className="bg-error-soft/10 border-2 border-error-soft/30 rounded-xl p-4 mb-6">
+      <div className="bg-error-bg border-2 border-error-soft/30 rounded-2xl p-5 mb-6 shadow-md">
         <p className="text-xl font-bold text-center text-soot">{task.prompt}</p>
       </div>
 
@@ -40,14 +40,14 @@ export default function FixIt({ task, onCorrect, onWrong, showHint }) {
             key={i}
             onClick={() => handleSelect(i)}
             disabled={revealed}
-            className={`py-3 px-5 rounded-xl font-bold text-lg transition-all border-2 ${
+            className={`py-5 px-8 rounded-2xl font-bold text-lg transition-[transform,border-color,background-color,box-shadow] duration-200 border-2 shadow-md hover:shadow-lg ${
               !revealed
-                ? 'bg-white border-forest/20 text-soot hover:border-forest hover:bg-forest-light/10'
+                ? 'bg-white border-forest/20 text-soot hover:border-forest hover:bg-forest-pale hover:scale-[1.03] active:scale-[0.97]'
                 : i === task.correctIndex
-                  ? 'bg-success text-white border-success animate-pop'
+                  ? 'bg-success-bg border-success text-success animate-pop shadow-lg'
                   : i === selected
-                    ? 'bg-error-soft text-white border-error-soft animate-shake'
-                    : 'bg-gray-100 text-gray-400 border-gray-200'
+                    ? 'bg-white border-error-soft text-error-soft animate-shake'
+                    : 'bg-gray-50 text-gray-400 border-gray-200'
             }`}
           >
             {option}

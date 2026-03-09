@@ -106,17 +106,18 @@
     },
     {
       "id": "t10",
-      "type": "pick_one",
+      "type": "snap_choice",
       "round": "challenge",
-      "prompt": "Which sentence is correct?",
-      "options": [
-        "She likes parrots but she doesn't like snakes.",
-        "She like parrots but she don't like snakes.",
-        "She likes parrots but she don't like snakes.",
-        "She like parrots but she doesn't like snakes."
+      "prompt": "Quick! likes or like?",
+      "questions": [
+        { "prompt": "She ___ dolphins.", "options": ["likes", "like"], "correctIndex": 0 },
+        { "prompt": "They ___ parrots.", "options": ["like", "likes"], "correctIndex": 0 },
+        { "prompt": "He ___ koalas.", "options": ["likes", "like"], "correctIndex": 0 },
+        { "prompt": "I ___ eagles.", "options": ["like", "likes"], "correctIndex": 0 },
+        { "prompt": "It ___ fish.", "options": ["likes", "like"], "correctIndex": 0 }
       ],
-      "correctIndex": 0,
-      "hint": "She → likes / doesn't like (both need -s rules).",
+      "timePerQuestion": 8,
+      "hint": "He/she/it → likes. I/you/we/they → like.",
       "acornValue": 3
     }
   ]

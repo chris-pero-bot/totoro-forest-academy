@@ -117,12 +117,11 @@
     },
     {
       "id": "t10",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "challenge",
-      "prompt": "Kangaroos live in Australia. Australia has deserts and ___.",
-      "options": ["forests", "igloos", "subways", "apartments"],
-      "correctIndex": 0,
-      "hint": "Australia has lots of natural places.",
+      "prompt": "A very hot, dry place with lots of sand. Camels live here.",
+      "answer": "desert",
+      "hint": "It starts with D and has no water.",
       "acornValue": 3
     }
   ]

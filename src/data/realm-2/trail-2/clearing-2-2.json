@@ -56,12 +56,11 @@
     },
     {
       "id": "t5",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "core",
-      "prompt": "Do we have ___ milk left?",
-      "options": ["any", "many", "a lot", "few"],
-      "correctIndex": 0,
-      "hint": "In questions, we use ___.",
+      "prompt": "In questions about uncountable things, we use this word: 'Do we have ___ milk?'",
+      "answer": "any",
+      "hint": "It starts with 'a' and has 3 letters.",
       "acornValue": 3
     },
     {
@@ -106,17 +105,18 @@
     },
     {
       "id": "t10",
-      "type": "pick_one",
+      "type": "snap_choice",
       "round": "challenge",
-      "prompt": "Which sentence is correct?",
-      "options": [
-        "How many apples and how much milk do we need?",
-        "How much apples and how many milk do we need?",
-        "How many apples and how many milk do we need?",
-        "How much apples and how much milk do we need?"
+      "prompt": "Quick! How many or how much?",
+      "questions": [
+        { "prompt": "___ apples do we need?", "options": ["How many", "How much"], "correctIndex": 0 },
+        { "prompt": "___ water is in the glass?", "options": ["How much", "How many"], "correctIndex": 0 },
+        { "prompt": "___ cookies are on the plate?", "options": ["How many", "How much"], "correctIndex": 0 },
+        { "prompt": "___ cheese do we have?", "options": ["How much", "How many"], "correctIndex": 0 },
+        { "prompt": "___ oranges are in the bag?", "options": ["How many", "How much"], "correctIndex": 0 }
       ],
-      "correctIndex": 0,
-      "hint": "Apples = countable (many). Milk = uncountable (much).",
+      "timePerQuestion": 8,
+      "hint": "Can you count it? Many. Can't count it? Much.",
       "acornValue": 3
     }
   ]

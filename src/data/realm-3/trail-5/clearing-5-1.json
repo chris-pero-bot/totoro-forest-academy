@@ -19,12 +19,16 @@
     },
     {
       "id": "t2",
-      "type": "pick_one",
+      "type": "match_up",
       "round": "warmup",
-      "prompt": "Where does Uncle Michael live?",
-      "options": ["In the mountains", "In the city", "At the beach", "On a boat"],
-      "correctIndex": 0,
-      "hint": "He lives in the country.",
+      "prompt": "Match each person to what they did on the tour.",
+      "pairs": [
+        { "left": "Uncle Michael", "right": "visited from the mountains" },
+        { "left": "Ralph's Mom", "right": "planned the city tour" },
+        { "left": "the baby", "right": "cried in the rain" },
+        { "left": "Ralph", "right": "showed his uncle the city" }
+      ],
+      "hint": "Think about each person's role in the story.",
       "acornValue": 3
     },
     {
@@ -55,17 +59,12 @@
     },
     {
       "id": "t5",
-      "type": "pick_one",
+      "type": "fix_it",
       "round": "core",
-      "prompt": "What happened on the rainy day?",
-      "options": [
-        "The family tried to catch the tour bus and got wet.",
-        "They went to the beach.",
-        "They flew on an airplane.",
-        "They stayed at the museum all day."
-      ],
-      "correctIndex": 0,
-      "hint": "It was raining and they were running!",
+      "prompt": "The family runned to catch the tour bus in the rain.",
+      "options": ["runned", "ran", "runs", "running"],
+      "correctIndex": 1,
+      "hint": "Run is an irregular verb. What is its past tense?",
       "acornValue": 3
     },
     {
@@ -95,6 +94,23 @@
     },
     {
       "id": "t8",
+      "type": "sort_it",
+      "round": "challenge",
+      "prompt": "Sort these places: did the family visit them or not?",
+      "buckets": ["They Visited", "They Did NOT Visit"],
+      "items": [
+        { "text": "museum", "correctBucket": "They Visited" },
+        { "text": "church", "correctBucket": "They Visited" },
+        { "text": "stadium", "correctBucket": "They Visited" },
+        { "text": "airport", "correctBucket": "They Did NOT Visit" },
+        { "text": "City Hall Library", "correctBucket": "They Visited" },
+        { "text": "supermarket", "correctBucket": "They Did NOT Visit" }
+      ],
+      "hint": "Remember the tour route from the story!",
+      "acornValue": 3
+    },
+    {
+      "id": "t9",
       "type": "pick_one",
       "round": "challenge",
       "prompt": "What is the MAIN IDEA of the city tour story?",
@@ -106,21 +122,6 @@
       ],
       "correctIndex": 0,
       "hint": "The whole story is about showing the city to visitors.",
-      "acornValue": 3
-    },
-    {
-      "id": "t9",
-      "type": "pick_one",
-      "round": "challenge",
-      "prompt": "How did Uncle Michael feel about the city?",
-      "options": [
-        "He was amazed because the city was so different from the country.",
-        "He was bored because there was nothing to do.",
-        "He was angry because it was too noisy.",
-        "He was sad because he missed his home."
-      ],
-      "correctIndex": 0,
-      "hint": "The city was new and exciting for him!",
       "acornValue": 3
     },
     {

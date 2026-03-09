@@ -9,12 +9,11 @@
   "tasks": [
     {
       "id": "t1",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "warmup",
-      "prompt": "The apartment building is very ___.",
-      "options": ["tall", "small", "short", "tiny"],
-      "correctIndex": 0,
-      "hint": "It has many floors!",
+      "prompt": "The apartment building is very ___. It has many floors!",
+      "answer": "tall",
+      "hint": "It starts with 't' and rhymes with 'ball'.",
       "acornValue": 3
     },
     {
@@ -53,12 +52,11 @@
     },
     {
       "id": "t5",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "core",
-      "prompt": "The library is a ___ and ___ place.",
-      "options": ["quiet, peaceful", "noisy, loud", "scary, dark", "hot, dry"],
-      "correctIndex": 0,
-      "hint": "Libraries are calm places where you read.",
+      "prompt": "Libraries are calm and ___. You must not make noise there.",
+      "answer": "quiet",
+      "hint": "It starts with 'q' and has 5 letters.",
       "acornValue": 3
     },
     {
@@ -73,12 +71,13 @@
     },
     {
       "id": "t7",
-      "type": "pick_one",
+      "type": "fix_it",
       "round": "core",
-      "prompt": "In the country, the houses are ___ than in the city.",
-      "options": ["smaller", "taller", "bigger", "noisier"],
-      "correctIndex": 0,
-      "hint": "Country houses don't have many floors.",
+      "prompt": "Find and fix the error.",
+      "sentence": "In the country, the houses are taller than in the city.",
+      "options": ["taller", "smaller", "tallest", "tall"],
+      "correctIndex": 1,
+      "hint": "Country houses don't have many floors. They are not big!",
       "acornValue": 3
     },
     {
@@ -110,17 +109,18 @@
     },
     {
       "id": "t10",
-      "type": "pick_one",
+      "type": "snap_choice",
       "round": "challenge",
-      "prompt": "Which sentence describes a city best?",
-      "options": [
-        "A city has tall buildings, busy streets, and many people.",
-        "A city has farms, mountains, and rivers.",
-        "A city has forests, animals, and lakes.",
-        "A city has beaches, sand, and waves."
+      "prompt": "Quick! Pick the right adjective!",
+      "questions": [
+        { "prompt": "The stadium is ___.", "options": ["huge", "tiny"], "correctIndex": 0 },
+        { "prompt": "The library is ___.", "options": ["quiet", "noisy"], "correctIndex": 0 },
+        { "prompt": "City Hall is ___.", "options": ["important", "scary"], "correctIndex": 0 },
+        { "prompt": "The park is ___.", "options": ["beautiful", "ugly"], "correctIndex": 0 },
+        { "prompt": "The apartment building is ___.", "options": ["tall", "short"], "correctIndex": 0 }
       ],
-      "correctIndex": 0,
-      "hint": "Cities are urban places with lots of activity.",
+      "timePerQuestion": 8,
+      "hint": "Pick the word that best describes each place!",
       "acornValue": 3
     }
   ]

@@ -30,7 +30,9 @@ function GameRouter() {
 
   return (
     <div className="game-container">
-      <Screen />
+      <div key={state.screen} className="animate-fadeIn">
+        <Screen />
+      </div>
     </div>
   )
 }

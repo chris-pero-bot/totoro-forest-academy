@@ -19,12 +19,12 @@
     },
     {
       "id": "t2",
-      "type": "pick_one",
+      "type": "fill_the_gap",
       "round": "warmup",
-      "prompt": "How did the class get to the museum?",
-      "options": ["By bus", "By car", "They walked", "By train"],
+      "prompt": "The children ___ to the museum by bus.",
+      "options": ["went", "goed", "goes", "going"],
       "correctIndex": 0,
-      "hint": "They all rode together.",
+      "hint": "Go in the past tense is an irregular verb.",
       "acornValue": 3
     },
     {
@@ -45,12 +45,12 @@
     },
     {
       "id": "t4",
-      "type": "pick_one",
+      "type": "fix_it",
       "round": "core",
-      "prompt": "What did the children see in the Dinosaur Gallery?",
-      "options": ["Dinosaur bones", "Live dinosaurs", "Paintings", "Books"],
-      "correctIndex": 0,
-      "hint": "Dinosaurs lived long ago. We can only see their...",
+      "prompt": "The children was surprised when they saw the big dinosaur bones.",
+      "options": ["was", "were", "is", "are"],
+      "correctIndex": 1,
+      "hint": "The children = they. Use the right past tense of 'be'.",
       "acornValue": 3
     },
     {
@@ -65,12 +65,16 @@
     },
     {
       "id": "t6",
-      "type": "pick_one",
+      "type": "match_up",
       "round": "core",
-      "prompt": "Who went missing during the field trip?",
-      "options": ["Amy and Ralph", "Miss Wilson", "The whole class", "The bus driver"],
-      "correctIndex": 0,
-      "hint": "Two students got lost.",
+      "prompt": "Match each character to what they did in the story.",
+      "pairs": [
+        { "left": "Miss Wilson", "right": "reminded the class to follow the rules" },
+        { "left": "Amy and Ralph", "right": "went missing at the museum" },
+        { "left": "The children", "right": "sang songs on the bus" },
+        { "left": "The lizard", "right": "wore pink sneakers" }
+      ],
+      "hint": "Think about what each character did in the story.",
       "acornValue": 3
     },
     {
@@ -90,17 +94,19 @@
     },
     {
       "id": "t8",
-      "type": "pick_one",
+      "type": "sort_it",
       "round": "challenge",
-      "prompt": "What rule did Miss Wilson remind the students about?",
-      "options": [
-        "Follow the rules and be quiet.",
-        "Run in the hallway.",
-        "Touch all the displays.",
-        "Leave the museum early."
+      "prompt": "Sort what happened at the museum and what happened on the bus.",
+      "buckets": ["At the Museum", "On the Bus"],
+      "items": [
+        { "text": "They saw dinosaur bones.", "correctBucket": "At the Museum" },
+        { "text": "They sang songs.", "correctBucket": "On the Bus" },
+        { "text": "Amy and Ralph went missing.", "correctBucket": "At the Museum" },
+        { "text": "Miss Wilson reminded them of the rules.", "correctBucket": "On the Bus" },
+        { "text": "They ate lunch in the cafeteria.", "correctBucket": "At the Museum" },
+        { "text": "Ralph looked out the window.", "correctBucket": "On the Bus" }
       ],
-      "correctIndex": 0,
-      "hint": "She wanted them to behave well.",
+      "hint": "Think about WHERE each event took place.",
       "acornValue": 3
     },
     {

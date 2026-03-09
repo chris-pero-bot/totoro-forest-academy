@@ -32,14 +32,14 @@ export default function PickOne({ task, onCorrect, onWrong, showHint }) {
             key={i}
             onClick={() => handleSelect(i)}
             disabled={revealed}
-            className={`py-4 px-6 rounded-xl font-bold text-lg transition-all border-2 ${
+            className={`py-5 px-8 rounded-2xl font-bold text-lg transition-[transform,border-color,background-color,box-shadow] duration-200 border-2 shadow-md hover:shadow-lg ${
               !revealed
-                ? 'bg-white border-forest/20 text-soot hover:border-forest hover:bg-forest-light/10 hover:scale-[1.02]'
+                ? 'bg-white border-forest/20 text-soot hover:border-forest hover:bg-forest-pale hover:scale-[1.03] active:scale-[0.97]'
                 : i === task.correctIndex
-                  ? 'bg-success text-white border-success animate-pop'
+                  ? 'bg-success-bg border-success text-success animate-pop shadow-lg'
                   : i === selected
-                    ? 'bg-error-soft text-white border-error-soft animate-shake'
-                    : 'bg-gray-100 text-gray-400 border-gray-200'
+                    ? 'bg-white border-error-soft text-error-soft animate-shake'
+                    : 'bg-gray-50 text-gray-400 border-gray-200'
             }`}
           >
             {option}

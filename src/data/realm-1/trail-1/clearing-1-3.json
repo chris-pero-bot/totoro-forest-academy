@@ -53,12 +53,11 @@
     },
     {
       "id": "t5",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "core",
-      "prompt": "Which animal has feathers?",
-      "options": ["snake", "dolphin", "parrot", "hippo"],
-      "correctIndex": 2,
-      "hint": "This animal is a bird.",
+      "prompt": "This animal is a colorful bird. It can talk!",
+      "answer": "parrot",
+      "hint": "It starts with P and lives in the jungle.",
       "acornValue": 3
     },
     {

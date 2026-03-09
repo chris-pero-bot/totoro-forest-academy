@@ -63,6 +63,11 @@ const initialState = {
   cutsceneType: null, // 'trail' or 'realm'
   cutsceneRealm: null,
   cutsceneTrail: null,
+
+  // Instructions shown (challenge types user has seen)
+  shownInstructions: [],
+  // Contextual tips shown
+  shownTips: [],
 }
 
 function gameReducer(state, action) {
@@ -115,6 +120,29 @@ function gameReducer(state, action) {
       if (newStreak === 5) streakBonus = SCORING.STREAK_5_BONUS
       if (newStreak === 10) streakBonus = SCORING.STREAK_10_BONUS
 
+      // Track unique words encountered
+      const newWords = action.words || []
+      const updatedUniqueWords = [...state.uniqueWordsEncountered]
+      for (const w of newWords) {
+        const lower = w.toLowerCase()
+        if (!updatedUniqueWords.includes(lower)) {
+          updatedUniqueWords.push(lower)
+        }
+      }
+
+      // Track grammar streak
+      const newGrammarStreak = action.isGrammar ? state.grammarStreak + 1 : state.grammarStreak
+      const newBestGrammarStreak = Math.max(state.bestGrammarStreak, newGrammarStreak)
+
+      // Check word_collector and grammar_guardian achievements
+      const newAchievements = [...state.unlockedAchievements]
+      if (updatedUniqueWords.length >= 100 && !newAchievements.includes('word_collector')) {
+        newAchievements.push('word_collector')
+      }
+      if (newBestGrammarStreak >= 50 && !newAchievements.includes('grammar_guardian')) {
+        newAchievements.push('grammar_guardian')
+      }
+
       return {
         ...state,
         acorns: state.acorns + acornsEarned + streakBonus,
@@ -126,6 +154,10 @@ function gameReducer(state, action) {
         bestStreak: Math.max(state.bestStreak, newStreak),
         totalQuestionsAnswered: state.totalQuestionsAnswered + 1,
         totalCorrectAnswers: state.totalCorrectAnswers + 1,
+        uniqueWordsEncountered: updatedUniqueWords,
+        grammarStreak: newGrammarStreak,
+        bestGrammarStreak: newBestGrammarStreak,
+        unlockedAchievements: newAchievements,
       }
     }
 
@@ -136,6 +168,7 @@ function gameReducer(state, action) {
         ...state,
         lives: Math.max(0, state.lives - 1),
         streak: 0,
+        grammarStreak: action.isGrammar ? 0 : state.grammarStreak,
         taskAttempts: newAttempts,
         totalQuestionsAnswered: state.totalQuestionsAnswered + 1,
       }
@@ -163,12 +196,36 @@ function gameReducer(state, action) {
         newAchievements.push('streak_legend')
       }
 
+      // Build updated clearing progress to check perfectionist
+      const updatedClearingProgress = {
+        ...state.clearingProgress,
+        [key]: { stars: Math.max(stars, existingStars), completed: true },
+      }
+
+      // Check perfectionist: all clearings across all realms have 3 stars
+      if (!newAchievements.includes('perfectionist')) {
+        let allThreeStars = true
+        for (let r = 1; r <= 3; r++) {
+          const trailCount = getTrailCount(r)
+          for (let t = 1; t <= trailCount; t++) {
+            const cc = getClearingCount(r, t)
+            for (let c = 0; c < cc; c++) {
+              const ck = `${r}-${t}-${c}`
+              if ((updatedClearingProgress[ck]?.stars || 0) < 3) {
+                allThreeStars = false
+                break
+              }
+            }
+            if (!allThreeStars) break
+          }
+          if (!allThreeStars) break
+        }
+        if (allThreeStars) newAchievements.push('perfectionist')
+      }
+
       return {
         ...state,
-        clearingProgress: {
-          ...state.clearingProgress,
-          [key]: { stars: Math.max(stars, existingStars), completed: true },
-        },
+        clearingProgress: updatedClearingProgress,
         acorns: state.acorns + acornBonus,
         totalAcornsEarned: state.totalAcornsEarned + acornBonus,
         acornsEarnedThisClearing: state.acornsEarnedThisClearing + acornBonus,
@@ -219,6 +276,20 @@ function gameReducer(state, action) {
       const trailKey = `${state.currentRealm}-${state.currentTrail}`
       const acornBonus = SCORING.TRAIL_COMPLETE
       const newAchievements = [...state.unlockedAchievements]
+
+      // Check perfect_trail: all clearings in this trail have 3 stars
+      if (!newAchievements.includes('perfect_trail')) {
+        const clearingCount = getClearingCount(state.currentRealm, state.currentTrail)
+        let allPerfect = clearingCount > 0
+        for (let i = 0; i < clearingCount; i++) {
+          const key = `${state.currentRealm}-${state.currentTrail}-${i}`
+          if ((state.clearingProgress[key]?.stars || 0) < 3) {
+            allPerfect = false
+            break
+          }
+        }
+        if (allPerfect) newAchievements.push('perfect_trail')
+      }
 
       return {
         ...state,
@@ -308,6 +379,36 @@ function gameReducer(state, action) {
 
     case 'SET_PLAYER_NAME':
       return { ...state, playerName: action.name }
+
+    case 'MARK_INSTRUCTION_SHOWN':
+      if (state.shownInstructions.includes(action.challengeType)) return state
+      return {
+        ...state,
+        shownInstructions: [...state.shownInstructions, action.challengeType],
+      }
+
+    case 'MARK_TIP_SHOWN':
+      if (state.shownTips.includes(action.tip)) return state
+      return {
+        ...state,
+        shownTips: [...state.shownTips, action.tip],
+      }
+
+    case 'JUMP_TO_CLEARING':
+      return {
+        ...state,
+        currentRealm: action.realm,
+        currentTrail: action.trail,
+        currentClearing: action.clearing,
+        currentTaskIndex: 0,
+        correctFirstTry: 0,
+        totalCorrectInClearing: 0,
+        acornsEarnedThisClearing: 0,
+        taskAttempts: {},
+        clearingStartTime: Date.now(),
+        lives: INITIAL_LIVES,
+        screen: 'clearing',
+      }
 
     default:
       return state

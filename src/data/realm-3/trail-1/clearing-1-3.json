@@ -19,12 +19,11 @@
     },
     {
       "id": "t2",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "warmup",
-      "prompt": "It's quarter past three. What does the clock show?",
-      "options": ["3:15", "3:30", "3:45", "3:00"],
-      "correctIndex": 0,
-      "hint": "Quarter past = 15 minutes after.",
+      "prompt": "This word means 'one fourth.' ___ past three = 3:15.",
+      "answer": "quarter",
+      "hint": "It starts with 'q' and has 7 letters.",
       "acornValue": 3
     },
     {
@@ -73,12 +72,18 @@
     },
     {
       "id": "t7",
-      "type": "pick_one",
+      "type": "snap_choice",
       "round": "core",
-      "prompt": "The Catbus arrives at quarter past four. What time is that?",
-      "options": ["4:15", "4:45", "4:30", "4:00"],
-      "correctIndex": 0,
-      "hint": "Quarter past = 15 minutes after the hour.",
+      "prompt": "Quick time check! Pick the correct time!",
+      "questions": [
+        { "prompt": "Quarter past four = ?", "options": ["4:15", "4:45"], "correctIndex": 0 },
+        { "prompt": "Half past two = ?", "options": ["2:30", "2:15"], "correctIndex": 0 },
+        { "prompt": "Quarter to nine = ?", "options": ["8:45", "9:15"], "correctIndex": 0 },
+        { "prompt": "Six o'clock = ?", "options": ["6:00", "6:30"], "correctIndex": 0 },
+        { "prompt": "3:15 = ?", "options": ["quarter past three", "quarter to three"], "correctIndex": 0 }
+      ],
+      "timePerQuestion": 8,
+      "hint": "Match the words to the numbers!",
       "acornValue": 3
     },
     {

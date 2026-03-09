@@ -51,7 +51,7 @@ export default function OrderIt({ task, onCorrect, onWrong, showHint }) {
         {task.items.map((_, i) => (
           <div
             key={i}
-            className={`flex items-center gap-2 p-3 rounded-xl border-2 min-h-[48px] transition-all ${
+            className={`flex items-center gap-3 p-3 rounded-2xl border-2 min-h-[52px] transition-[border-color,background-color] shadow-sm ${
               order[i]
                 ? revealed
                   ? order[i].origIdx === task.correctOrder[i]
@@ -75,16 +75,16 @@ export default function OrderIt({ task, onCorrect, onWrong, showHint }) {
       {!revealed && (
         <>
           <p className="text-xs text-center text-forest-dark/60 mb-2">Tap items in order:</p>
-          <div className="flex flex-wrap gap-2 justify-center mb-3">
+          <div className="flex flex-wrap gap-3 justify-center mb-3">
             {items.map((item, i) => (
               <button
                 key={i}
                 onClick={() => handleItemClick(item)}
                 disabled={!!isPlaced(item)}
-                className={`py-2 px-4 rounded-lg text-sm font-bold transition-all ${
+                className={`py-3 px-5 rounded-2xl text-base font-bold transition-[transform,border-color,background-color,box-shadow] duration-200 shadow-md ${
                   isPlaced(item)
-                    ? 'bg-gray-200 text-gray-400'
-                    : 'bg-white border-2 border-forest/20 text-soot hover:border-forest hover:bg-forest-light/10'
+                    ? 'bg-gray-200 text-gray-400 shadow-none'
+                    : 'bg-white border-2 border-forest/20 text-soot hover:border-forest hover:bg-forest-pale hover:shadow-lg hover:scale-[1.03] active:scale-[0.97]'
                 }`}
               >
                 {item.text}

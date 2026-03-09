@@ -19,7 +19,7 @@
     },
     {
       "id": "t2",
-      "type": "pick_one",
+      "type": "fill_the_gap",
       "round": "warmup",
       "prompt": "Your father's brother is your ___.",
       "options": ["uncle", "cousin", "brother", "grandfather"],
@@ -82,12 +82,19 @@
     },
     {
       "id": "t8",
-      "type": "pick_one",
+      "type": "sort_it",
       "round": "challenge",
-      "prompt": "Sophie has a baby brother. Sophie is the baby's ___.",
-      "options": ["sister", "mother", "aunt", "cousin"],
-      "correctIndex": 0,
-      "hint": "Sophie and the baby have the same parents.",
+      "prompt": "Sort these people into the right group!",
+      "buckets": ["Adults", "Children"],
+      "items": [
+        { "text": "mother", "correctBucket": "Adults" },
+        { "text": "cousin", "correctBucket": "Children" },
+        { "text": "grandfather", "correctBucket": "Adults" },
+        { "text": "baby", "correctBucket": "Children" },
+        { "text": "uncle", "correctBucket": "Adults" },
+        { "text": "sister", "correctBucket": "Children" }
+      ],
+      "hint": "Are they grown-ups or kids?",
       "acornValue": 3
     },
     {

@@ -19,32 +19,35 @@
     },
     {
       "id": "t2",
-      "type": "pick_one",
+      "type": "word_build",
       "round": "warmup",
-      "prompt": "How do kangaroos move?",
-      "options": ["They hop.", "They fly.", "They swim.", "They slide."],
-      "correctIndex": 0,
-      "hint": "They use their strong legs to jump!",
+      "prompt": "A baby kangaroo is called a ___.",
+      "answer": "joey",
+      "hint": "It starts with J and has four letters!",
       "acornValue": 3
     },
     {
       "id": "t3",
       "type": "fill_the_gap",
       "round": "core",
-      "prompt": "A baby kangaroo is called a ___.",
-      "options": ["joey", "puppy", "kitten", "cub"],
+      "prompt": "A small joey lives in its mother's ___.",
+      "options": ["pouch", "nest", "cave", "shell"],
       "correctIndex": 0,
-      "hint": "It starts with J!",
+      "hint": "The mother carries it in a special pocket.",
       "acornValue": 3
     },
     {
       "id": "t4",
-      "type": "pick_one",
+      "type": "match_up",
       "round": "core",
-      "prompt": "Where does a joey live when it is very small?",
-      "options": ["In its mother's pouch", "In a nest", "In a cave", "In the water"],
-      "correctIndex": 0,
-      "hint": "The mother carries it in a special pocket.",
+      "prompt": "Match each animal to what covers its body.",
+      "pairs": [
+        { "left": "kangaroo", "right": "fur" },
+        { "left": "parrot", "right": "feathers" },
+        { "left": "crocodile", "right": "scales" },
+        { "left": "dolphin", "right": "smooth skin" }
+      ],
+      "hint": "Think about how each animal feels to touch.",
       "acornValue": 3
     },
     {
@@ -76,12 +79,12 @@
     },
     {
       "id": "t7",
-      "type": "pick_one",
+      "type": "fix_it",
       "round": "core",
-      "prompt": "What covers a kangaroo's body?",
-      "options": ["Fur", "Feathers", "Scales", "Stripes"],
-      "correctIndex": 0,
-      "hint": "It's soft and keeps them warm.",
+      "prompt": "Ralph said kangaroos has feathers on their body.",
+      "options": ["has feathers", "have fur", "has scales", "have feathers"],
+      "correctIndex": 1,
+      "hint": "Kangaroos are mammals. What covers their body?",
       "acornValue": 3
     },
     {
@@ -101,17 +104,19 @@
     },
     {
       "id": "t9",
-      "type": "pick_one",
+      "type": "sort_it",
       "round": "challenge",
-      "prompt": "What do kangaroos and koalas have in common?",
-      "options": [
-        "Both live in Australia.",
-        "Both can fly.",
-        "Both live in the ocean.",
-        "Both have feathers."
+      "prompt": "Sophie wants to compare. Sort these into the right animal!",
+      "buckets": ["Kangaroo", "Koala"],
+      "items": [
+        { "text": "hops on strong legs", "correctBucket": "Kangaroo" },
+        { "text": "climbs trees", "correctBucket": "Koala" },
+        { "text": "has a pouch for joeys", "correctBucket": "Kangaroo" },
+        { "text": "eats leaves from trees", "correctBucket": "Koala" },
+        { "text": "lives in Australia", "correctBucket": "Kangaroo" },
+        { "text": "lives in Australia", "correctBucket": "Koala" }
       ],
-      "correctIndex": 0,
-      "hint": "Think about WHERE they both come from.",
+      "hint": "Both live in Australia, but they move differently!",
       "acornValue": 3
     },
     {
