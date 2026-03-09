@@ -76,6 +76,23 @@ export default function ClearingScreen() {
   const currentTask = tasks[state.currentTaskIndex]
   const isLastTask = state.currentTaskIndex >= tasks.length - 1
 
+  // Determine if this clearing focuses on grammar (for grammar_guardian achievement)
+  const isGrammarClearing = /grammar|tense|pronoun|verb|possessive|adjective|preposition|sentence|ordinal|adverb/i.test(clearing.focus || '')
+
+  // Extract vocabulary words from a task for word_collector achievement
+  function extractWords(task) {
+    const words = []
+    if (task.options) words.push(...task.options)
+    if (task.pairs) {
+      for (const p of task.pairs) { words.push(p.left, p.right) }
+    }
+    if (task.items) {
+      for (const item of task.items) { words.push(item.text) }
+    }
+    if (task.answer) words.push(task.answer)
+    return words.filter(w => w && typeof w === 'string' && w.length > 1)
+  }
+
   function handleStartClearing() {
     // Check if we need to show instruction for this challenge type
     const firstTaskType = tasks[0]?.type
@@ -87,7 +104,7 @@ export default function ClearingScreen() {
   }
 
   function handleCorrect() {
-    dispatch({ type: 'ANSWER_CORRECT' })
+    dispatch({ type: 'ANSWER_CORRECT', words: extractWords(currentTask), isGrammar: isGrammarClearing })
     setShowHint(false)
     setConfettiTrigger(t => t + 1)
     setShowAcornFly(true)
@@ -110,7 +127,7 @@ export default function ClearingScreen() {
   }
 
   function handleWrong() {
-    dispatch({ type: 'ANSWER_WRONG' })
+    dispatch({ type: 'ANSWER_WRONG', isGrammar: isGrammarClearing })
 
     if (state.lives <= 1) {
       dispatch({ type: 'GAME_OVER' })

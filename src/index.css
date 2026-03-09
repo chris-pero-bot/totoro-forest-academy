@@ -40,7 +40,13 @@ button {
   font-family: 'Nunito', sans-serif;
   cursor: pointer;
   border: none;
-  outline: none;
+  touch-action: manipulation;
+}
+
+button:focus-visible {
+  outline: 3px solid var(--acorn-gold);
+  outline-offset: 2px;
+  border-radius: 8px;
 }
 
 button:active {
@@ -152,6 +158,27 @@ button:active {
 .animate-fadeOut { animation: fadeOut 0.3s ease-out forwards; }
 .animate-sootSleep { animation: sootSleep 0.5s ease-out forwards; }
 .animate-pulseGlow { animation: pulseGlow 2s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-shake,
+  .animate-pop,
+  .animate-fadeIn,
+  .animate-slideUp,
+  .animate-glow,
+  .animate-bounceIn,
+  .animate-acornFly,
+  .animate-streakGlow,
+  .animate-confetti,
+  .animate-fadeOut,
+  .animate-sootSleep,
+  .animate-pulseGlow {
+    animation: none !important;
+  }
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
 
 .text-shadow-dark {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
